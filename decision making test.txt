@@ -1,0 +1,315 @@
+Q.1.
+Problem Statement – Chaman planned to choose a four digit lucky number for his car. His
+lucky numbers are 3,5 and 7. Help him find the number, whose sum is divisible by 3 or 5 or
+7. Provide a valid car number, Fails to provide a valid input then display that number is not a
+valid car number.
+Note : The input other than 4 digit positive number[includes negative and 0] is considered as
+invalid.
+--------
+Ans.1.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your Car number");
+        int num=sc.nextInt();
+        if(num<1000)
+        {
+            System.out.println("Not valid");
+        }
+        else
+        {
+        int rem;
+        int sum=0;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+        }
+        if(sum%3==0 || sum%5==0 || sum%7==0)
+        {
+            System.out.println("Luckey Number");
+        }
+        else
+        {
+            System.out.println("Sorry its not my lucky number");
+        }
+        }
+    }
+}
+-------------------------------------------------------------------------
+Q.2.
+XYZ Technologies is in the process of increment the salary of the employees. This
+increment is done based on their salary and their performance appraisal rating.
+If the appraisal rating is between 1 and 3, the increment is 10% of the salary.
+If the appraisal rating is between 3.1 and 4, the increment is 25% of the salary.
+If the appraisal rating is between 4.1 and 5, the increment is 30% of the salary.
+Help them to do this, by writing a program that displays the incremented salary. Write a
+class “IncrementCalculation.java” and write the main method in it.
+Note : If either the salary is 0 or negative (or) if the appraisal rating is not in the range 1 to
+5 (inclusive), then the output should be “Invalid Input”.
+------
+Ans.2.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Salary");
+        int sal=sc.nextInt();
+        System.out.println("Enter the Performance appraisal rating");
+        float per=sc.nextFloat();
+        if(sal<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+           if(per>=1 && per<=3)
+        {
+            System.out.println("Salary is = "+sal);
+            System.out.println("Performance appraisal rating is ="+per);
+            int in=sal*10/100;
+            int np=sal+in;
+            System.out.println("Congretulation You Get 10% Increment");
+            System.out.println("Your Total Growth is ="+in);
+            System.out.println("Your New salary is ="+np);
+        }
+        else if(per>=3.1 && per<=4)
+        {
+            System.out.println("Salary is = "+sal);
+            System.out.println("Performance appraisal rating is ="+per);
+            int in=sal*25/100;
+            int np=sal+in;
+            System.out.println("Congretulation You Get 25% Increment");
+            System.out.println("Your Total Growth is ="+in);
+            System.out.println("Your New salary is ="+np);
+        }
+        else if(per>=4.1 && per<=5)
+        {
+            System.out.println("Salary is = "+sal);
+            System.out.println("Performance appraisal rating is ="+per);
+            int in=sal*30/100;
+            int np=sal+in;
+            System.out.println("Congretulation You Get 30% Increment");
+            System.out.println("Your Total Growth is ="+in);
+            System.out.println("Your New salary is ="+np);
+        }
+        else if(per>5 || per<1)
+        {
+            System.out.println("Not Valid");
+        }
+        }
+    }
+}
+-------------------------------------------------------------------------
+Q.3.
+Problem Statement – Rhea Pandey’s teacher has asked her to prepare well for the
+lesson on seasons. When her teacher tells a month, she needs to say the season
+corresponding to that month. Write a program to solve the above task.
+Spring – March to May,
+Summer – June to August,
+Autumn – September to November and,
+Winter – December to February.
+Month should be in the range 1 to 12. If not the output should be “Invalid month”.
+-----
+Ans.3.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Which month you want : 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 10 || 11 || 12");
+        int a=sc.nextInt();
+        if(a==1)
+        {
+            System.out.println("The Month is January");
+            System.out.println("Season: Winter");
+        }
+        else if(a==2)
+        {
+            System.out.println("The Month is Fabruary");
+            System.out.println("Season: Winter");
+        }
+        else if(a==3)
+        {
+            System.out.println("The Month is March");
+            System.out.println("Season: Spring");
+        }
+        else if(a==4)
+        {
+            System.out.println("The Month is April");
+            System.out.println("Season: Spring");
+        }
+        else if(a==5)
+        {
+            System.out.println("The Month is May");
+            System.out.println("Season: Spring");
+        }
+        else if(a==6)
+        {
+            System.out.println("The Month is June");
+            System.out.println("Season: Summer");
+        }
+        else if(a==7)
+        {
+            System.out.println("The Month is July");
+            System.out.println("Season: Summer");
+        }
+        else if(a==8)
+        {
+            System.out.println("The Month is August");
+            System.out.println("Season: Summer");
+        }
+        else if(a==9)
+        {
+            System.out.println("The Month is September");
+            System.out.println("Season: Autumn");
+        }
+        else if(a==10)
+        {
+            System.out.println("The Month is October");
+            System.out.println("Season: Autumn");
+        }
+        else if(a==11)
+        {
+            System.out.println("The Month is November");
+            System.out.println("Season: Autumn");
+        }
+        else if(a==12)
+        {
+            System.out.println("The Month is December");
+            System.out.println("Season: Winter");
+        }
+        else 
+        {
+            System.out.println("Not valid");
+        }
+    }
+}
+------------------------------------------------------------------------
+Q.4.
+An intelligence agency has received reports about some threats. The reports consist of
+numbers in a mysterious method. There is a number “N” and another number “R”. Those
+numbers are studied thoroughly and it is concluded that all digits of the number ‘N’ are
+summed up and this action is performed ‘R’ number of times. The resultant is also a single
+digit that is yet to be deciphered. The task here is to find the single-digit sum of the given
+number ‘N’ by repeating the action ‘R’ number of times.
+If the value of ‘R’ is 0, print the output as ‘0’.
+Example 1:
+Input :
+99 -> Value of N
+3 -> Value of R
+Output :
+9 -> Possible ways to fill the cistern.
+Explanation:
+Here, the number N=99
+1)Sum of the digits N: 9+9 = 18
+2)Repeat step 2 ‘R’ times i.e. 3 tims (9+9)+(9+9)+(9+9) = 18+18+18 =54
+3)Add digits of 54 as we need a single digit 5+4
+Hence , the output is 9.
+Example 2:
+Input :
+1234 -> Value of N
+2 -> Value of R
+Output :
+2 -> Possible ways to fill the cistern
+Explanation:
+Here, the number N=1234
+1)Sum of the digits of N: 1+2+3+4 =10
+2)Repeat step 2 ‘R’ times i.e. 2 times (1+2+3+4)+(1+2+3+4)= 10+10=20
+3)Add digits of 20 as we need a single digit. 2+0=2
+Hence, the output is 2.
+Constraints:
+0<N<=1000
+0<=R<=50
+The Input format for testing
+The candidate has to write the code to accept 2 input(s)
+First input- Accept value for N (positive integer number)
+Second input: Accept value for R(Positive integer number)
+The output format for testing
+The output should be a positive integer number or print the message (if any) given in the
+problem statement. (Check the output in Example 1, Example 2).
+-----
+Ans.4.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the value of N");
+        int n=sc.nextInt();
+        System.out.println("Enter the value of R");
+        int r=sc.nextInt();
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+            n=n/10;
+        }
+        int h=sum*r;
+        System.out.println("the new number is "+h);
+        int sum1=0;
+        int rem1;
+        while(h>0)
+        {
+            rem1=h%10;
+            sum1=sum1+rem1;
+            h=h/10;
+            
+        }
+        System.out.println("The new Number is ="+sum1);
+    }
+}
+
+------------------------------------------------------------------------
+Q.5.
+There is a JAR full of candies for sale at a mall counter. JAR has the capacity N, that is JAR
+can contain maximum N candies when JAR is full. At any point of time. JAR can have M
+number of Candies where M<=N. Candies are served to the customers. JAR is never remain
+empty as when last k candies are left. JAR if refilled with new candies in such a way that
+JAR get full.
+Write a code to implement above scenario. Display JAR at counter with available number of
+candies. Input should be the number of candies one customer can order at point of time.
+Update the JAR after each purchase and display JAR at Counter.
+Output should give number of Candies sold and updated number of Candies in JAR.
+If Input is more than candies in JAR, return: “INVALID INPUT”
+Given,
+N=10, where N is NUMBER OF CANDIES AVAILABLE
+K =< 5, where k is number of minimum candies that must be inside JAR ever.
+Example 1:(N = 10, k =< 5)
+--------
+Ans.5.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Welcome to Our Mall");
+        System.out.println("Canddy You Want ? (5 canddy one time)");
+        int c=sc.nextInt();
+        if(c>10 || c<0)
+        {
+            System.out.println("Invelid");
+        }
+        else
+        {
+        int n=10;
+        int r=n-c;
+        System.out.println("Remaining Canddy in jar = "+r);
+        System.out.println("Please Full Fill the Jar by "+c+" canddy");
+        int f=n+c;
+        System.out.println("Thanks for Fill Up Now Jar Having Full");
+        }
+    }
+}
+-------------------------------------------------------------------------------

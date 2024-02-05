@@ -1,0 +1,539 @@
+Ans.1.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+---------------------------------
+Ans.2.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==1 || j==1 || i==4 || j==4)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+---------------------------------
+Ans.3.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==1 || j==1 || i==3 || j==4)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+--------------------------------------
+Ans.4.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==1 || j==1 || i==3 || j==4 || i==5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+------------------------------------
+Ans.5.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==1 || j==1 || i==5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+--------------------------------------
+Ans.6.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==1 || j==1 || i==5 || i==3)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+---------------------------------------
+Ans.7.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==1 || j==1 || i==3)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+---------------------------------------
+Ans.8.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==3 || j==1 || j==4)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+-------------------------------------------
+Ans.9.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==1 || j==3 || i==5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+-------------------------------------------
+Ans.10.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==5 || j==1 )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+------------------------------------------
+Ans.11.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==1 || j==3 )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+----------------------------------------
+Ans.12.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==5  || j==1 || j==5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+-------------------------------------------
+Ans.13.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==1  || i==4 || i==j )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+-------------------------------------------
+Ans.14.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if( i==j )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+-------------------------------------------
+Ans.15.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==1 || j==1 || i==j )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+----------------------------------------------
+Ans.16.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==1 || j==5  )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+---------------------------------------------
+Ans.17.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==1 || j==1  )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+----------------------------------------------
+Ans.18.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i==5 || j==5  )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+--------------------------------------------------
+Ans.19
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=4;j++)
+        {
+            if(i==4 || j==1 || i==j )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+--------------------------------------------------
+Ans.20.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=3;i++)
+    {
+        for(s=2;s>=i;s--)
+        {
+          printf(" ");
+        }
+        for(j=1;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+----------------------------------------------------
+Ans.21.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=5;i++)
+    {
+        for(s=2;s<=i;s++)
+        {
+          printf(" ");
+        }
+        for(j=5;j>=i;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+}
+----------------------------------------------------
+Ans.22.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=4;i++)
+    {
+        for(s=3;s>=i;s--)
+        {
+          printf(" ");
+        }
+        for(j=1;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for(i=1;i<=4;i++)
+    {
+        for(s=2;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(j=4;j>=i;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+----------------------------------------------------
+Ans.23.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=3;i++)
+    {
+        for(s=2;s>=i;s--)
+        {
+          printf(" ");
+        }
+        for(j=1;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for(i=1;i<=2;i++)
+    {
+        for(s=1;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(j=2;j>=i;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+------------------------------------------------------------

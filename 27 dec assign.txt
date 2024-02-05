@@ -1,0 +1,410 @@
+Ans.1.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your age");
+        int age=sc.nextInt();
+        if(age>=18)
+        {
+            System.out.println("you are elligble for vote");
+        }
+        else
+        {
+            System.out.println("you are not elligble for vote");
+        }
+    }
+}
+------------------------------------------------
+Ans.2.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        if(num>10)
+        {
+            System.out.println("this number is greater then 10");
+        }
+        else
+        {
+            System.out.println("this number is less then 10");
+        }
+    }
+}
+-------------------------------------------------
+Ans.3.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the number of a and b");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a>b)
+        {
+            System.out.println("a is greater");
+        }
+        else
+        {
+            System.out.println("b is greater");
+        }
+    }
+}
+----------------------------------------------------
+Ans.4.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the number of a,b and c");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a>b && a>c)
+        {
+            System.out.println("a is greater");
+        }
+        else if(b>a && b>c)
+        {
+            System.out.println("b is greater");
+        }
+        else
+        {
+            System.out.println("c is greater");
+        }
+    }
+}
+-------------------------------------------------------
+Ans.5.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any five number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        if(a>b && a>c && a>d && a>e)
+        {
+            System.out.println("a is greater");
+        }
+        else if(b>a && b>c && b>d && b>e)
+        {
+            System.out.println("b is greater");
+        }
+        else if(c>a && c>b && c>d && c>e)
+        {
+            System.out.println("c is greater");
+        }
+        else if(d>a && d>b && d>c && d<e )
+        {
+            System.out.println("d is greater");
+        }
+        else
+        {
+            System.out.println("e is greater");
+        }
+    }
+}
+-------------------------------------------------------
+Ans.6.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int a=sc.nextInt();
+        if(a<0)
+        {
+         System.out.println("this is negative number");
+        }
+        else if(a>0)
+        {
+            System.out.println("this is positive number");
+        }
+        else
+        {
+            System.out.println("Zero");
+        }
+    }
+}
+--------------------------------------------------------
+Ans.7.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any char");
+        char a=sc.next().charAt(0);
+        if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u')
+        {
+            System.out.println("this is vowel");
+        }
+        else
+        {
+            System.out.println("this is consonent");
+        }
+    }
+}
+---------------------------------------------------------
+Ans.8.
+A)
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        if(num%5==0 && num%11==0)
+        {
+            System.out.println("this number is divisible");
+        }
+        else
+        {
+            System.out.println("this number is not divisible");
+        }
+        
+    }
+}
+
+B)
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        if(num%5==0 || num%11==0)
+        {
+            System.out.println("this number is divisible");
+        }
+        else
+        {
+            System.out.println("this number is not divisible");
+        }
+        
+    }
+}
+------------------------------------------------------------
+Ans.9.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any char");
+        char a=sc.next().charAt(0);
+        if(a>='A' && a<='Z')
+        {
+            System.out.println("upper case");
+        }
+        else if(a>='a' && a<='z')
+        {
+            System.out.println("lower case");
+        }
+        else
+        {
+            System.out.println("inviled");
+        }
+    }
+}
+-----------------------------------------------------------
+Ans.10.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        if(num%7*3==0)
+        {
+            System.out.println("this number is divisible");
+        }
+        else
+        {
+            System.out.println("this number is not divisible");
+        }
+        
+    }
+}
+-------------------------------------------------------------
+Ans.11.
+A)
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any two number");
+        int a= sc.nextInt();
+        int b=sc.nextInt();
+        int c;
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("a is "+a+" b is "+b);
+        
+    }
+}
+----------
+B)
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any two number");
+        int a= sc.nextInt();
+        int b=sc.nextInt();
+        int c;
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("a is "+a+" b is "+b);
+        
+    }
+}
+---------------------------------------------------------------
+Ans.12.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first latter of your gender");
+        char a=sc.next().charAt(0);
+        if(a=='m')
+        {
+            System.out.println("you are male");
+        }
+        else if(a=='f')
+        {
+            System.out.println("you are female");
+        }
+        else
+        {
+            System.out.println("other");
+        }
+    }
+}
+------------------------------------------------------------------
+Ans.13.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any number");
+        int a=sc.nextInt();
+        if(a==1)
+        {
+            System.out.println("sunday");
+        }
+        else if(a==2)
+        {
+            System.out.println("monday");
+        }
+        else if(a==3)
+        {
+            System.out.println("tuesday");
+        }
+        else if(a==4)
+        {
+            System.out.println("wednesday");
+        }
+        else if(a==5)
+        {
+            System.out.println("thursday");
+        }
+        else if(a==6)
+        {
+            System.out.println("friday");
+        }
+        else
+        {
+            System.out.println("Saturday");
+        }
+    }
+}
+---------------------------------------------------------
+Ans.14.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any number");
+        int a= sc.nextInt();
+        if(a%2==0)
+        {
+            System.out.println("this number is even");
+        }
+        else
+        {
+            System.out.println("this number is odd");
+        }
+    }
+}
+---------------------------------------------------------
+Ans.15.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter any char");
+        char a=sc.next().charAt(0);
+        if(a=='a')
+        {
+            System.out.println("apple");
+        }
+        else if(a=='b')
+        {
+            System.out.println("ball");
+        }
+        else if(a=='c')
+        {
+            System.out.println("cat");
+        }
+        
+        else
+        {
+            System.out.println("not match");
+        }
+    }
+}
+--------------------------------------------------------
+
+
+

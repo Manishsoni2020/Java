@@ -1,0 +1,750 @@
+Ans.1.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any number ");
+        int a=sc.nextInt();
+        switch (a)
+        {
+                case 1:
+                {
+                    System.out.println("Sunday");
+                    break;
+                }
+                case 2:
+                {
+                    System.out.println("Monday");
+                    break;
+                }
+                case 3:
+                {
+                    System.out.println("Tuesday");
+                    break;
+                }
+                case 4:
+                {
+                    System.out.println("Wednesday");
+                    break;
+                }
+                case 5:
+                {
+                    System.out.println("Thursday");
+                    break;
+                }
+                case 6:
+                {
+                    System.out.println("Friday");
+                    break;
+                }
+                case 7:
+                {
+                    System.out.println("Saturday");
+                    break;
+                }
+                default:
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+-------------------------------------------------------------
+Ans.2.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter First char of your gender ");
+        char  a=sc.next().charAt(0);
+        switch (a)
+        {
+                case 'm':
+                {
+                    System.out.println("Male");
+                    break;
+                }
+                case 'f':
+                {
+                    System.out.println("Female");
+                    break;
+                }
+                default:
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.3.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1 for even and 2 for odd ");
+        int a=sc.nextInt();
+        switch (a)
+        {
+                case 1:
+                {
+                    System.out.println("Enter any Number");
+                    int num=sc.nextInt();
+                    if(num%2==0)
+                    {
+                        System.out.println("Even Number");
+                    }
+                    else
+                    {
+                        System.out.println("Odd Number");
+                    }
+                    break;
+                }
+                case 2:
+                {
+                    System.out.println("Enter any Number");
+                    int num=sc.nextInt();
+                    if(num%2!=0)
+                    {
+                        System.out.println("Odd Number");
+                    }
+                    else
+                    {
+                        System.out.println("Even Number");
+                    }
+                    break;
+                }
+                default:
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.4.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("+ || - || * || / || %");
+        char a=sc.next().charAt(0);
+        switch (a)
+        {
+                case '+':
+                {
+                    System.out.println("Enter any two Number");
+                    int b=sc.nextInt();
+                    int c=sc.nextInt();
+                    int d=b+c;
+                    System.out.println("Addition of a and b is = "+d+" ");
+                    break;
+                }
+                case '-':
+                {
+                    System.out.println("Enter any two Number");
+                    int b=sc.nextInt();
+                    int c=sc.nextInt();
+                    int d=b-c;
+                    System.out.println("Submition of a and b is = "+d+" ");
+                    break;
+                }
+                case '*':
+                {
+                    System.out.println("Enter any two Number");
+                    int b=sc.nextInt();
+                    int c=sc.nextInt();
+                    int d=b*c;
+                    System.out.println("Multiplication of a and b is = "+d+" ");
+                    break;
+                }
+                case '/':
+                {
+                    System.out.println("Enter any two Number");
+                    int b=sc.nextInt();
+                    int c=sc.nextInt();
+                    int d=b/c;
+                    System.out.println("Dividition of a and b is = "+d+" ");
+                    break;
+                }
+                case '%':
+                {
+                    System.out.println("Enter any two Number");
+                    int b=sc.nextInt();
+                    int c=sc.nextInt();
+                    int d=b%c;
+                    System.out.println("Mudular of a and b is = "+d+" ");
+                    break;
+                }
+                default :
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.5.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter v ");
+        char  a=sc.next().charAt(0);
+        switch (a)
+        {
+                case 'v':
+                {
+                    System.out.println("Enter Your Age");
+                    int age=sc.nextInt();
+                    if(age>18)
+                    {
+                        System.out.println("elligible");
+                    }
+                    else
+                    {
+                        System.out.println("Not elligible");
+                    }
+                    break;
+                }
+                
+                default:
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+------------------------------------------------------------------
+Ans.6.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any number ");
+        int a=sc.nextInt();
+        switch (a)
+        {
+                case 1:
+                {
+                    System.out.println("January");
+                    break;
+                }
+                case 2:
+                {
+                    System.out.println("Feb");
+                    break;
+                }
+                case 3:
+                {
+                    System.out.println("March");
+                    break;
+                }
+                case 4:
+                {
+                    System.out.println("April");
+                    break;
+                }
+                case 5:
+                {
+                    System.out.println("May");
+                    break;
+                }
+                case 6:
+                {
+                    System.out.println("June");
+                    break;
+                }
+                case 7:
+                {
+                    System.out.println("July");
+                    break;
+                }
+                case 8:
+                {
+                    System.out.println("Aug");
+                    break;
+                }
+                case 9:
+                {
+                    System.out.println("Sept");
+                    break;
+                }
+                case 10:
+                {
+                    System.out.println("Oct");
+                    break;
+                }
+                case 11:
+                {
+                    System.out.println("Nov");
+                    break;
+                }
+                case 12:
+                {
+                    System.out.println("Dic");
+                    break;
+                }
+                default:
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+----------------------------------------------------------------------
+Ans.7.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("a = armstrong || p = pallindrome || e = even || o = odd || f = factorial || r = reverse || l = fibonacci || t = perfect number || n =neon number || w =leap year || s =swap one way || v =vowel and consonant");
+        char a=sc.next().charAt(0);
+        switch (a)
+        {
+                case 'a':
+                {
+                    System.out.println("Enter any two Number");
+                    int num=sc.nextInt();
+                    int rem;
+                    int sum=0;
+                    int temp=num;
+                    while(num>0)
+                    {
+                        rem=num%10;
+                        sum=sum+rem*rem*rem;
+                        num=num/10;
+                    }
+                    if(temp==sum)
+                    {
+                        System.out.println("Armstrong");
+                    }
+                    else
+                    {
+                        System.out.println("Not armstrong");
+                    }
+                    
+                    break;
+                }
+                case 'p':
+                {
+                    System.out.println("Enter any two Number");
+                    int num=sc.nextInt();
+                    int rem;
+                    int sum=0;
+                    int temp=num;
+                    while(num>0)
+                    {
+                        rem=num%10;
+                        sum=sum*10+rem;
+                        num=num/10;
+                    }
+                    if(temp==sum)
+                    {
+                        System.out.println("Pallindrome");
+                    }
+                    else
+                    {
+                        System.out.println("Not Pallidrome");
+                    }
+                    break;
+                }
+                case 'e':
+                {
+                    System.out.println("Enter any Number");
+                    int b=sc.nextInt();
+                    if(b%2==0)
+                    {
+                        System.out.println("Even Number");
+                    }
+                    else
+                    {
+                        System.out.println("Not Even Number");
+                    }
+                    
+                    break;
+                }
+                case 'o':
+                {
+                    System.out.println("Enter any Number");
+                    int b=sc.nextInt();
+                    if(b%2!=0)
+                    {
+                        System.out.println("Odd Number");
+                    }
+                    else
+                    {
+                        System.out.println("Not Odd Number");
+                    }
+                    break;
+                }
+                case 'r':
+                {
+                    
+                    System.out.println("Enter any two Number");
+                    int num=sc.nextInt();
+                    int rem;
+                    int sum=0;
+                
+                    while(num>0)
+                    {
+                        rem=num%10;
+                        sum=sum*10+rem;
+                        num=num/10;
+                    }
+                    System.out.println(sum+" ");
+                    break;
+                }
+                case 'w':
+                {
+                    
+                    System.out.println("Enter any year");
+                    int num=sc.nextInt();
+                    if(num%4==0)
+                    {
+                        System.out.println("Leap year");
+                    }
+                    else
+                    {
+                        System.out.println("Not Leap year");
+                    }
+                    break;
+                }
+                case 'v':
+                {
+                    
+                    System.out.println("Enter any Char");
+                    char v=sc.next().charAt(0);
+                    if(v == 'a' || v=='e' || v== 'i' || v== 'o' || v=='u')
+                    {
+                        System.out.println("Vowel");
+                    }
+                    else
+                    {
+                        System.out.println("Consonent");
+                    }
+                    break;
+                }
+                case 's':
+                {
+                    System.out.println("Enter any two Number");
+                    int z=sc.nextInt();
+                    int b=sc.nextInt();
+                    int c;
+                    z=z+b;
+                    b=z-b;
+                    z=z-b;
+                    System.out.println("a is = "+ z +" b is = "+b);
+                    break;
+                }
+                case 'f':
+                {
+                    int i;
+                    int fact=1;
+                    for(i=1;i<=5;i++)
+                    {
+                        fact=fact*i;
+                        
+                    }
+                    System.out.println(fact);
+                    break;
+                }
+                case 'l':
+                {
+                    int n1=0;
+                    int n2=1;
+                    int n3;
+                    int i;
+                    System.out.print(n1+" "+n2+" ");
+                    for(i=1;i<=5;i++)
+                    {
+                     n3=n1+n2;
+                     n1=n2;
+                     n2=n3;
+                     System.out.print(n3+" ");
+                    }
+                    break;
+                }
+                case 't':
+                {
+                    System.out.println("Enter any number");
+                    int n=sc.nextInt();
+                    int i=1;
+                    int sum=0;
+                    while(i<n)
+                    {
+                     if(n%i==0)
+                    {
+                     sum=sum+i;
+                    }
+                     i++;
+                    }
+                    if(n==sum)
+                    {
+                     System.out.println("Perfect Number");
+                    }
+                     else
+                    {
+                      System.out.println("Not perfect Number");
+                    }
+                    break;
+                }
+                case 'n':
+                {
+                    System.out.println("Enter any number");
+                    int num=sc.nextInt();
+                    int s=num*num;
+                    int temp=num;
+                    int sum=0;
+                    int rem;
+                    while(s>0)
+                     {
+                      rem=s%10;
+                      sum=sum+rem;
+                      s=s/10;
+                     }
+                     if(temp==sum)
+                    {
+                       System.out.println("Neon Number");
+                    }
+                    else
+                    {
+                       System.out.println("Not Neon Number");
+                    }
+                    break;
+                }
+                default :
+                {
+                    System.out.println("Not Match");
+                }
+        }
+    }
+}
+------------------------------------------------------------------------
+Ans.8.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("for Star press 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 10 ");
+        int a=sc.nextInt();
+        switch (a)
+        {
+            case 1:
+                {
+                    int i;
+                    int j;
+                    for(i=1;i<=4;i++)
+                     {
+                       for(j=1;j<=4;j++)
+                    { 
+                    System.out.print("*");
+                    }
+                      System.out.println();
+                    }
+                }
+            case 2:
+                {
+                    for (int i=1;i<=3 ;i++ )
+       {
+           for(int j=1;j<=i;j++)
+           {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+                }
+                case 3:
+                    {
+                        int i;
+        int j;
+       for(i=1;i<=3;i++)
+       {
+           for(j=3;j>=i;j--)
+           {
+               System.out.print("*");
+           }
+           System.out.println(" ");
+       }
+                    }
+                    case 4:
+                        {
+                            int i;
+        int j;
+        for(i=1;i<=3;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+       for(i=1;i<=3;i++)
+       {
+           for(j=3;j>=i;j--)
+           {
+               System.out.print("*");
+           }
+           System.out.println(" ");
+       }
+                        }
+                        case 5:
+                            {
+                                int i;
+        int j;
+        for(i=1;i<=3;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+       for(i=1;i<=2;i++)
+       {
+           for(j=2;j>=i;j--)
+           {
+               System.out.print("*");
+           }
+           System.out.println(" ");
+       }
+                            }
+                            case 6:
+                                {
+                                    int i;
+        int j;
+        int s;
+        for(i=1;i<=3;i++)
+        {
+            for(s=2;s>=i;s--)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+                                }
+                                case 7:
+                                    {
+                                        int i;
+        int j;
+        int s;
+        for(i=1;i<=3;i++)
+        {
+            for(s=1;s<=2;s++)
+            {
+                System.out.print(" ");
+            }
+            for(j=3;j>=i;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+                                    }
+                                    case 8:
+                                        {
+                                            int i;
+        int j;
+        int s;
+        for(i=1;i<=3;i++)
+        {
+            for(s=2;s>=i;s--)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(i=1;i<=3;i++)
+        {
+            for(s=2;s<=i;s++)
+            {
+                System.out.print(" ");
+            }
+            for(j=3;j>=i;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+                                        }
+                                        case 9:
+                                            {
+                                                int i;
+        int j;
+        int s;
+        for(i=1;i<=3;i++)
+        {
+            for(s=2;s>=i;s--)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(i=1;i<=2;i++)
+        {
+            for(s=1;s<=i;s++)
+            {
+                System.out.print(" ");
+            }
+            for(j=2;j>=i;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+                                            }
+                                            case 10:
+                                                {
+                                                    int i;
+        int j;
+        int s;
+        for(i=1;i<=5;i++)
+        {
+            for(s=5;s>=i;s--)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+                                                }
+                                                default:
+                                                {
+                                                    System.out.println("Not Match");
+                                                }
+                    
+        }
+    }
+}
+---------------------------------------------------------------------

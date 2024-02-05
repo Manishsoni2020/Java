@@ -1,0 +1,761 @@
+class A 
+add() :no return and no argument 
+
+class B
+sub():no return and  argument 
+
+
+class C ex B
+multi(): return and no argument 
+
+
+class D ex A
+div(): return and  argument 
+
+class Main 
+child class k through property access
+
+user input 
+---
+Ans.
+import java.util.*;
+class A
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for add ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+}
+class B 
+{
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+class C extends B
+{
+    int multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for multi ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return c;
+    }
+}
+class D extends A
+{
+    int div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for sub ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter any two number for div ");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        C obj=new C();
+        obj.sub(a,b);
+        obj.multi();
+        D obj2=new D();
+        obj2.add();
+        obj2.div(c,d);
+    }
+}
+------------------------------------------------------------------
+class A 
+add() :no return and no argument 
+
+class B ex A
+sub():no return and  argument 
+
+
+class C ex B
+multi(): return and no argument 
+
+
+class D ex A
+div(): return and  argument 
+
+class Main 
+child class k through property access
+
+user input 
+----
+Ans..
+import java.util.*;
+class A
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for add ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+}
+class B extends A
+{
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+class C extends B
+{
+    int multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for multi ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return c;
+    }
+}
+class D extends A
+{
+    int div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for sub ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter any two number for div ");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        C obj=new C();
+        obj.sub(a,b);
+        obj.multi();
+        obj.add();
+        D obj2=new D();
+        obj2.div(c,d);
+    }
+}
+-------------------------------------------------
+covariant return type 
+
+class A 
+add() : return and no argument 
+
+class B ex A
+sub(): return and  argument 
+
+
+class C ex B
+multi(): return and no argument 
+
+
+class D ex A
+div(): return and  argument 
+
+class Main 
+child class k through property access
+
+user input 
+----
+Ans...
+import java.util.*;
+class A 
+{
+    A add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+        return this;
+    }
+}
+class B extends A
+{
+    A sub(int a , int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+        return this;
+    }
+}
+class C extends B
+{
+    C multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for multi");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return this;   
+    }
+}
+class D extends A
+{
+    D div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return this;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for sub");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter any two number for div");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        C obj=new C();
+        obj.add();
+        obj.sub(a,b);
+        obj.multi();
+        D obj2=new D();
+        obj2.div(c,d);
+    }
+}
+
+--------------------------------------------------------
+getter and setter method 
+
+class A 
+add() :no return and no argument 
+
+class B ex A
+sub():no return and  argument 
+
+
+class C ex B
+multi(): return and no argument 
+
+
+class D ex A
+div(): return and  argument 
+
+class Main 
+child class k through property access
+
+user input 
+---
+Ans..
+import java.util.*;
+class A 
+{
+    int a;
+    int b;
+    void setA(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA()
+    {
+        return a;
+    }
+    int getA1()
+    {
+        return b;
+    }
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+}
+class B extends A
+{
+    int a;
+    int b;
+    void setA(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA()
+    {
+        return a;
+    }
+    int getA1()
+    {
+        return b;
+    }
+    int sub(int a,int b)
+    {
+        
+        int c=a-b;
+        System.out.println("Sub is = "+c);
+        return c;
+    }
+}
+class C extends B
+{
+    int a;
+    int b;
+    void setA(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA()
+    {
+        return a;
+    }
+    int getA1()
+    {
+        return b;
+    }
+    void multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number for multi");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+    }
+}
+class D extends A
+{
+    int a;
+    int b;
+    void setA(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    int getA()
+    {
+        return a;
+    }
+    int getA1()
+    {
+        return b;
+    }
+    int div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number for sub");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter two number for div");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        C obj=new C();
+        obj.add();
+        obj.sub(a,b);
+        obj.multi();
+        D obj2=new D();
+        obj2.div(c,d);
+        
+        
+    }
+}
+-----------------------------------------------------------------
+class A 
+add() : return and  argument 
+
+class B ex A
+add(): return and  argument  
+
+
+class C ex B
+add(): return and  argument  
+
+
+class D ex A
+add(): return and  argument 
+
+class Main 
+child class k through property access
+
+user input 
+----
+Ans..
+import java.util.*;
+class A
+{
+    int add(int a,int b)
+    {
+        int c=a+b;
+        System.out.println("add1 is = "+c);
+        return c;
+        
+    }
+}
+class B extends A
+{
+    int add(int a,int b)
+    {
+        super.add(a,b);
+        int c=a+b;
+        System.out.println("add2 is = "+c);
+        return c;
+    }
+}
+class C extends B
+{
+    int add(int a,int b)
+    {
+        super.add(a,b);
+        int c=a+b;
+        System.out.println("add3 is = "+c);
+        return c;
+    }
+}
+class D extends A
+{
+    int add(int a,int b)
+    {
+        super.add(a,b);
+        int c=a+b;
+        System.out.println("add4 is = "+c);
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for add ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        C obj=new C();
+        obj.add(a,b);
+        D obj2=new D();
+        obj2.add(a,b);
+    }
+}
+------------------------------------------------------------
+class A 
+A() :add :a+b 
+add() :no return and no argument 
+
+class B ex A
+B() :a-b
+sub():no return and  argument 
+
+
+class C ex B
+C() :a*b
+multi(): return and no argument 
+
+
+class D ex A
+D() :a/b
+div(): return and  argument 
+
+class Main 
+child class k through property access
+
+user input 
+---
+Ans..
+import java.util.*;
+class A
+{
+    A()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for add2 ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add2 is = "+c);
+    }
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for add ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+}
+class B extends A
+{
+    B()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for sub2 ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a-b;
+        System.out.println("sub2 is = "+c);
+    }
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+class C extends B
+{
+    C()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for multi2 ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi2 is = "+c);
+    }
+    int multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for multi ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return c;
+    }
+}
+class D extends A
+{
+    D()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for div2 ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("div2 is = "+c);
+    }
+    int div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number for sub ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter any two number for div ");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        C obj=new C();
+        obj.sub(a,b);
+        obj.multi();
+        obj.add();
+        D obj2=new D();
+        obj2.div(c,d);
+    }
+}  
+--------------------------------------------------------
+class A 
+div(): return and  argument 
+
+class B ex A
+multi(): return and no argument 
+
+class C ex B
+add() :no return and no argument 
+
+class D ex C
+sub():no return and  argument 
+
+class Main ex D
+main method k through aceess 
+---
+Ans.
+import java.util.*;
+class A
+{
+    int div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return c;
+    }
+}
+class B extends A
+{
+    int multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two numbers for multi");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return c;
+    }
+}
+class C extends B
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two numbers for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+}
+class D extends C
+{
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two numbers for div");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter any two numbers for sub");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        D obj=new D();
+        obj.div(a,b);
+        obj.multi();
+        obj.add();
+        obj.sub(c,d);
+    }
+}
+--------------------------------------------------------
+
+class A 
+div(): return and  argument 
+
+class B ex A
+multi(): return and no argument 
+
+class C 
+add() :no return and no argument 
+
+class D ex C
+sub():no return and  argument 
+
+class Main ex D
+main method k through aceess 
+---
+Ans.
+import java.util.*;
+class A
+{
+    int div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+        return c;
+    }
+}
+class B extends A
+{
+    int multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two numbers for multi");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return c;
+    }
+}
+class C 
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two numbers for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+}
+class D extends C
+{
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two numbers for div");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Enter any two numbers for sub");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        B obj=new B();
+        obj.div(a,b);
+        obj.multi();
+        D obj1=new D();
+        obj1.add();
+        obj1.sub(c,d);
+    }
+}
+--------------------------------------------
+
+

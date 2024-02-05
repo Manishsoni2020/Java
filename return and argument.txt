@@ -1,0 +1,443 @@
+Ans.1.
+import java.util.*;
+public class Main 
+{
+    int add(int a,int b)
+    {
+        int c=a+b;
+        return c;
+    }
+    int sub(int a,int b)
+    {
+        int c=a-b;
+        return c;
+    }
+    int multi(int a,int b)
+    {
+        int c=a*b;
+        return c;
+    }
+    int div(int a,int b)
+    {
+        int c=a/b;
+        return c;
+    }
+    int mod(int a,int b)
+    {
+        int c=a%b;
+        return c;
+    }
+    
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number for add ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Main obj=new Main();
+        System.out.println("addition of a and b is = "+obj.add(a,b));
+        System.out.println("enter any two number for sub ");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        System.out.println("addition of a and b is = "+obj.sub(c,d));
+        System.out.println("enter any two number for multi ");
+        int e=sc.nextInt();
+        int f=sc.nextInt();
+        System.out.println("addition of a and b is = "+obj.multi(e,f));
+        System.out.println("enter any two number for div ");
+        int g=sc.nextInt();
+        int h=sc.nextInt();
+        System.out.println("addition of a and b is = "+obj.div(g,h));
+        System.out.println("enter any two number for mod ");
+        int i=sc.nextInt();
+        int j=sc.nextInt();
+        System.out.println("addition of a and b is = "+obj.mod(i,j));
+    }
+}
+-------------------------------------------------------------------------------
+Ans.2.
+import java.util.*;
+class A 
+{
+    int add(int a,int b)
+    {
+        int c=a+b;
+        return c;
+    }
+    
+}
+class B 
+{
+    int sub(int a,int b)
+    {
+        int c=a-b;
+        return c;
+    }
+    
+}
+class C 
+{
+    int multi(int a,int b)
+    {
+        int c=a*b;
+        return c;
+    }
+    
+}
+class D 
+{
+    int div(int a,int b)
+    {
+        int c=a/b;
+        return c;
+    }
+    
+}
+class E 
+{
+    int mod(int a,int b)
+    {
+        int c=a%b;
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number for add ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A obj=new A();
+        System.out.println("addition of a and b is = "+obj.add(a,b));
+        System.out.println("enter any two number for sub ");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        B obj1=new B();
+        System.out.println("addition of a and b is = "+obj1.sub(c,d));
+        System.out.println("enter any two number for multi ");
+        int e=sc.nextInt();
+        int f=sc.nextInt();
+        C obj2=new C();
+        System.out.println("addition of a and b is = "+obj2.multi(e,f));
+        System.out.println("enter any two number for div ");
+        int g=sc.nextInt();
+        int h=sc.nextInt();
+        D obj3=new D();
+        System.out.println("addition of a and b is = "+obj3.div(g,h));
+        System.out.println("enter any two number for mod ");
+        int i=sc.nextInt();
+        int j=sc.nextInt();
+        E obj4=new E();
+        System.out.println("addition of a and b is = "+obj4.mod(i,j));
+    }
+}
+-------------------------------------------------------------------------
+Ans.3.
+import java.util.*;
+public class Main 
+{
+    int fact(int f)
+    {
+       int fact=1;
+       int i;
+       for(i=1;i<=f;i++)
+       {
+           fact=fact*i;
+           
+       }
+       System.out.println(fact+" ");
+        return f;
+    }
+    int arm(int num)
+    {
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("armstrong");
+        }
+        else
+        {
+            System.out.println("not armstrong");
+        }
+        return num;
+    }
+    int pal(int num)
+    {
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("pallindrome");
+        }
+        else
+        {
+            System.out.println("not pallindrome");
+        }
+        return sum;
+    }
+    int neo(int num)
+    {
+        int rem;
+        int n=num*num;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+            n=n/10;
+        }
+        if(num==sum)
+        {
+            System.out.println("neon");
+        }
+        else
+        {
+            System.out.println("not neon");
+        }
+        return sum;
+    }
+    int vot(int a)
+    {
+        if(a>=18)
+        {
+            System.out.println("vote ");
+        }
+        else 
+        {
+            System.out.println("not vote");
+        }
+        return a;
+    }
+    char gen(char a)
+    {
+        if(a=='m')
+        {
+            System.out.println("Male");
+        }
+        else if(a=='f') 
+        {
+            System.out.println("female");
+        }
+        else 
+        {
+            System.out.println("other");
+        }
+        return a;
+    }
+    int per(int n)
+    {
+        int i=1;
+        int sum=0;
+        while(i<n)
+        {
+            if(n%i==0)
+            {
+                sum=sum+i;
+            }
+            i++;
+        }
+        if(n==sum)
+        {
+            System.out.println("Perfect Number");
+        }
+        else
+        {
+            System.out.println("Not perfect Number");
+        }
+        return n;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        Main obj=new Main();
+        System.out.println("Enter the number for fact ");
+        int c=sc.nextInt();
+        obj.fact(c);
+        System.out.println("Enter the number for arm ");
+        int d=sc.nextInt();
+        obj.arm(d);
+        System.out.println("Enter the number for pal ");
+        int e=sc.nextInt();
+        obj.pal(e);
+        System.out.println("Enter the number for neo ");
+        int f=sc.nextInt();
+        obj.neo(f);
+        System.out.println("Enter your age ");
+        int g=sc.nextInt();
+        obj.vot(g);
+        System.out.println("Enter your gender ");
+        char h=sc.next().charAt(0);
+        obj.gen(h);
+        System.out.println("Enter the number for perfect ");
+        int i=sc.nextInt();
+        obj.per(i);
+        
+    }
+}
+-------------------------------------------------------------------------
+Ans.4.
+import java.util.*;
+public class Main 
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number of sum");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("sum is = "+c);
+        
+    }
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+    int multi()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number of multi");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        return c;
+    }
+    int div(int a,int b)
+    {
+        int c=a/b;
+        return c;
+    }
+    int mod()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number of mod");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a%b;
+        return c;
+    }
+    public static void main(String[] args)
+    {
+        Main obj=new Main();
+        obj.add();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number for sub");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        obj.sub(a,b);
+        System.out.println("multi is = "+obj.multi());
+        System.out.println("enter any two number for div");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        System.out.println("multi is = "+obj.div(c,d));
+        System.out.println("mod is = "+obj.mod());
+    }
+}
+---------------------------------------------------------------------
+Ans.5.
+import java.util.*;
+class A 
+{
+    A()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any string");
+        String name=sc.nextLine();
+        System.out.println(name);
+    }
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two numbers ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add is = "+c);
+    }
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+class B 
+{
+    B(int a,int b)
+    {
+       int c=a*b;
+       System.out.println("sub is = "+c); 
+    }
+    int mod()
+    {
+       Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two numbers ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a%b;
+        System.out.println("mod is = "+c); 
+        return c;
+    }
+    int multi(int a,int b)
+    {
+        int c=a*b;
+        System.out.println("multi is = "+c);
+        return c;
+    }
+}
+public class Main 
+{
+    Main(int a)
+    {
+        System.out.println("a is = "+a);
+    }
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.add();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two numbers ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        obj.sub(a,b);
+        System.out.println("enter any two numbers ");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        B obj1=new B(c,d);
+        obj1.mod();
+        System.out.println("enter any two numbers ");
+        int e=sc.nextInt();
+        int f=sc.nextInt();
+        obj1.multi(e,f);
+        System.out.println("enter any two numbers ");
+        int g=sc.nextInt();
+        Main obj2=new Main(g);
+        System.out.println("enter any two numbers ");
+        int h=sc.nextInt();
+        int i=sc.nextInt();
+        obj2.sub(h,i);
+    }
+}
+---------------------------------------------------------------------

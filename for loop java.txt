@@ -1,0 +1,560 @@
+Basic Assign For loop:-
+Ans.1.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        for(i=1;i<=10;i++)
+        {
+            System.out.print(i+" ");
+            
+        }
+    }
+}
+--------------------------------------------------
+Ans.2.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int sum=0;
+        for(i=1;i<=10;i++)
+        {
+            sum=sum+i;
+            
+        }
+        System.out.print(sum+" ");
+    }
+}
+--------------------------------------------------
+Ans.3.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int j;
+        for(i=2;i<=2;i++)
+        {
+            for(j=1;j<=10;j++)
+            {
+                System.out.print(i*j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------------------
+Ans.4.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int fact=1;
+        for(i=1;i<=5;i++)
+        {
+            fact=fact*i;
+            
+        }
+        System.out.print(fact+" ");
+    }
+}
+-----------------------------------------------------
+Ans.5.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        for(i=1;i<=100;i++)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+-------------------------------------------------------
+Ans.6.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        for(i=100;i>=1;i--)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+-------------------------------------------------------
+Ans.7.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int sum=0;
+        for(i=1;i<=100;i++)
+        {
+            if(i%2==0)
+            {
+                sum=sum+i;
+                
+            }
+            
+        }
+        System.out.print(sum+" ");
+    }
+}
+--------------------------------------------------------
+Ans.8.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int sum=0;
+        for(i=100;i>=1;i--)
+        {
+            if(i%2!=0)
+            {
+                sum=sum+i;
+            }
+        }
+        System.out.print(sum+" ");
+    }
+}
+--------------------------------------------------------
+Ans.9.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int sum=0;
+        for(i=50;i<=1000;i++)
+        {
+            if(i%2==0)
+            {
+                sum=sum+i;
+                
+            }
+            
+        }
+        System.out.print(sum+" ");
+    }
+}
+---------------------------------------------------------
+Ans.10.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int sum=0;
+        for(i=1000;i>=500;i--)
+        {
+            if(i%2!=0)
+            {
+                sum=sum+i;
+            }
+        }
+        System.out.print(sum+" ");
+    }
+}
+------------------------------------------------------------
+Average level:-
+Ans.1.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i;
+        int j;
+        for(i=2;i<=10;i++)
+        {
+            for(j=1;j<=10;j++)
+            {
+             System.out.print(i*j+" ");    
+            }
+           System.out.println();
+        }
+        
+    }
+}
+-------------------------------------------------------------
+Ans.2.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter starting and ending point");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int i;
+        int j;
+        for(i=a;i<=b;i++)
+        {
+            for(j=1;j<=10;j++)
+            {
+                System.out.print(i*j+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------------
+Ans.3.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Any Two Number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int i;
+        for(i=1;i<=100;i++)
+        {
+            if(i%a==0 && i%b==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+        }
+    }
+}
+--------------------------------------------------------------
+Ans.4.
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        
+        int i;
+        for(i=1;i<=100;i++)
+        {
+            if(i%5==0 && i%11==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+        }
+    }
+}
+---------------------------------------------------------------
+Ans.5.
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        
+        int i;
+        for(i=10;i>=1;i--)
+        {
+            System.out.print(i*2+" ");
+            
+        }
+    }
+}
+--------------------------------------------------------------
+Ans.6.
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        
+        int i;
+        for(i=1;i<=10;i++)
+        {
+            System.out.println("2"+" x "+i+" = "+i*2);
+            
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.7.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Pallindrome || Armstrong || Reverse ");
+        String a=sc.next();
+        if(a.equals("pallindrome"))
+        {
+            System.out.println("Enter any Number");
+            int num=sc.nextInt();
+            int rem;
+            int sum=0;
+            int temp=num;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum*10+rem;
+                num=num/10;
+            }
+            if(temp==sum)
+            {
+                System.out.println("Pallindrome");
+            }
+            else
+            {
+                System.out.println("Not Pallindrome");
+            }
+        }
+        else if(a.equals("armstrong"))
+        {
+            System.out.println("Enter any Number");
+            int num=sc.nextInt();
+            int rem;
+            int sum=0;
+            int temp=num;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum+rem*rem*rem;
+                num=num/10;
+            }
+            if(temp==sum)
+            {
+                System.out.println("Armstrong");
+            }
+            else
+            {
+                System.out.println("Not Armstrong");
+            }
+        }
+        else if(a.equals("reverse"))
+        {
+            System.out.println("Enter any Number");
+            int num=sc.nextInt();
+            int rem;
+            int sum=0;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum*10+rem;
+                num=num/10;
+            }
+            System.out.println(sum);
+        }
+    }
+}
+---------------------------------------------------------------
+Ans.8.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Febonacci || Reverse ");
+        String a=sc.next();
+        if(a.equals("febonacci"))
+        {
+            int n1=0;
+            int n2=1;
+            int n3;
+            int i;
+            System.out.print(n1+" "+n2+" ");
+            for(i=1;i<=10;i++)
+          {
+            n3=n1+n2;
+            System.out.print(n3+" ");
+            n1=n2;
+            n2=n3;
+          }
+        }
+        else if(a.equals("reverse"))
+        {
+            System.out.println("Enter any Number");
+            int num=sc.nextInt();
+            int rem;
+            int sum=0;
+            while(num>0)
+            {
+                rem=num%10;
+                sum=sum*10+rem;
+                num=num/10;
+            }
+            System.out.println(sum);
+        }
+    }
+}
+----------------------------------------------------------
+Ans.9.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Even || Odd ");
+        String a=sc.next();
+        if(a.equals("even"))
+        {
+            System.out.println("Enter any number");
+            int b=sc.nextInt();
+            if(b%2==0)
+            {
+                System.out.println("even Number");
+            }
+            else
+            {
+                System.out.println("Odd Number");
+            }
+        }
+        else if(a.equals("odd"))
+        {
+            System.out.println("Enter any number");
+            int b=sc.nextInt();
+            if(b%2!=0)
+            {
+                System.out.println("Odd Number");
+            }
+            else
+            {
+                System.out.println("Even Number");
+            }
+        }
+    }
+}
+--------------------------------------------------------
+Ans.10.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("neon || perfect || fibonacci || count");
+        String a=sc.next();
+        if(a.equals("neon"))
+        {
+        System.out.println("Enter any number");
+        int num=sc.nextInt();
+        int s=num*num;
+        int temp=num;
+        int sum=0;
+        int rem;
+        while(s>0)
+        {
+            rem=s%10;
+            sum=sum+rem;
+            s=s/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("Neon Number");
+        }
+        else
+        {
+            System.out.println("Not Neon Number");
+        }
+            
+        }
+        else if(a.equals("perfect"))
+        {
+        System.out.println("Enter any number");
+        int n=sc.nextInt();
+        int i=1;
+        int sum=0;
+        while(i<n)
+        {
+            if(n%i==0)
+            {
+                sum=sum+i;
+            }
+            i++;
+        }
+        if(n==sum)
+        {
+            System.out.println("Perfect Number");
+        }
+        else
+        {
+            System.out.println("Not perfect Number");
+        }
+        }
+        else if(a.equals("count"))
+        {
+        System.out.println("Enter any Number");
+        int num=sc.nextInt();
+        int count=0;
+        while(num>0)
+        {
+            num=num/10;
+            count++;
+        }
+        System.out.println(count);  
+        }
+        else if(a.equals("fibonacci"))
+        {
+        System.out.println("Enter any number");
+        int z=sc.nextInt();
+        int i;
+        int n1=0;
+        int n2=1;
+        int n3;
+        System.out.print(n1+" "+n2+" ");
+        for(i=1;i<=z;i++)
+        {
+            n3=n1+n2;
+            n1=n2;
+            n2=n3;
+            System.out.print(n3+" ");
+        }
+        }
+    }
+}
+-----------------------------------------------------------------
+Ans.11.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the num");
+        int num=sc.nextInt();
+        if(num<1000 )
+        {
+            System.out.println(num+" = is Not valid");
+        }
+        else
+        {
+        int rem;
+        int sum=0;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+        }
+        if(sum%3==0 || sum%5==0 || sum%7==0)
+        {
+            System.out.println("Luckey Number");
+        }
+        else 
+        {
+            System.out.println("Sorry its not my lucky number");
+        }
+        }
+    }
+}
+-------------------------------------------------------------------
+
+
+
+

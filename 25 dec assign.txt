@@ -1,0 +1,149 @@
+Ans.1.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=34;
+        float b=6.7f;
+        int c=12;
+        float d=8.9f;
+        char e='o';
+        char f='w';
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+    }
+}
+----------------------------------------
+Ans.2.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        char a='r';
+        int b=12;
+        int c=-78;
+        char d='y';
+        float e=8.9f;
+        int f=16;
+        float g=-9.8f;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+    }
+}
+-------------------------------------------
+Ans.3.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=23;
+        int b=9;
+        int c=a+b;
+        System.out.print("the sum of a and b is "+c);
+    }
+}
+--------------------------------------------
+Ans.4.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=23;
+        int b=9;
+        int c=a-b;
+        System.out.print("the sum of a and b is "+c);
+    }
+}
+--------------------------------------------
+Ans.5.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=12;
+        int b=3;
+        int c=a*b;
+        System.out.print("the multi of a and b is "+c);
+    }
+}
+--------------------------------------------
+Ans.6.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=66;
+        int b=3;
+        int c=a/b;
+        System.out.print("the division of a and b is "+c);
+    }
+}
+---------------------------------------------
+Ans.7.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=56;
+        int b=78;
+        int c=34;
+        int d=12;
+        int e=a+b+c+d;
+        System.out.print("the division of a and b is "+e);
+    }
+}
+-----------------------------------------------
+Ans.8.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=12;
+        int b=4;
+        int c=6;
+        int d=2;
+        int e=a*b-c/d;
+        System.out.print("the division of a and b is "+e);
+    }
+}
+-----------------------------------------------
+Ans.9.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        float a=12f;
+        int b=2;
+        int c=8;
+        int d=2;
+        int e=a*b-(c/d);
+        System.out.print("the division of a and b is "+e);
+    }
+}
+-----------------------------------------------
+Ans.10.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a=12;
+        int b=7;
+        int c=45;
+        int d=34;
+        int e=3;
+        float f=3.4f;
+        float g=8.9f;
+        float h=a*b+c-(d-e)+f-g;
+        System.out.print("the division of a and b is "+h);
+    }
+}
+-------------------------------------------------

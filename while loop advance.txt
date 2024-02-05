@@ -1,0 +1,227 @@
+Ans.1.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your Salary");
+        int sal=sc.nextInt();
+        System.out.println("Enter the Performance appraisal rating");
+        float ap=sc.nextFloat();
+        if(sal==0 || sal<0){
+         System.out.println("invalid input");   
+        }
+        else if(sal>0)
+        {
+        if(ap>=1 && ap<=3)
+        {
+            System.out.println("Your Salary = "+sal);
+            System.out.println("Your Performance appraisal rating = "+ap);
+            int in=sal*10/100;
+            System.out.println("Your Total Increment is 10% = "+in);
+            int np=sal+in;
+            System.out.println("Now Your Next Salary is = "+np);
+        }
+        else if(ap>=3.1 && ap<=4)
+        {
+            System.out.println("Your Salary = "+sal);
+            System.out.println("Your Performance appraisal rating = "+ap);
+            int in=sal*25/100;
+            System.out.println("Your Total Increment is 25% = "+in);
+            int np=sal+in;
+            System.out.println("Now Your Next Salary is = "+np);
+        }
+        else if(ap>=4.1 && ap<=5)
+        {
+            System.out.println("Your Salary = "+sal);
+            System.out.println("Your Performance appraisal rating = "+ap);
+            int in=sal*30/100;
+            System.out.println("Your Total Increment is 30% = "+in);
+            int np=sal+in;
+            System.out.println("Now Your Next Salary is = "+np);
+        }
+         else
+        {
+            System.out.println("Invelid Input");
+        }
+        }
+       
+    }
+}
+-------------------------------------------------------------------------------
+Ans.2.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Hello tarun Hy gautam");
+        System.out.println("Ohk Gautam say a number");
+        int num=sc.nextInt();
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("Gautam this is pallindrome Number");
+        }
+        else
+        {
+            System.out.println("Gautam this is not pallindrome Number");
+        }
+    }
+}
+--------------------------------------------------------------------------------
+Ans.3.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Welcome to Inox Chinema");
+        System.out.println("Enter the Number of Ticket");
+        int n=sc.nextInt();
+        
+        if(n>4 && n<41)
+        {
+            System.out.println("Enter the class K or Q");
+            char c=sc.next().charAt(0);
+             if(c=='k')
+           {
+            System.out.println("Do you want refreshment Rs. 50");
+            String r=sc.next();
+            if(r.equals("yes"))
+            {
+                System.out.println("Do you have coupon code");
+                String co=sc.next();
+                if(co.equals("yes"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    System.out.println("Cong You get 10% discount ");
+                    float tp=n*75;
+                    float dis=tp*10/100;
+                    float dis1=dis*2/100;
+                    float np=tp-dis1+50;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("You Want refreshment of Rs. 50 ");
+                    System.out.println("Congratulation You get more 2% discount Use coupen code");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+                else if(co.equals("no"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    float tp=n*75;
+                    float dis=tp*10/100;
+                    float np=tp-dis+50;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("You Want refreshment of Rs. 50 ");
+                    System.out.println("Congratulation You get 10% discount");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+            }
+            else if(r.equals("no"))
+            {
+                System.out.println("Do you have coupon code");
+                String co=sc.next();
+                if(co.equals("yes"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    System.out.println("Cong You get 10% discount ");
+                    float tp=n*75;
+                    float dis=tp*10/100;
+                    float dis1=dis*2/100;
+                    float np=tp-dis1;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("Congratulation You get more 2% discount Use coupen code");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+                else if(co.equals("no"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    float tp=n*75;
+                    float dis=tp*10/100;
+                    float np=tp-dis;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("Congratulation You get 10% discount");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+            }
+           }
+           if(c=='q')
+          {
+            System.out.println("Do you want refreshment Rs. 50");
+            String r=sc.next();
+            if(r.equals("yes"))
+            {
+                System.out.println("Do you have coupon code");
+                String co=sc.next();
+                if(co.equals("yes"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    System.out.println("Cong You get 10% discount ");
+                    float tp=n*150;
+                    float dis=tp*10/100;
+                    float dis1=dis*2/100;
+                    float np=tp-dis1+50;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("You Want refreshment of Rs. 50 ");
+                    System.out.println("Congratulation You get more 2% discount Use coupen code");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+                else if(co.equals("no"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    float tp=n*150;
+                    float dis=tp*10/100;
+                    float np=tp-dis+50;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("You Want refreshment of Rs. 50 ");
+                    System.out.println("Congratulation You get 10% discount");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+            }
+            else if(r.equals("no"))
+            {
+                System.out.println("Do you have coupon code");
+                String co=sc.next();
+                if(co.equals("yes"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    System.out.println("Cong You get 10% discount ");
+                    float tp=n*150;
+                    float dis=tp*10/100;
+                    float dis1=dis*2/100;
+                    float np=tp-dis1;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("Congratulation You get more 2% discount Use coupen code");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+                else if(co.equals("no"))
+                {
+                    System.out.println("Thanks For Updating Please Wait");
+                    float tp=n*150;
+                    float dis=tp*10/100;
+                    float np=tp-dis;
+                    System.out.println("Total Number of Ticket is = "+n);
+                    System.out.println("Congratulation You get 10% discount");
+                    System.out.println("Your Total Net Payment is = "+np);
+                }
+            }
+          }
+        }
+           else if(n<4 || n>41)
+          {
+            System.out.println("Invelid output");
+          }
+    }
+}
+-----------------------------------------------------------------------------------

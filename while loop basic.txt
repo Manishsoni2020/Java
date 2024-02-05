@@ -1,0 +1,423 @@
+Ans.1.
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=100)
+        {
+            System.out.print(i+" ");
+            i++;
+        }
+    }
+}
+-------------------------------------------
+Ans.2.
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=100;
+        while(i>=1)
+        {
+            System.out.print(i+" ");
+            i--;
+        }
+    }
+}
+-------------------------------------------
+Ans.3..
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=100)
+        {
+            if(i%2==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i++;
+        }
+    }
+}
+------------------------------------------
+Ans.4.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=100;
+        while(i>=1)
+        {
+            if(i%2==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i--;
+        }
+    }
+}
+------------------------------------------
+Ans.5.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=100)
+        {
+            if(i%2!=0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i++;
+        }
+    }
+}
+-------------------------------------------
+Ans.6.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=50;
+        while(i<=500)
+        {
+            
+            System.out.print(i+" ");
+            i++;
+        }
+    }
+}
+-------------------------------------------
+Ans.7.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=500;
+        while(i>=50)
+        {
+            
+            System.out.print(i+" ");
+            i--;
+        }
+    }
+}
+--------------------------------------------
+Ans.8.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=50;
+        while(i<=1000)
+        {
+            if(i%2==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i++;
+        }
+    }
+}
+----------------------------------------------
+Ans.9.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Starting ans Ending point");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        while(a<=b)
+        {
+            System.out.print(a+" ");
+            a++;
+        }
+    }
+}
+-----------------------------------------------
+Ans.10.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Starting ans Ending point");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        while(a<=b)
+        {
+            if(a%2==0)
+            {
+                System.out.print(a+" ");
+            }
+            
+            a++;
+        }
+    }
+}
+---------------------------------------------
+Ans.11.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Starting ans Ending point");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        while(a<=b)
+        {
+            if(a%2!=0)
+            {
+                System.out.print(a+" ");
+            }
+            
+            a++;
+        }
+    }
+}
+----------------------------------------------
+Ans.12.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        int sum=0;
+        while(i<=10)
+        {
+            sum=sum+i;
+            i++;
+        }
+        System.out.print(sum);
+    }
+}
+----------------------------------------------
+Ans.13
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        int sum=0;
+        while(i<=10)
+        {
+            System.out.print(i*2+" ");
+            i++;
+        }
+        
+    }
+}
+-----------------------------------------------
+Ans.14.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Which table You want");
+        int t=sc.nextInt();
+        int i=1;
+        int sum=0;
+        while(i<=10)
+        {
+            System.out.print(i*t+" ");
+            i++;
+        }
+        
+    }
+}
+----------------------------------------------
+Ans.15.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=10)
+        {
+            int j=1;
+            while(j<=10)
+            {
+             System.out.print(i*j+" "); 
+             j++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
+----------------------------------------------
+Ans.16.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=100)
+        {
+            if(i%21==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i++;
+        }
+    }
+}
+-------------------------------------------
+Ans.17.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=100)
+        {
+            if(i%5==0 && i%11==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i++;
+        }
+    }
+}
+-------------------------------------------
+Ans.18.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=100;
+        while(i>=1)
+        {
+            if(i%5==0 && i%11==0)
+            {
+                System.out.print(i+" ");
+            }
+            
+            i--;
+        }
+    }
+}
+-------------------------------------------
+Ans.19.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=10;
+        while(i>=1)
+        {
+            System.out.print(i*2+" ");
+            i--;
+        }
+    }
+}
+-------------------------------------------
+Ans.20.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int i=100;
+        while(i>=1)
+        {
+            if(i%a==0 && i%b==0)
+            {
+                System.out.print(i);
+            }
+            
+            i--;
+        }
+    }
+}
+----------------------------------------------
+Ans.21.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=10)
+        {
+            System.out.println("2"+" x "+i+" = "+i*2);
+            i++;
+        }
+    }
+}
+------
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        while(i<=10)
+        {
+            System.out.println("9"+" x "+i+" = "+i*9);
+            i++;
+        }
+    }
+}
+--------------------------------------------------
+Ans.22.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        int sum=0;
+        while(i<=100)
+        {
+            if(i%2==0)
+            {
+                sum=sum+i;
+            }
+            i++;
+        }
+        System.out.print(sum+" ");
+     }
+}
+---------------
+Ans.22.
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int i=1;
+        int sum=0;
+        while(i<=100)
+        {
+            if(i%2!=0)
+            {
+                sum=sum+i;
+            }
+            i++;
+        }
+        System.out.print(sum+" ");
+     }
+}
+---------------------------------------------------------------
+

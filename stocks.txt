@@ -1,0 +1,30 @@
+Information Technology:
+
+Infosys (INFY)
+Tata Consultancy Services (TCS)
+HCL Technologies (HCLTECH)
+Banking and Finance:
+
+HDFC Bank (HDFCBANK)
+ICICI Bank (ICICIBANK)
+Kotak Mahindra Bank (KOTAKBANK)
+Consumer Goods:
+
+Hindustan Unilever Ltd (HINDUNILVR)
+ITC Limited (ITC)
+Nestle India (NESTLEIND)
+Automobile:
+
+Maruti Suzuki India Ltd (MARUTI)
+Mahindra & Mahindra Ltd (M&M)
+Bajaj Auto Ltd (BAJAJ-AUTO)
+Energy and Utilities:
+
+Reliance Industries Ltd (RELIANCE)
+NTPC Ltd (NTPC)
+Power Grid Corporation of India Ltd (POWERGRID)
+Pharmaceuticals:
+
+Sun Pharmaceutical Industries Ltd (SUNPHARMA)
+Dr. Reddy's Laboratories Ltd (DRREDDY)
+Cipla Ltd (CIPLA)

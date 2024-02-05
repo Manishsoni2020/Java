@@ -1,0 +1,206 @@
+Ans.1.
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter any number\n");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("this is even number");
+    }
+    else
+    {
+        printf("this is odd number");
+    }
+}
+-----------------------------------------
+Ans.2.
+#include<stdio.h>
+int main()
+{
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    printf("enter any five number\n");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if(a>b && a>c && a>d && a>e)
+    {
+        printf("a is max");
+    }
+    else if(b>a && b>c && b>d && b>e)
+    {
+        printf("b is max");
+    }
+    else if(c>a && c>b && c>d && c>e)
+    {
+      printf("c is max");
+    }
+    else if(d>a && d>b && d>c && d>e)
+    {
+        printf("d is max");
+    }
+    else
+    {
+        printf("e is max");
+    }
+}
+--------------------------------------------
+Ans.3
+#include<stdio.h>
+int main()
+{
+    int i;
+    int fact=1;
+    for(i=1;i<=5;i++)
+    {
+        fact=fact*i;
+    }
+    printf("%d",fact);
+}
+----------------------------------------------
+Ans.4.
+#include<stdio.h>
+int main()
+{
+    int n1=0;
+    int n2=1;
+    int n3;
+    int i;
+    printf("%d %d",n1,n2);
+    for(i=1;i<=5;i++)
+    {
+        n3=n1+n2;
+        printf("%d",n3);
+        n1=n2;
+        n2=n3;
+    }
+}
+---------------------------------------------
+Ans.5
+#include<stdio.h>
+int main()
+{
+    int num;
+    int rem;
+    int sum=0;
+    printf("enter any number\n");
+    scanf("%d",&num);
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("this is pallindrome number");
+    }
+    else
+    {
+         printf("this is not pallindrome number");
+    }
+}
+----------------------------------------------------
+Ans.6.
+#include<stdio.h>
+int main()
+{
+    int num;
+    int rem;
+    int sum=0;
+    printf("enter any number\n");
+    scanf("%d",&num);
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("this is armstrong number");
+    }
+    else
+    {
+         printf("this is not armstrong number");
+    }
+}
+-------------------------------------------------------
+Ans.7
+#include<stdio.h>
+int main()
+{
+   int a;
+   int b;
+   int i;
+   printf("enter starting and ending number\n");
+   scanf("%d %d",&a,&b);
+   for(i=a;i<=b;i++)
+   {
+       if(i%2==0)
+       {
+           printf("%d ",i);
+       }
+   }
+}
+--------------------------------------------------------
+Ans.8
+#include<stdio.h>
+int main()
+{
+   int num;
+   int count=0;
+   printf("enter any number\n");
+   scanf("%d",&num);
+   while(num>0)
+   {
+       num=num/10;
+       count++;
+   }
+   printf("count of all digit is :%d",count);
+}
+--------------------------------------------------------
+Ans.9.
+#include<stdio.h>
+int main()
+{
+   int num;
+   int rem;
+   int sum=0;
+   printf("enter any number\n");
+   scanf("%d",&num);
+   while(num>0)
+   {
+       rem=num%10;
+       sum=sum*10+rem;
+       num=num/10;
+   }
+   printf("%d",sum);
+}
+--------------------------------------------------------
+Ans.10.
+#include<stdio.h>
+int main()
+{
+   char a;
+   printf("enter first char of your gender\n");
+   scanf("%c",&a);
+   if(a=='m')
+   {
+       printf("you are male");
+   }
+   else if(a=='f')
+   {
+       printf("you are female");
+   }
+   else
+   {
+       printf("other");
+   }
+}
+---------------------------------------------------------

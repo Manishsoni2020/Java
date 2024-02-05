@@ -1,0 +1,165 @@
+Ans.1.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=3;i++)
+    {
+        for(s=1;s<i;s++)
+        {
+            printf(" ");
+        }
+        for(j=3;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+--------------------------------------
+Ans.2.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=3;i++)
+    {
+        for(s=3;s>i;s--)
+        {
+            printf(" ");
+        }
+        for(j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+----------------------------------------
+Ans.3.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int s;
+    for(i=1;i<=3;i++)
+    {
+        for(s=3;s>i;s--)
+        {
+            printf(" ");
+        }
+        for(j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(i=1;i<=3;i++)
+    {
+        for(s=1;s<i;s++)
+        {
+            printf(" ");
+        }
+        for(j=3;j>=i;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+------------------------------------------
+Ans.4.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=3;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+          printf("%d ",i*i);
+        }
+        printf("\n");
+    }
+}
+--------------------------------------------
+Ans.5.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=3;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+          printf("%d ",j*j);
+        }
+        printf("\n");
+    }
+}
+--------------------------------------------
+Ans.6.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int n=1;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+          printf("%d ",n);
+          n++;
+        }
+        printf("\n");
+    }
+}
+---------------------------------------------
+Ans.7.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int n=1;
+    for(i=1;i<=3;i++)
+    {
+        for(j=1;j<=10;j++)
+        {
+          if(n%2==0)
+           printf("%d ",n);
+           n++;
+          
+        }
+        printf("\n");
+    }
+}
+----------------------------------------------
+Ans.8.
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j;
+    int n=1;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=8;j++)
+        {
+          if(n%2!=0)
+           printf("%d ",n);
+           n++;
+          
+        }
+        printf("\n");
+    }
+}
+--------------------------------------------------

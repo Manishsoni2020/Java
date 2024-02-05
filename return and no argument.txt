@@ -1,0 +1,522 @@
+Ans.1.
+a)
+public class Main 
+{
+    int show()
+    {
+        int a=8;
+        int b=9;
+        int c=a+b;
+        return c;
+    }
+    public static void main(String[] args)
+    {
+        Main obj=new Main();
+        System.out.println(obj.show());
+    }
+}
+--------------------
+b)
+import java.util.*;
+public class Main 
+{
+    int show()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two Number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        return c;
+    }
+    public static void main(String[] args)
+    {
+        Main obj=new Main();
+        System.out.println("Submition is = "+obj.show());
+    }
+}
+--------------------------------------------------------------
+Ans.2.
+a)
+class A 
+{
+    int show1()
+    {
+        int a=18;
+        int b=6;
+        int c=a-b;
+        return c;
+    }
+    int show2()
+    {
+        int a=8;
+        int b=16;
+        int c=a*b;
+        return c;
+    }
+    int show3()
+    {
+        int a=28;
+        int b=4;
+        int c=a/b;
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        System.out.println("Submition is = "+obj.show1());
+        System.out.println("Multiplication is = "+obj.show2());
+        System.out.println("Division is = "+obj.show3());
+    }
+}
+--------------
+b)
+import java.util.Scanner;
+class A 
+{
+    int show1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any Two Numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a-b;
+        return c;
+    }
+    int show2()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any Two Numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        return c;
+    }
+    int show3()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any Two Numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a/b;
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        System.out.println("Submition is = "+obj.show1());
+        System.out.println("Multiplication is = "+obj.show2());
+        System.out.println("Division is = "+obj.show3());
+    }
+}
+--------------------------------------------------------------------
+Ans.3.
+a)
+class A 
+{
+    void show1()
+    {
+        int a=5;
+        int b=6;
+        System.out.println("submition is = "+a+b);
+    }
+}
+class B 
+{
+    void show2(int a,int b)
+    {
+        System.out.println("Submition is = "+(a-b));
+    }
+     
+}
+class C 
+{
+    int show3()
+    {
+        int a=5;
+        int b=6;
+        int c=a*b;
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show1();
+        B obj2= new B();
+        obj2.show2(15,8);
+        C obj1=new C();
+        System.out.println("multiplication is = "+obj1.show3());
+    }
+}
+------------------------
+b)
+import java.util.*;
+class A 
+{
+    void show1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("submition is = "+(a+b));
+    }
+}
+class B 
+{
+    void show2(int a,int b)
+    {
+        System.out.println("Submition is = "+(a-b));
+    }
+     
+}
+class C 
+{
+    int show3()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two Numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a*b;
+        return c;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show1();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any two number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        B obj2= new B();
+        obj2.show2(a,b);
+        C obj1=new C();
+        System.out.println("multiplication is = "+obj1.show3());
+    }
+}
+-----------------------------------------------------------------------
+Ans.4.
+a)
+class A 
+{
+    short show1()
+    {
+        short a=45;
+        return a;
+    }
+    byte show2()
+    {
+        byte a=68;
+        return a;
+    }
+    float show3()
+    {
+        float a=4.6f;
+        return a;
+    }
+    long show4()
+    {
+        long a=689;
+        return a;
+    }
+    double show5()
+    {
+        double a=5.88;
+        return a;
+    }
+    char show6()
+    {
+        char a='b';
+        return a;
+    }
+    String show7()
+    {
+        String name="Manish";
+        return name;
+    }
+    boolean show8()
+    {
+        boolean a=true;
+        return a;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        System.out.println(obj.show1());
+        System.out.println(obj.show2());
+        System.out.println(obj.show3());
+        System.out.println(obj.show4());
+        System.out.println(obj.show5());
+        System.out.println(obj.show6());
+        System.out.println(obj.show7());
+        System.out.println(obj.show8());
+    }
+}
+----------
+b)
+import java.util.*;
+class A 
+{
+    short show1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        short a=sc.nextShort();
+        return a;
+    }
+    byte show2()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        byte a=sc.nextByte();
+        return a;
+    }
+    float show3()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        float a=sc.nextFloat();
+        return a;
+    }
+    long show4()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        long a=sc.nextLong();
+        return a;
+    }
+    double show5()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        double a=sc.nextDouble();
+        return a;
+    }
+    char show6()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any char");
+        char a=sc.next().charAt(0);
+        return a;
+    }
+    String show7()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter Your Name");
+        String name=sc.next();
+        return name;
+    }
+    boolean show8()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        boolean a=sc.nextBoolean();
+        return a;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        System.out.println(obj.show1());
+        System.out.println(obj.show2());
+        System.out.println(obj.show3());
+        System.out.println(obj.show4());
+        System.out.println(obj.show5());
+        System.out.println(obj.show6());
+        System.out.println(obj.show7());
+        System.out.println(obj.show8());
+    }
+}
+-----------------------------------------------------------------------
+Ans.5.
+import java.util.*;
+class A 
+{
+    int pallindrome()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number for pallin");
+        int num=sc.nextInt();
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        if(sum==temp)
+        {
+            System.out.println("pallindrome");
+        }
+        else 
+        {
+            System.out.println("not pallindrome");
+        }
+        return sum;
+    }
+    void fact()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int e=sc.nextInt();
+        int i;
+        int fact=1;
+        for(i=1;i<=e;i++)
+        {
+            fact=fact*i;
+            
+        }
+        System.out.println(fact);
+    }
+    void fib(int f)
+    {
+        int n1 =0;
+        int n2=1;
+        int n3;
+        System.out.print(n1+" "+n2);
+        for(int i=1;i<=f;i++)
+        {
+            n3=n1+n2;
+            n1=n2;
+            n2=n3;
+            System.out.print(" "+n3+" ");
+            
+        }
+        System.out.println();
+        
+    }
+    int neon()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        int n=num*num;
+        int rem;
+        int sum=0;
+        while(n>0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+            n=n/10;
+        }
+        if(num==sum)
+        {
+            System.out.println("neon");
+        }
+        else 
+        {
+            System.out.println("not neon");
+        }
+        return num;
+    }
+    int arm()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        if(sum==temp)
+        {
+            System.out.println("armstrong");
+        }
+        else 
+        {
+            System.out.println("not armstrong");
+        }
+        return sum;
+    }
+    int swap()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("a is = "+a+" b is = "+b);
+        return b;
+        
+    }
+    int rev()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        int rem;
+        int sum=0;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        System.out.println(sum);
+        return sum;
+    }
+    void gen()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first latter of your gender");
+        char a=sc.next().charAt(0);
+        if(a=='m')
+        {
+            System.out.println("male");
+        }
+        else if(a=='f')
+        {
+            System.out.println("female");
+        }
+        else 
+        {
+            System.out.println("other");
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int b=sc.nextInt();
+        A obj=new A();
+        System.out.println(obj.pallindrome());
+        obj.fact();
+        obj.fib(b);
+        obj.neon();
+        obj.arm();
+        obj.swap();
+        obj.rev();
+        obj.gen();
+    }
+}
+-----------------------------------------------------------------------

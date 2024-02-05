@@ -1,0 +1,561 @@
+Ans.1.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any year");
+        int a=sc.nextInt();
+        if(a%4==0)
+        {
+            System.out.println("this is leap year");
+        }
+        else
+        {
+            System.out.println("this is not leap year");
+
+
+
+        }
+    }
+}
+------------------------------------------
+Ans.2.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the temp in cel");
+        int temp=sc.nextInt();
+        System.out.println("your temp in f");
+        int f=(temp*9/5)+32;
+        System.out.println(f);
+        System.out.println("your temp is cel");
+        temp=(f-32)*5/9;
+        System.out.println(temp);
+    }
+}
+------------------------------------------
+Ans.3.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter what you want area and volume");
+        String a=sc.next();
+        if(a.equals("area"))
+        {
+            System.out.println("traingle , square , reactangle");
+            String b=sc.next();
+            if(b.equals("traingle"))
+            {
+                System.out.println("height and bright");
+                int h=sc.nextInt();
+                int br=sc.nextInt();
+                float r=0.5f*br*h;
+                System.out.println("area of traingle is " +r);
+                
+            }
+            else if(b.equals("square"))
+            {
+                System.out.println("enter side");
+                int s=sc.nextInt();
+                int r=s*s;
+                System.out.println("area of squre is "+r);
+            }
+            else if(b.equals("reactangle"))
+            {
+                System.out.println("enter lenght and width");
+                int l=sc.nextInt();
+                int w=sc.nextInt();
+                int r=l*w;
+                System.out.println("area of reactangle is "+r);
+            }
+        }
+        else if(a.equals("volume"))
+        {
+            System.out.println("square , reactangle");
+            String b=sc.next();
+            if(b.equals("square"))
+            {
+                System.out.println("enter side");
+                int s=sc.nextInt();
+                int r=s*s*s;
+                System.out.println("the volume of square is "+r);
+            }
+            else if(b.equals("reactangle"))
+            {
+                System.out.println("enter length width and height");
+                int l=sc.nextInt();
+                int w=sc.nextInt();
+                int h=sc.nextInt();
+                int r=l*w*h;
+                System.out.println("the volume of reactangle is "+r);
+            }
+        }
+    }
+}
+-----------------------------------------------------------------------
+Ans.4.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any char");
+        char a=sc.next().charAt(0);
+        if(a>='a' && a<='z')
+        {
+           System.out.println("this is alphabet"); 
+        }
+        else if(a>=1 && a<=1000)
+        {
+            System.out.println("this is digit");
+        }
+        else
+        {
+            System.out.println("not vaild");
+        }
+    }
+}
+-------------------------------------------------------------------------
+Ans.5.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your marks in Hindi, English, Maths, Scinece, S.S.T, Sanskrit");
+        float h=sc.nextFloat();
+        float e=sc.nextFloat();
+        float m=sc.nextFloat();
+        float s=sc.nextFloat();
+        float ss=sc.nextFloat();
+        float sa=sc.nextFloat();
+        float pre=(h+e+m+s+ss+sa)*100/600;
+        System.out.println("presentage is "+pre);
+        if(pre>=80 && pre<=100)
+        {
+            System.out.println("grade A");
+        }
+        else if(pre>=60 && pre<=80)
+        {
+            System.out.println("grade B");
+        }
+        else if(pre>=50 && pre<=60)
+        {
+            System.out.println("grade C");
+        }
+        else if(pre>=45 && pre<=50)
+        {
+            System.out.println("grade D");
+        }
+        else if(pre>=25 && pre<=45)
+        {
+            System.out.println("grade E");
+        }
+        else
+        {
+            System.out.println("grade F");
+        }
+    }
+}
+-----------------------------------------------------------------
+Ans.6.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner (System.in);
+        System.out.println("enter your height in centimeters");
+        int a=sc.nextInt();
+        if(a>=9 && a<=12)
+        {
+            System.out.println("your height is so high");
+        }
+        else if(a>=5 && a<=8)
+        {
+            System.out.println("your height is mid");
+        }
+        else if(a<=4)
+        {
+            System.out.println("your height is low");
+        }
+    }
+}
+------------------------------------------------------------------
+Ans.7.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your roll Number");
+        int roll=sc.nextInt();
+        System.out.println("Enter Student Name");
+        String sname=sc.next();
+        System.out.println("Enter Father Name");
+        String fname=sc.next();
+        System.out.println("Enter Mother Name");
+        String mname=sc.next();
+        System.out.println("Enter Your Addres ");
+        String add=sc.next();
+        System.out.println("Enter your contact Number");
+        int con=sc.nextInt();
+        System.out.println("Enter your marks of Physics, Chemistry and Computer Application");
+        int ph=sc.nextInt();
+        int ch=sc.nextInt();
+        int co=sc.nextInt();
+        int total=ph+ch+co;
+        int pre=total*100/300;
+        System.out.println("Your Total Marks is "+total);
+        System.out.println("Your persentage is "+pre);
+        if(pre>=60 && pre<=100)
+        {
+            System.out.println("1st division");
+        }
+        else if(pre>=50 && pre<=60)
+        {
+            System.out.println("2nd division");
+        }
+        else if(pre>=36 && pre<=50)
+        {
+            System.out.println("3rd division");
+        }
+        else
+        {
+            System.out.println("Try again");
+        }
+        
+        
+        
+    }
+}
+------------------------------------------------------------------
+Ans.8.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your marks");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        int f=a+b+c+d+e;
+        int g=f*100/500;
+        if(g>=80 && g<=100)
+        {
+            System.out.println("grade A");
+        }
+        else if(g>=60 && g<=80)
+        {
+            System.out.println("grade B");
+        }
+        else if(g>=50 && g<=60)
+        {
+            System.out.println("grade C");
+        }
+        else if(g>=45 && g<=50)
+        {
+            System.out.println("grade D");
+        }
+        else
+        {
+            System.out.println("You are Fail");
+        }
+    }
+}
+-------------------------------------------------------------------
+Ans.9.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any three number ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a>b && a>c)
+        {
+            System.out.println("a is max");
+        }
+        else if(b>a && b>c)
+        {
+            System.out.println("b is max");
+        }
+        else
+        {
+            System.out.println("c is max");
+        }
+    }
+}
+-----------------------------------------------------------------
+Ans.11.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your Name");
+        String name=sc.next();
+        System.out.println("Enter your Address");
+        String add=sc.next();
+        System.out.println("Enter your salary");
+        int sal=sc.nextInt();
+        System.out.println("Enter your Bank Details");
+        int ba=sc.nextInt();
+        System.out.println("Enter your holidays");
+        int ho=sc.nextInt();
+        if(ho>1 && ho<6)
+        {
+            System.out.println("Output");
+            System.out.println("Employee Name is = "+name);
+            System.out.println("Employee Addres is = "+add);
+            System.out.println("Employee Bank Details is = "+ba);
+            System.out.println("Employee Basic Salary is = "+sal);
+            System.out.println("Employee total Holidays is = "+ho);
+            int did=sal*5/100;
+            int al=sal-did;
+            System.out.println("Total Salary Didecution = "+did);
+            System.out.println("Your net salary is = "+al);
+            
+        }
+        else if(ho>6 && ho<15)
+        {
+            System.out.println("Output");
+            System.out.println("Employee Name is = "+name);
+            System.out.println("Employee Addres is = "+add);
+            System.out.println("Employee Bank Details is = "+ba);
+            System.out.println("Employee Basic Salary is = "+sal);
+            System.out.println("Employee total Holidays is = "+ho);
+            int did=sal*10/100;
+            int al=sal-did;
+            System.out.println("Total Salary Didecution = "+did);
+            System.out.println("Your net salary is = "+al);
+            
+        }
+        else if(ho==15)
+        {
+            System.out.println("Output");
+            System.out.println("Employee Name is = "+name);
+            System.out.println("Employee Addres is = "+add);
+            System.out.println("Employee Bank Details is = "+ba);
+            System.out.println("Employee Basic Salary is = "+sal);
+            System.out.println("Employee total Holidays is = "+ho);
+            int did=sal*50/100;
+            int al=sal-did;
+            System.out.println("Total Salary Didecution = "+did);
+            System.out.println("Your net salary is = "+al);
+            
+        }
+        else
+        {
+            System.out.println("Output");
+            System.out.println("Employee Name is = "+name);
+            System.out.println("Employee Addres is = "+add);
+            System.out.println("Employee Bank Details is = "+ba);
+            System.out.println("Employee Basic Salary is = "+sal);
+            System.out.println("Employee total Holidays is = "+ho);
+            System.out.println("Your net salary is = 0 ");
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.12.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your Name ");
+        String name=sc.next();
+        System.out.println("Enter How much unit You did Use ");
+        int un=sc.nextInt();
+        int amt=un*10;
+        if(un>0 && un<11)
+        {
+            System.out.println("Your name is = "+name);
+            amt=un*10;
+            System.out.println("Unit used by you = "+un);
+            System.out.println("Your total amount is = "+amt);
+            int dis=amt*10/100;
+            System.out.println("You get 10% discount = "+dis);
+            int np=amt-dis;
+            System.out.println("Your net pay is = "+np);
+        }
+        else if(un>11 && un<21)
+        {
+            System.out.println("Your name is = "+name);
+            amt=un*10;
+            System.out.println("Unit used by you = "+un);
+            System.out.println("Your total amount is = "+amt);
+            int dis=amt*15/100;
+            System.out.println("You get 10% discount = "+dis);
+            int np=amt-dis;
+            System.out.println("Your net pay is = "+np);
+        }
+        else if(un>21 && un<41)
+        {
+            System.out.println("Your name is = "+name);
+            amt=un*10;
+            System.out.println("Unit used by you = "+un);
+            System.out.println("Your total amount is = "+amt);
+            int dis=amt*15/100;
+            System.out.println("You get 15% discount = "+dis);
+            int np=amt-dis;
+            System.out.println("Your net pay is = "+np);
+        }
+        else if(un>41 && un<51)
+        {
+            System.out.println("Your name is = "+name);
+            amt=un*10;
+            System.out.println("Unit used by you = "+un);
+            System.out.println("Your total amount is = "+amt);
+            int dis=amt*30/100;
+            System.out.println("You get 30% discount = "+dis);
+            int np=amt-dis;
+            System.out.println("Your net pay is = "+np);
+        }
+        else if( un>=51)
+        {
+            System.out.println("Your name is = "+name);
+            amt=un*10;
+            System.out.println("Unit used by you = "+un);
+            System.out.println("Your total amount is = "+amt);
+            int dis=amt*50/100;
+            System.out.println("You get 50% discount = "+dis);
+            int np=amt-dis;
+            System.out.println("Your net pay is = "+np);
+        }
+        
+    }
+}
+----------------------------------------------------------------
+Ans.13.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Which you are Retailer or Customer");
+        String a=sc.next();
+        System.out.println("Enter your Name");
+        String name=sc.next();
+        if(a.equals("retailer"))
+        {
+            System.out.println("Enter how much pices you want buy insure 50 pices on one time");
+            int pc=sc.nextInt();
+            if(pc>0 && pc<16)
+            {
+                System.out.println("Retailer Name "+name);
+                System.out.println("Total peices "+pc);
+                int amt=pc*100;
+                int dis=amt*15/100;
+                int na=amt-dis;
+                System.out.println("Your total amount "+amt);
+                System.out.println("You get 15% discount "+dis );
+                System.out.println("Total net amount "+na);
+                
+            }
+            else if(pc>16 && pc<31)
+            {
+                System.out.println("Retailer Name "+name);
+                System.out.println("Total peices "+pc);
+                int amt=pc*100;
+                int dis=amt*30/100;
+                int na=amt-dis;
+                System.out.println("Your total amount "+amt);
+                System.out.println("You get 30% discount "+dis );
+                System.out.println("Total net amount "+na);
+                
+            }
+            else if(pc>31 && pc<51)
+            {
+                System.out.println("Retailer Name "+name);
+                System.out.println("Total peices "+pc);
+                int amt=pc*100;
+                int dis=amt*50/100;
+                int na=amt-dis;
+                System.out.println("Your total amount "+amt);
+                System.out.println("You get 50% discount "+dis );
+                System.out.println("Total net amount "+na);
+                
+            }
+        }
+        else if(a.equals("customer"))
+        {
+            System.out.println("Enter your contact number ");
+            int con=sc.nextInt();
+            System.out.println("Enter How much pis you want ");
+            int pcs=sc.nextInt();
+            if(pcs>100 && pcs<1001)
+            {
+                System.out.println("your name is "+name);
+                System.out.println("your contact number is "+con);
+                int amt=pcs*400;
+                int dis=amt*5/100;
+                int np=amt-dis;
+                System.out.println("Your total payment is "+amt);
+                System.out.println("You get 5% discount "+dis);
+                System.out.println("Your total net payment is "+np);
+            }
+            else if(pcs>1001 && pcs<2001)
+            {
+                System.out.println("your name is "+name);
+                System.out.println("your contact number is "+con);
+                int amt=pcs*400;
+                int dis=amt*10/100;
+                int np=amt-dis;
+                System.out.println("Your total payment is "+amt);
+                System.out.println("You get 5% discount "+dis);
+                System.out.println("Your total net payment is "+np);
+            }
+            else if(pcs>2001 && pcs<3001)
+            {
+                System.out.println("your name is "+name);
+                System.out.println("your contact number is "+con);
+                int amt=pcs*400;
+                int dis=amt*15/100;
+                int np=amt-dis;
+                System.out.println("Your total payment is "+amt);
+                System.out.println("You get 5% discount "+dis);
+                System.out.println("Your total net payment is "+np);
+            }
+            else if(pcs<3001)
+            {
+                System.out.println("your name is "+name);
+                System.out.println("your contact number is "+con);
+                int amt=pcs*400;
+                int dis=amt*30/100;
+                int np=amt-dis;
+                System.out.println("Your total payment is "+amt);
+                System.out.println("You get 5% discount "+dis);
+                System.out.println("Your total net payment is "+np);
+            }
+            
+            
+        }
+        
+    }
+}
+--------------------------------------------------------------------------
+
+

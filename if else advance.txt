@@ -1,0 +1,415 @@
+Ans.1.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your Name ");
+        String name=sc.next();
+        System.out.println("Enter Your Salary ");
+        int sal=sc.nextInt();
+        if(sal>0 && sal<10001)
+        {
+            System.out.println("Your Name is = "+name);
+            System.out.println("Your Salary is = "+sal);
+            System.out.println("You have deduct 0% tax ");
+        }
+        else if(sal>10001 && sal<30001)
+        {
+            System.out.println("Your Name is = "+name);
+            System.out.println("Your Salary is = "+sal);
+            int tax=sal*10/100;
+            System.out.println("You have deduct 10% tax = "+tax);
+            int np=sal-tax;
+            System.out.println("Your Net salary is = "+np);
+        }
+        else if(sal>30001 && sal<50001)
+        {
+            System.out.println("Your Name is = "+name);
+            System.out.println("Your Salary is = "+sal);
+            int tax=sal*20/100;
+            System.out.println("You have deduct 20% tax = "+tax);
+            int np=sal-tax;
+            System.out.println("Your Net salary is = "+np);
+        }
+        else if(sal>=50001)
+        {
+            System.out.println("Your Name is = "+name);
+            System.out.println("Your Salary is = "+sal);
+            int tax=sal*30/100;
+            System.out.println("You have deduct 30% tax = "+tax);
+            int np=sal-tax;
+            System.out.println("Your Net salary is = "+np);
+        }
+        
+    }
+}
+------------------------------------------------------------------------
+Ans.2.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your Name ");
+        String name=sc.next();
+        System.out.println("Enter Your body Weight in kilograms");
+        int kg=sc.nextInt();
+        System.out.println("Enter Your Height is Meters ");
+        float he=sc.nextFloat();
+        float bmi=kg/he;
+        System.out.println("Your Body Mass Index "+bmi);
+        if(bmi<=18.5)
+        {
+            System.out.println("You Have Under weight ");
+        }
+        else if(bmi>18.5 && bmi<25)
+        {
+            System.out.println("You Have Normal weight ");
+        }
+        else if(bmi>25 && bmi<30)
+        {
+            System.out.println("You Have Over weight ");
+        }
+        else if(bmi<=30)
+        {
+            System.out.println("You Have Obesity ");
+        }
+        System.out.println("Thanks and Take Care");
+    }
+}
+------------------------------------------------------------
+Ans.3.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any Year");
+        int ye=sc.nextInt();
+        if(ye%4==0)
+        {
+            System.out.println("Leap year");
+        }
+        else
+        {
+            System.out.println("Not Leap year");
+        }
+    }
+}
+-------------------------------------------------------------
+Ans.4.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any time of the Day");
+        float tm=sc.nextFloat();
+        if(tm>0 && tm<12)
+        {
+            System.out.println("Good Morning");
+        }
+        else if(tm>12 && tm<17)
+        {
+            System.out.println("Good After Noon");
+        }
+        else if(tm>17 && tm<21)
+        {
+            System.out.println("Good Evening");
+        }
+        else if(tm>21 && tm<24)
+        {
+            System.out.println("Good Night");
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.5.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Welcome to Our Restaurant 🥰");
+        System.out.println("So Which Dish You want to have today Sir/Mam");
+        System.out.println("Rajasthani || Gujrati || Punjabi");
+        String dis=sc.next();
+        if(dis.equals("rajasthani"))
+        {
+           System.out.println("What You Want to Have in Rajasthani Dish");
+           System.out.println("Dal Bati = 400 || Bajra Roti With Kadi = 450 || Special Thali = 500");
+           String me=sc.next();
+           System.out.println("Just Wait sir/mam Your order is preparing");
+           if(me.equals("dal bati"))
+           {
+               System.out.println("Thanks for order Dal Bati");
+           }
+           else if(me.equals("bajra roti with kadi"))
+           {
+               System.out.println("Thanks for order Bajra Roti With Kadi");
+           }
+           else if(me.equals("special thali"))
+           {
+               System.out.println("Thanks for order Special Thali");
+           }
+           
+           
+        }
+        else if(dis.equals("gujrati"))
+        {
+           System.out.println("What You Want to Have in Gujrati Dish");
+           System.out.println("Jalebi Phaphra = 300 || Dal Dhokla = 250 || Butter Milk = 50");
+           String me=sc.next();
+           System.out.println("Just Wait sir/mam Your order is preparing");
+           if(me.equals("jalebi phaphra"))
+           {
+               System.out.println("Thanks for Jalebi Phaphra");
+           }
+           else if(me.equals("dal dhokla"))
+           {
+               System.out.println("Thanks for order Dal Dhokla");
+           }
+           else if(me.equals("butter milk"))
+           {
+               System.out.println("Thanks for order Butter Milk");
+           }
+           
+           
+        }
+        
+        else if(dis.equals("punjabi"))
+        {
+           System.out.println("What You Want to Have in Gujrati Dish");
+           System.out.println("Makke Roti  = 30 || Sarso sag = 150 || Lassi = 350");
+           String me=sc.next();
+           System.out.println("Just Wait sir/mam Your order is preparing");
+           if(me.equals("makke roti"))
+           {
+               System.out.println("Thanks for Makke Roti");
+           }
+           else if(me.equals("sarso sag"))
+           {
+               System.out.println("Thanks for order Sarso sag");
+           }
+           else if(me.equals("lassi"))
+           {
+               System.out.println("Thanks for order Lassi");
+           }
+           
+           
+        }
+        
+        else
+        {
+            System.out.println("Please Select Right Option 👀");
+        }
+    }
+}
+-----------------------------------------------------------------
+Ans.6.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the temp in cel");
+        int temp=sc.nextInt();
+        System.out.println("your temp in f");
+        int f=(temp*9/5)+32;
+        System.out.println(f);
+        System.out.println("your temp is cel");
+        temp=(f-32)*5/9;
+        System.out.println(temp);
+    }
+}
+----------------------------------------------------------------
+Ans.7.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Enter any two numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a>b)
+        {
+            System.out.println(+a+" = is max");
+        }
+        else
+        {
+            System.out.println(+b+" = is max");
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.8.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Welcome to Inox cinema");
+        System.out.println("Enter Your Name ");
+        String name=sc.next();
+        System.out.println("Enter Your Age");
+        int age=sc.nextInt();
+        System.out.println("Which Movie You want (Sholey || Mard || Aakhen)");
+        String mo=sc.next();
+        int tp=600;
+        if(mo.equals("sholey"))
+        {
+            if(age<=12)
+        {
+            System.out.println("Your Name = "+name);
+            System.out.println("You are a Children");
+            int dis=tp*50/100;
+            int np=tp-dis;
+            System.out.println("Your Movie Ticket Price is = "+tp);
+            System.out.println("Congratulations You get 50% discount = "+dis);
+            System.out.println("Your Net Payment is = "+np);
+            
+        }
+        else if(age>12)
+        {
+            System.out.println("Your Name = "+name);
+            System.out.println("You are an Adult");
+            int dis=tp*30/100;
+            int np=tp-dis;
+            System.out.println("Your Movie Ticket Price is = "+tp);
+            System.out.println("Congratulations You get 30% discount = "+dis);
+            System.out.println("Your Net Payment is = "+np);
+            
+        }
+        }
+        else if(mo.equals("mard"))
+        {
+            if(age<=12)
+        {
+            System.out.println("Your Name = "+name);
+            System.out.println("You are a Children");
+            int dis=tp*50/100;
+            int np=tp-dis;
+            System.out.println("Your Movie Ticket Price is = "+tp);
+            System.out.println("Congratulations You get 50% discount = "+dis);
+            System.out.println("Your Net Payment is = "+np);
+            
+        }
+        else if(age>12)
+        {
+            System.out.println("Your Name = "+name);
+            System.out.println("You are an Adult");
+            int dis=tp*30/100;
+            int np=tp-dis;
+            System.out.println("Your Movie Ticket Price is = "+tp);
+            System.out.println("Congratulations You get 30% discount = "+dis);
+            System.out.println("Your Net Payment is = "+np);
+            
+        }
+        }
+        else if(mo.equals("aakhen"))
+        {
+            if(age<=12)
+        {
+            System.out.println("Your Name = "+name);
+            System.out.println("You are a Children");
+            int dis=tp*50/100;
+            int np=tp-dis;
+            System.out.println("Your Movie Ticket Price is = "+tp);
+            System.out.println("Congratulations You get 50% discount = "+dis);
+            System.out.println("Your Net Payment is = "+np);
+            
+        }
+        else if(age>12)
+        {
+            System.out.println("Your Name = "+name);
+            System.out.println("You are an Adult");
+            int dis=tp*30/100;
+            int np=tp-dis;
+            System.out.println("Your Movie Ticket Price is = "+tp);
+            System.out.println("Congratulations You get 30% discount = "+dis);
+            System.out.println("Your Net Payment is = "+np);
+            
+        }
+        }
+        else
+        {
+            System.out.println("Please choose right movie");
+        }
+        System.out.println("Have a Nice Day");
+        
+    }
+}
+----------------------------------------------------------------
+Ans.9.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your marks in Hindi, English, Maths, Scinece, S.S.T, Sanskrit");
+        float h=sc.nextFloat();
+        float e=sc.nextFloat();
+        float m=sc.nextFloat();
+        float s=sc.nextFloat();
+        float ss=sc.nextFloat();
+        float sa=sc.nextFloat();
+        float pre=(h+e+m+s+ss+sa)*100/600;
+        System.out.println("presentage is "+pre);
+        if(pre>=80 && pre<=100)
+        {
+            System.out.println("grade A");
+        }
+        else if(pre>=60 && pre<=80)
+        {
+            System.out.println("grade B");
+        }
+        else if(pre>=50 && pre<=60)
+        {
+            System.out.println("grade C");
+        }
+        else if(pre>=45 && pre<=50)
+        {
+            System.out.println("grade D");
+        }
+        else if(pre>=25 && pre<=45)
+        {
+            System.out.println("grade E");
+        }
+        else
+        {
+            System.out.println("Try again");
+        }
+    }
+}
+----------------------------------------------------------------
+Ans.10.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main (String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any char");
+        char a=sc.next().charAt(0);
+        if(a=='a'||a=='e'|| a=='i'|| a=='o'|| a=='u')
+        {
+            System.out.println(" This is Vowel");
+        }
+        else
+        {
+            System.out.println("This is Consonent");
+        }
+    }
+}
+-----------------------------------------------------------------
