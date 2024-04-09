@@ -1,0 +1,239 @@
+class A 
+show1() :Ex
+
+class B 
+show1() :Ari
+
+Main class 
+access 
+------
+Ans...
+class A 
+{
+    void show() throws Exception
+    {
+        System.out.println("parent class");
+    }
+}
+class B extends A
+{
+    void show() throws ArithmeticException
+    {
+        System.out.println("child class");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        B obj=new B();
+        try 
+        {
+            obj.show();
+        }
+        catch(Exception ex)
+        {
+            
+        }
+    }
+}
+------------------------------------------------------------------
+class A 
+show1() :Ari
+
+class B 
+show1() :EX
+
+Main class 
+access 
+-----
+Ans...
+class A 
+{
+    void show() throws ArithmeticException
+    {
+        System.out.println("parent class");
+    }
+}
+class B extends A
+{
+    void show() throws Exception
+    {
+        System.out.println("child class");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        B obj=new B();
+        try 
+        {
+            obj.show();
+        }
+        catch(Exception ex)
+        {
+
+        }
+    }
+}
+Error
+------------------------------------------------------------------
+class A 
+show1() :IO
+
+class B 
+show1() :EX
+
+Main class 
+access 
+import java.io.IOException;
+
+class A 
+{
+    void show() throws IOException
+    {
+        System.out.println("parent class");
+    }
+}
+class B extends A
+{
+    void show() throws Exception
+    {
+        System.out.println("child class");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        B obj=new B();
+        try 
+        {
+            obj.show();
+        }
+        catch(Exception ex)
+        {
+
+        }
+    }
+}
+Error
+------------------------------------------------------------------
+class A 
+show1() :Ex
+
+class B 
+show1() :IO
+
+Main class 
+access 
+----
+Ans...
+import java.io.IOError;
+import java.io.IOException;
+
+class A 
+{
+    void show() throws Exception
+    {
+        System.out.println("parent class");
+    }
+}
+class B extends A
+{
+    void show() throws IOException
+    {
+        System.out.println("child class");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        B obj=new B();
+        try 
+        {
+            obj.show();
+        }
+        catch(Exception ex)
+        {
+
+        }
+    }
+}
+------------------------------------------------------------------
+class A 
+show1() :Ari
+
+class B 
+show1() :IO
+
+Main class 
+access 
+----
+Ans...
+class A 
+{
+    void show() throws ArithmeticException
+    {
+        System.out.println("parent class");
+    }
+}
+class B extends A
+{
+    void show() throws IOException
+    {
+        System.out.println("child class");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        B obj=new B();
+        try 
+        {
+            obj.show();
+        }
+        catch(Exception ex)
+        {
+
+        }
+    }
+}
+------------------------------------------------------------------
+class A 
+show1() :Ari
+
+class B 
+show1() :Array
+
+Main class 
+access 
+-----
+Ans...
+class A 
+{
+    void show() throws ArithmeticException
+    {
+        System.out.println("parent class");
+    }
+}
+class B extends A
+{
+    void show() throws ArrayIndexOutOfBoundsException
+    {
+        System.out.println("child class");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        B obj=new B();
+        try 
+        {
+            obj.show();
+        }
+        catch(Exception ex)
+        {
+
+        }
+    }
+}
+------------------------------------------------------------------
