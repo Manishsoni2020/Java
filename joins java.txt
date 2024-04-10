@@ -1,0 +1,446 @@
+1)
+odd number print 
+even number print 
+1--->5
+1--->5 
+
+1 2 3 4 5 
+----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+        try 
+        {
+            Thread.sleep(200);
+        }
+        catch(Exception ex)
+        {
+
+        }
+        if(i%2!=0)
+        {
+            System.out.print(i+" ");
+        }
+        else if(i%2==0)
+        {
+            System.out.print(i+" ");
+        }
+        }
+    }
+    
+    
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.start();
+    }
+}
+------------------------------------------------------------
+2)
+even number print 
+odd number print 
+1--->5
+1--->5 
+---
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=2;i<=5;i++)
+        {
+        try 
+        {
+            Thread.sleep(200);
+        }
+        catch(Exception ex)
+        {
+
+        }
+        if(i%2==0)
+        {
+            System.out.print(i+" ");
+        }
+        else if(i%2!=0)
+        {
+            System.out.print(i+" ");
+        }
+
+        }
+    }
+    
+    
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.start();
+    }
+}
+------------------------------------------------------------
+3)
+k1
+k2
+k3
+k4 
+k5 
+----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            try 
+            {
+                Thread.sleep(100);
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            System.out.print(i+" ");
+        }
+    }
+
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        A obj1=new A();
+        A obj2=new A();
+        A obj3=new A();
+        A obj4=new A();
+        obj.start();
+        obj1.start();
+        obj2.start();
+        obj3.start();
+        obj4.start();
+    }
+}
+------------------------------------------------------------------------
+4)
+k1
+k2 :join
+k3
+k4 :join
+k5 
+-----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            try 
+            {
+                Thread.sleep(100);
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            System.out.print(i+" ");
+        }
+    }
+
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        A obj1=new A();
+        A obj2=new A();
+        A obj3=new A();
+        A obj4=new A();
+        obj.start();
+        obj1.start();
+        try 
+        {
+            obj1.join();
+        }
+        catch(Exception ex)
+        {
+
+        }
+        obj2.start();
+        obj3.start();
+        try 
+        {
+            obj3.join();
+        }
+        catch(Exception ex)
+        {
+            
+        }
+        obj4.start();
+    }
+}
+-----------------------------------------------------------------------
+5)
+k1:join
+k2 
+k3:join
+k4 :join
+k5 :join
+----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            try 
+            {
+                Thread.sleep(100);
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            System.out.print(i+" ");
+        }
+    }
+
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        A obj1=new A();
+        A obj2=new A();
+        A obj3=new A();
+        A obj4=new A();
+        obj.start();
+        try 
+        {
+            obj.join();
+        }
+        catch(Exception ex)
+        {
+        }
+        obj1.start();
+        obj2.start();
+        try 
+        {
+            obj2.join();
+        }
+        catch(Exception ex)
+        {
+        }
+        obj3.start();
+        try 
+        {
+            obj3.join();
+        }
+        catch(Exception ex)
+        {
+            
+        }
+        obj4.start();
+        try 
+        {
+            obj4.join();
+        }
+        catch(Exception ex)
+        {
+            
+        }
+    }
+}
+-----------------------------------------------------------------------
+6)
+k1
+k2
+k3
+k4 
+k5 
+run
+-----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            try 
+            {
+                Thread.sleep(100);
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            System.out.print(i+" ");
+        }
+    }
+
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        A obj1=new A();
+        A obj2=new A();
+        A obj3=new A();
+        A obj4=new A();
+        obj.run();
+        obj1.run();
+        obj2.run();
+        obj3.run();
+        obj4.run();
+    }
+}
+-----------------------------------------------------------------------
+7)
+k1
+k2
+k3
+k4 
+k5 
+start 
+-----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" ");
+        }
+    }
+
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        A obj1=new A();
+        A obj2=new A();
+        A obj3=new A();
+        A obj4=new A();
+        obj.start();
+        obj1.start();
+        obj2.start();
+        obj3.start();
+        obj4.start();
+    }
+}
+--------------------------------
+8)
+k1
+k2
+k3
+k4 
+k5 
+simulatenously 
+----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            try 
+            {
+                Thread.sleep(100);
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            System.out.print(i+" ");
+        }
+    }
+
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        A obj1=new A();
+        A obj2=new A();
+        A obj3=new A();
+        A obj4=new A();
+        obj.start();
+        obj1.start();
+        obj2.start();
+        obj3.start();
+        obj4.start();
+    }
+}
+-------------------------------------------------------
+9)
+alg alg ho 
+k1
+k2
+k3
+k4 
+k5 
+
+1
+2
+3
+4
+5
+-----
+Ans...
+class A extends Thread
+{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=10;j++)
+            {
+                System.out.print(i*j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) {
+        A obj=new A();
+        obj.start();
+    }
+}
+---------------------------------------------------------------------
+10)
+
+k1
+k2
+k3
+k4 
+k5 
+
+k2,k3 sath
+
+k4,k5 :sath 
+----
+Ans...
+
+---------------------------------------------------------------------
