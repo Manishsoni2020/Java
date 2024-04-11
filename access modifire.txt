@@ -1,0 +1,1085 @@
+1)class A 
+instance vairable :private ,protected, public 
+two number addition 
+
+class Main: 
+access 
+-----
+Ans...
+private...
+class A 
+{
+    private int a=6;
+    private int b=3;
+    void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show();
+    }
+}
+Yes access...
+
+public..
+class A 
+{
+    public int a=6;
+    public int b=3;
+    void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show();
+    }
+}
+Yes access...
+
+protected...
+class A 
+{
+    protected int a=6;
+    protected int b=3;
+    void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show();
+    }
+}
+Yes access...
+-------------------
+class A 
+instance vairable :private ,protected, public 
+two number addition method :private ,protected, public 
+
+class Main: 
+access 
+-----
+Ans...
+Private...
+class A 
+{
+    private int a=6;
+    private int b=3;
+    private void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show();
+    }
+}
+
+public...
+class A 
+{
+    public int a=6;
+    public int b=3;
+    public void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show();
+    }
+}
+
+protected..
+class A 
+{
+    protected int a=6;
+    protected int b=3;
+    protected void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        A obj=new A();
+        obj.show();
+    }
+}
+--------------------------------------------
+class A 
+instance vairable :private ,protected, public 
+two number addition method :private ,protected, public 
+
+class B ex A 
+access :all method and access modfier 
+
+class Main: 
+access 
+-----
+Ans...
+Private...
+class A 
+{
+    private int a=6;
+    private int b=3;
+    private void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+
+class B extends A 
+{
+    private int a=6;
+    private int b=3;
+    private void show1()
+    {
+        System.out.println("sub is "+(a-b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        B obj=new B();
+        obj.show();
+        obj.show1();
+    }
+}
+
+Public...
+class A 
+{
+    public int a=6;
+    public int b=3;
+    public void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+
+class B extends A 
+{
+    public int a=6;
+    public int b=3;
+    public void show1()
+    {
+        System.out.println("sub is "+(a-b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        B obj=new B();
+        obj.show();
+        obj.show1();
+    }
+}
+
+Protected....
+class A 
+{
+    protected int a=6;
+    protected int b=3;
+    protected void show()
+    {
+        System.out.println("addition is "+(a+b));
+    }
+}
+
+class B extends A 
+{
+    protected int a=6;
+    protected int b=3;
+    protected void show1()
+    {
+        System.out.println("sub is "+(a-b));
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        B obj=new B();
+        obj.show();
+        obj.show1();
+    }
+}
+
+------------------------------------------------
+class A 
+instance vairable :private ,protected, public 
+two number addition method :
+
+class B ex A 
+
+class C ex B 
+
+class D 
+access : instance vairable :private ,protected, public 
+
+class Main: 
+access 
+----
+Ans...
+public...
+class A 
+{
+    public int a=6;
+    public int b=3;
+    void show()
+    {
+        System.out.println(a+b);
+    }
+}
+class B extends A 
+{
+
+}
+class C extends B 
+{
+
+}
+class D extends C
+{
+    void show1()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        D obj= new D();
+        obj.show();
+        obj.show1();
+    }
+}
+
+private..
+class A 
+{
+    private int a=6;
+    private int b=3;
+    void show()
+    {
+        System.out.println(a+b);
+    }
+}
+class B extends A 
+{
+
+}
+class C extends B 
+{
+
+}
+class D extends C
+{
+    void show1()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        D obj= new D();
+        obj.show();
+        obj.show1();
+    }
+}
+Not access
+
+protected..
+class A 
+{
+    protected int a=6;
+    protected int b=3;
+    void show()
+    {
+        System.out.println(a+b);
+    }
+}
+class B extends A 
+{
+
+}
+class C extends B 
+{
+
+}
+class D extends C
+{
+    void show1()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        D obj= new D();
+        obj.show();
+        obj.show1();
+    }
+}
+-------------------------------------------------------
+class A 
+instance vairable :private ,protected, public 
+two number addition method :private ,protected, public 
+
+class B ex A 
+
+class C ex B 
+
+class D 
+access : instance vairable :private ,protected, public 
+
+class Main: 
+access 
+----
+Ans...
+protected...
+class A 
+{
+    protected int a=6;
+    protected int b=3;
+    protected void show()
+    {
+        System.out.println(a+b);
+    }
+}
+class B extends A 
+{
+
+}
+class C extends B 
+{
+
+}
+class D extends C
+{
+    void show1()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        D obj= new D();
+        obj.show();
+        obj.show1();
+    }
+}
+
+Public...
+class A 
+{
+    public int a=6;
+    public int b=3;
+    public void show()
+    {
+        System.out.println(a+b);
+    }
+}
+class B extends A 
+{
+
+}
+class C extends B 
+{
+
+}
+class D extends C
+{
+    void show1()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        D obj= new D();
+        obj.show();
+        obj.show1();
+    }
+}
+---
+private...
+class A 
+{
+    private int a=6;
+    private int b=3;
+    private void show()
+    {
+        System.out.println(a+b);
+    }
+}
+class B extends A 
+{
+
+}
+class C extends B 
+{
+
+}
+class D extends C
+{
+    void show1()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        D obj= new D();
+        obj.show();
+        obj.show1();
+    }
+}
+Not access..
+---------------------------------------------
+
+class A
+	class B :private ,protected, public 
+		instance vairable :
+		two number addition method :
+
+Main class 
+access
+---
+Ans...
+Public..
+class A 
+{
+    public class B 
+    {
+        int a=6;
+        int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+
+Private..
+class A 
+{
+    private class B 
+    {
+        int a=6;
+        int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+Not access..
+
+Protected..
+class A 
+{
+    protected class B 
+    {
+        int a=6;
+        int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+---------------------------------------------
+class A
+	class B :private ,protected, public 
+		instance vairable :private ,protected, public
+		two number addition method :
+
+Main class 
+access
+---
+Ans..
+Public..
+class A 
+{
+    public class B 
+    {
+        public int a=6;
+        public int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+
+Private..
+class A 
+{
+    private class B 
+    {
+        private int a=6;
+        private int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+Not access..
+
+protected..
+class A 
+{
+    protected class B 
+    {
+        protected int a=6;
+        protected int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+
+
+------------------------------------------------
+ class A
+	class B :private ,protected, public 
+		instance vairable :
+		two number addition method :private ,protected, public
+
+Main class 
+access
+---
+Ans...
+Protected..
+class A 
+{
+    protected class B 
+    {
+        int a=6;
+        int b=3;
+        protected void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+
+Public..
+class A 
+{
+    public class B 
+    {
+        int a=6;
+        int b=3;
+        public void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+
+Private..
+class A 
+{
+    private class B 
+    {
+        int a=6;
+        int b=3;
+        private void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+Not access..
+
+------------------------------------------------
+	
+ class A
+	class B :private ,protected, public 
+		instance vairable :private ,protected, public
+		two number addition method :private ,protected, public
+
+Main class 
+access
+---
+Ans...
+Private..
+class A 
+{
+    private class B 
+    {
+        private int a=6;
+        private int b=3;
+        private void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+Not access
+
+Public...
+class A 
+{
+    public class B 
+    {
+        public int a=6;
+        public int b=3;
+        public void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+
+protected..
+class A 
+{
+    protected class B 
+    {
+        protected int a=6;
+        protected int b=3;
+        protected void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        A obj=new A();
+        A.B obj1= obj.new B();
+        obj1.show();
+    }
+}
+-----------------------------------------------------------
+ class A
+	class B :private ,protected, public 
+		instance vairable :
+		two number addition method :
+
+class C ex A 
+
+Main class 
+access
+---
+Ans...
+public..
+class A 
+{
+    public class B 
+    {
+        int a=6;
+        int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+
+private...
+class A 
+{
+    private class B 
+    {
+        int a=6;
+        int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+Not access..
+
+protected..
+class A 
+{
+    protected class B 
+    {
+        int a=6;
+        int b=3;
+        void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+----------------------------------------------
+ class A
+	class B :private ,protected, public 
+		instance vairable :private ,protected, public
+		two number addition method :private ,protected, public
+
+class C ex A 
+
+Main class 
+access
+----
+Ans...
+protected..
+class A 
+{
+    protected class B 
+    {
+        protected int a=6;
+        protected int b=3;
+        protected void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+
+public..
+class A 
+{
+    public class B 
+    {
+        public int a=6;
+        public int b=3;
+        public void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+
+private..
+class A 
+{
+    private class B 
+    {
+        private int a=6;
+        private int b=3;
+        private void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+------------------------------------------------------------------
+ class A
+	class B : 
+		instance vairable :private ,protected, public
+		two number addition method :
+
+class C ex A 
+
+Main class 
+access
+----
+Ans...
+private...
+class A 
+{
+     class B 
+    {
+        private int a=6;
+        private int b=3;
+         void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+Yes access.
+
+public..
+class A 
+{
+     class B 
+    {
+        public int a=6;
+        public int b=3;
+         void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+
+protected...
+class A 
+{
+     class B 
+    {
+        protected int a=6;
+        protected int b=3;
+         void show()
+        {
+            System.out.println(a+b);
+        }
+    }
+}
+class C extends A 
+{
+    
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      C obj=new C();
+      A.B obj1=obj.new B();
+      obj1.show();
+      
+    }
+}
+-------------------------------------------------------------------
