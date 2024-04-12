@@ -1,0 +1,269 @@
+wrapper class :
+5 data : insertion 
+
+print :direction object 
+------
+String 
+----
+Ans..
+print :direction object
+import java.util.ArrayList;
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<String> al=new ArrayList<>();
+        al.add("my");
+        al.add("name");
+        al.add("is");
+        al.add("manish");
+        System.out.println(al);
+    }
+}
+-----------------------------------------
+Integer
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> obj=new ArrayList<>();
+        obj.add(1);
+        obj.add(2);
+        obj.add(3);
+        obj.add(4);
+        obj.add(5);
+        System.out.println(obj);
+    }
+}
+-----------------------------------------
+Character
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Character> hii =new ArrayList<>();
+        hii.add('m');
+        hii.add('a');
+        hii.add('n');
+        hii.add('i');
+        hii.add('s');
+        hii.add('h');
+        System.out.println(hii);
+    }
+}
+-----------------------------------------
+Byte 
+------
+this question is done by typecasting.
+----------------------------------------
+Short 
+-----
+this question is done by typecasting.
+----------------------------------------
+Float 
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Float> obj=new ArrayList<>();
+        obj.add(10.3f);
+        obj.add(20.25f);
+        obj.add(30.14f);
+        obj.add(40.87f);
+        obj.add(50.22f);
+        System.out.println(obj);
+    }
+}    
+---------------------------------------
+Long 
+----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Long> obj= new ArrayList<>();
+        obj.add(2154L);
+        obj.add(5411L);
+        obj.add(1451L);
+        obj.add(9635L);
+        obj.add(4125L);
+        System.out.println(obj);
+    }
+}
+--------------------------------------
+Double 
+------
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Double> obj= new ArrayList<>();
+        obj.add(563.25241d);
+        obj.add(485.45784d);
+        obj.add(93.1548441d);
+        obj.add(258.2154d);
+        obj.add(482.1524d);
+        System.out.println(obj);
+    }
+}
+----------------------------------------
+Boolean 
+----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Boolean> obj= new ArrayList<>();
+        obj.add(true);
+        obj.add(true);
+        obj.add(true);
+        obj.add(true);
+        obj.add(true);
+        System.out.println(obj);
+    }
+}
+----------------------------------------
+
+for each loop 
+------
+String 
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<String> al =new ArrayList<>();
+        al.add("hello");
+        al.add("hii");
+        al.add("Namstee");
+        al.add("Kaise ho");
+        for(String i : al)
+        {
+            System.out.println(i+" ");
+        }
+    }
+}
+----------------------------------------
+Integer
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> al =new ArrayList<>();
+        al.add(25);
+        al.add(45);
+        al.add(63);
+        al.add(11);
+        for(int i : al)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+----------------------------------------
+Character
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Character> al =new ArrayList<>();
+        al.add('H');
+        al.add('E');
+        al.add('L');
+        al.add('O');
+        for(char i : al)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+----------------------------------------
+Byte 
+
+this question is done by typecasting.
+----------------------------------------
+Short 
+
+this question is done by typecasting.
+----------------------------------------
+Float 
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Float> al =new ArrayList<>();
+        al.add(2.36f);
+        al.add(6.45f);
+        al.add(4.58f);
+        al.add(10.26f);
+        for(float i : al)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+----------------------------------------
+Long 
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Long> al =new ArrayList<>();
+        al.add(1203L);
+        al.add(9635L);
+        al.add(74125L);
+        al.add(745988L);
+        for(long i : al)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+----------------------------------------
+Double 
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Double> al =new ArrayList<>();
+        al.add(120.254d);
+        al.add(9635.3654d);
+        al.add(14451.154d);
+        al.add(7845.1202154d);
+        for(double i : al)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+----------------------------------------
+Boolean 
+
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Boolean> al =new ArrayList<>();
+        al.add(true);
+        al.add(true);
+        al.add(true);
+        al.add(true);
+        for(boolean i : al)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}	
+----------------------------------------------
