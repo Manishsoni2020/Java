@@ -1,0 +1,300 @@
+1)
+user input 
+1
+2
+3
+4
+5
+-----
+Ans...
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of arraylist");
+        int size=sc.nextInt();
+        int x;
+        ArrayList<Integer> al=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter the value of x");
+            x=sc.nextInt();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+-----------------------------------
+CURD operation 
+----
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        // Create
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(5);
+        al.add(8);
+        al.add(7);
+        al.add(41);
+        al.add(12);
+        // Read
+        System.out.println(al);
+        //Update
+        al.set(3,25);
+        System.out.println(al);
+        // Delete
+        al.remove(3);
+        System.out.println(al);
+    }
+}
+-----------------------------------
+size 
+set
+get
+-----
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> al= new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        for(int i=0;i<al.size();i++)
+        {
+            System.out.print(al.get(i)+" ");
+        }
+    }
+}
+-----------------------------------
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+---
+Ans...
+import java.util.*;
+class Book 
+{
+    int id;
+    String name;
+    String author;
+    String publishar;
+    int quantity;
+    Book(int id,String name,String author,String publishar,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publishar=publishar;
+        this.quantity=quantity;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter book id");
+        int a=sc.nextInt();
+        System.out.println("enter book name");
+        String b=sc.next();
+        System.out.println("enter book author");
+        String au=sc.next();
+        System.out.println("enter book publisher");
+        String pu=sc.next();
+        System.out.println("enter book quantity");
+        int q=sc.nextInt();
+        Book obj=new Book(a, b, au, pu, q);
+        ArrayList<Book> al = new ArrayList<Book>();
+        al.add(obj);
+        for(Book i : al)
+        {
+            System.out.println(i.id+" "+i.name+" "+i.author+" "+i.publishar+" "+i.quantity);
+            //System.out.println(i.name);
+           
+        }
+    }
+}
+-----------------------------------
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+ArrayList
+----
+Ans...
+import java.util.*;
+class Employee 
+{
+    int id;
+    String empname;
+    String empfname;
+    String empmname;
+    String company;
+    int salary;
+    Employee(int id,String empname,String empfname,String empmname,String company,int salary)
+    {
+        this.id=id;
+        this.empname=empname;
+        this.empfname=empfname;
+        this.empmname=empmname;
+        this.company=company;
+        this.salary=salary;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter employee id");
+        int a=sc.nextInt();
+        System.out.println("enter employee name");
+        String b=sc.next();
+        System.out.println("enter employee father name");
+        String au=sc.next();
+        System.out.println("enter employee mothre name ");
+        String pu=sc.next();
+        System.out.println("enter employee compnay name ");
+        String co=sc.next();
+        System.out.println("enter employee salary");
+        int q=sc.nextInt();
+        Employee obj=new Employee(a, b, au, pu, co, q);
+        ArrayList<Employee> al = new ArrayList<Employee>();
+        al.add(obj);
+        for(Employee i : al)
+        {
+            System.out.println(i.id+" "+i.empname+" "+i.empfname+" "+i.empmname+" "+i.company+" "+i.salary);
+            //System.out.println(i.name);
+           
+        }
+    }
+}
+-----------------------------------------------
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+----
+Ans..
+import java.util.*;
+class Student
+{
+    String name;
+    String fname;
+    String mname;
+    int class1;
+    int year;
+    String address;
+    int number;
+    String booldgroup;
+    Student(String name,String fname,String mname,int class1,int year,String address,int number,String bloodgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.class1=class1;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.booldgroup=booldgroup;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter name ");
+        String n=sc.next();
+        System.out.println("enter father name ");
+        String fn=sc.next();
+        System.out.println("enter mother name ");
+        String mn=sc.next();
+        System.out.println("enter class ");
+        int c=sc.nextInt();
+        System.out.println("enter year");
+        int y=sc.nextInt();
+        System.out.println("enter address ");
+        String ad=sc.next();
+        System.out.println("enter number ");
+        int nu=sc.nextInt();
+        System.out.println("enter bloodgroup ");
+        String bg=sc.next();
+        Student obj=new Student(n, fn, mn, c, y, ad, nu, bg);
+        ArrayList<Student> al =new ArrayList<Student>();
+        al.add(obj);
+        for(Student i : al)
+        {
+            System.out.println(i.name);
+            System.out.println(i.fname);
+            System.out.println(i.mname);
+            System.out.println(i.class1);
+            System.out.println(i.year);
+            System.out.println(i.address);
+            System.out.println(i.number);
+            System.out.println(i.booldgroup);
+        }
+    }
+}
+----------------------------------
+even number in arraylist 
+---
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> al= new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        for(int i=0;i<al.size();i++)
+        {
+            if(al.get(i)%2==0)
+            {
+                System.out.print(al.get(i)+" ");
+            }
+        }
+    }
+}
+-----------------------------------
+odd number in arraylist 
+---
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        List<Integer> li= new ArrayList<>();
+        li.add(1);
+        li.add(2);
+        li.add(3);
+        li.add(4);
+        li.add(5);
+        for(int i=0;i<li.size();i++)
+        {
+            if(li.get(i)%2!=0)
+            {
+                System.out.print(li.get(i)+" ");
+            }
+        }
+    }
+}
+-----------------------------------
