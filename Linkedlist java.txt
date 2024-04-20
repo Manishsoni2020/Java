@@ -1,0 +1,291 @@
+---------------------------------------------------------
+add : 
+
+arraylist 
+al1
+
+al2--->al1
+
+al3-->a2
+
+al4-->al3
+
+al5 --->al4
+----
+Ans...
+import java.util.ArrayList;
+
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(250);
+        al.add(40);
+        al.add(50);
+        System.out.println(al);
+        ArrayList<Integer> al1=new ArrayList<>();
+        al1.add(26);
+        al1.add(240);
+        al1.add(450);
+        System.out.println(al1);
+        al1.addAll(al);
+        ArrayList<Integer> al2=new ArrayList<>();
+        al2.add(36);
+        al2.add(41);
+        al2.add(98);
+        System.out.println(al2);
+        al2.addAll(al1);
+        ArrayList<Integer> al3=new ArrayList<>();
+        al3.add(52);
+        al3.add(12);
+        al3.add(78);
+        System.out.println(al3);
+        al3.addAll(al2);
+        ArrayList<Integer> al4=new ArrayList<>();
+        al4.add(84);
+        al4.add(41);
+        al4.add(63);
+        System.out.println(al4);
+        al4.addAll(al3);
+        System.out.println(al4);
+
+    }
+}
+-------------------------------------------------
+number :sort on arraylist 
+----
+Ans...
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(250);
+        al.add(40);
+        al.add(50);
+        System.out.println(al);
+        Collections.sort(al);
+        System.out.println(al);
+    }
+}
+-------------------------------------------------------
+linkedlist : 
+hetrogenous data print 
+----
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedList al=new LinkedList<>();
+        al.add(36);
+        al.add(74);
+        al.add(12);
+        System.out.println(al);
+    }
+}
+-----------------------------------
+LinkedList :homogenous 
+
+all wrapper classes data try 
+----
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> ra=new LinkedList<>();
+        ra.add(25);
+        ra.add(36);
+        ra.add(85);
+        System.out.println(ra);
+    }
+}
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Long> ra=new LinkedList<>();
+        ra.add(2525L);
+        ra.add(3615L);
+        ra.add(8545L);
+        System.out.println(ra);
+    }
+}
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Float> ra=new LinkedList<>();
+        ra.add(25.25F);
+        ra.add(36.15F);
+        ra.add(85.45F);
+        System.out.println(ra);
+    }
+}
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Double> ra=new LinkedList<>();
+        ra.add(25.258541D);
+        ra.add(36.15784D);
+        ra.add(85.45741D);
+        System.out.println(ra);
+    }
+}
+----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Character> ra=new LinkedList<>();
+        ra.add('C');
+        ra.add('R');
+        ra.add('T');
+        System.out.println(ra);
+    }
+}
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<String> ra=new LinkedList<>();
+        ra.add("Manish");
+        ra.add("Rakesh");
+        ra.add("Akshay");
+        System.out.println(ra);
+    }
+}
+-----
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Boolean> ra=new LinkedList<>();
+        ra.add(true);
+        ra.add(false);
+        ra.add(true);
+        System.out.println(ra);
+    }
+}
+----
+Short and Byte not possible without typecasting
+-----------------------------------
+linkedlist : 
+hetrogenous data print 
+->through loop 
+----
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedList al=new LinkedList<>();
+        al.add(36);
+        al.add(74);
+        al.add(12);
+        for(Object i : al)
+        {
+            System.out.println(i+" ");
+        }
+    }
+}
+----------------------------------------------
+LinkedList :homogenous 
+
+all wrapper classes data try 
+->through loop 
+----
+Ans...
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(25);
+        al.add(36);
+        al.add(12);
+        for(int i : al)
+        {
+            System.out.print(i+" ");
+        }       
+    }
+}
+---------
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Long> al=new LinkedList<>();
+        al.add(25235L);
+        al.add(36454L);
+        al.add(1246L);
+        for(long i : al)
+        {
+            System.out.print(i+" ");
+        }       
+    }
+}
+--------
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Double> al=new LinkedList<>();
+        al.add(25235.3656D);
+        al.add(36454.15484D);
+        al.add(1246.897454D);
+        for(double i : al)
+        {
+            System.out.print(i+" ");
+        }       
+    }
+}
+-------
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Float> al=new LinkedList<>();
+        al.add(35.36F);
+        al.add(36.15F);
+        al.add(12.895F);
+        for(float i : al)
+        {
+            System.out.print(i+" ");
+        }       
+    }
+}
+------
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<String> al=new LinkedList<>();
+        al.add("manish");
+        al.add("rakesh");
+        al.add("suresh");
+        for(String i : al)
+        {
+            System.out.print(i+" ");
+        }       
+    }
+}
+------
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Character> al=new LinkedList<>();
+        al.add('H');
+        al.add('i');
+        al.add('i');
+        for(char i : al)
+        {
+            System.out.print(i+" ");
+        }       
+    }
+}
+----------------------------------------------
