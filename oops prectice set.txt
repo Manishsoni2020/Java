@@ -1,0 +1,471 @@
+1:
+Create a Java class named Person with private attributes name and age. Provide a constructor to initialize these attributes and methods to get and set them.
+---
+Ans...
+import java.util.*;
+class Person 
+{
+    private String name;
+    private int age;
+    Person(String name,int age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    int getA()
+    {
+        return age;
+    } 
+    String getB()
+    {
+        return name;
+    }
+    void show()
+    {
+        System.out.println(name+" "+age);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your name ");
+        String name=sc.nextLine();
+        System.out.println("enter your age");
+        int age=sc.nextInt();
+        Person obj=new Person(name, age);
+        obj.show();
+    }
+}
+-----------------------------------------
+2:
+Create a subclass Student that extends the Person class. Add a private attribute studentId and provide methods to get and set it.
+---
+Ans...
+import java.util.*;
+class Person
+{
+    private int studentid;
+    void setA(int studentid)
+    {
+        this.studentid=studentid;
+    }
+    int getA()
+    {
+        return studentid;
+    }
+    void show()
+    {
+        System.out.println(studentid);
+    }
+}
+class Student extends Person
+{
+
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Student s=new Student();
+        s.setA(5);
+        s.show();
+    }
+}
+-----------------------------------------
+3:
+Create an interface Shape with a method calculateArea(). Implement this interface with classes Circle and Rectangle.
+----
+Ans...
+interface Shape 
+{
+    void calculatearea();
+}
+class Circle implements Shape
+{
+    public void calculatearea()
+    {
+        System.out.println("circle area ");
+    }
+}
+class Rectangle implements Shape
+{
+    public void calculatearea()
+    {
+        System.out.println("rectangle area");
+    }
+}
+public class Main
+{
+    public static void main(String[] args) {
+        Circle obj= new Circle();
+        obj.calculatearea();
+        Rectangle obj1=new Rectangle();
+        obj1.calculatearea();
+    }
+}
+-------------------------------------------------------
+4:
+Create a class BankAccount with attributes accountNumber, balance, and owner. Add methods to deposit and withdraw funds.
+---
+Ans...
+import java.util.*;
+class BankAccount 
+{
+    private int accountnumber;
+    private int balance;
+    private String owner;
+    void setA(int accountnumber,int balance,String owner)
+    {
+        this.accountnumber=accountnumber;
+        this.balance=balance;
+        this.owner=owner;
+    }
+    int getA()
+    {
+        return accountnumber;
+    }
+    int getB()
+    {
+        return balance;
+    }
+    String getC()
+    {
+        return owner;
+    }
+    void deposit()
+    {
+        Scanner sc=new Scanner(System.in);
+        int am=10000;
+        System.out.println("your current balance is "+am);
+        System.out.println("how much amount you deposit");
+        int de=sc.nextInt();
+        int result=am+de;
+        System.out.println("now balance is "+result);
+
+    }
+    void withdraw()
+    {
+        Scanner sc=new Scanner(System.in);
+        int am=10000;
+        System.out.println("your current balance is "+am);
+        System.out.println("how much amount you withdraw");
+        int wi=sc.nextInt();
+        int result=am-wi;
+        System.out.println("now balance is "+result);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        BankAccount obj=new BankAccount();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("welcome to SBI Bank");
+        System.out.println("deposit || withdraw");
+        String s=sc.nextLine();
+        if(s.equals("deposit"))
+        {
+            obj.deposit();
+        }
+        else if(s.equals("withdraw"))
+        {
+            obj.withdraw();
+        }
+    }
+} 
+----------------------------------------------------------------
+5:
+Create an abstract class Animal with a method makeSound(). Create subclasses Dog and Cat that implement this method.
+----
+Ans...
+abstract class Animal 
+{
+    abstract void makesound();
+}
+class Dog extends Animal
+{
+    void makesound()
+    {
+        System.out.println("dog class ");
+    }
+}
+class Cat extends Animal
+{
+    void makesound()
+    {
+        System.out.println("cat class ");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Dog obj=new Dog();
+        obj.makesound();
+        Cat obj1=new Cat();
+        obj1.makesound();
+    }
+}
+----------------------------------------------------------------
+6:
+Create a Car class with private attributes make, model, and year. Provide a parameterless constructor and a constructor that takes these attributes as parameters.
+---
+Ans...
+class Car
+{
+    private String make;
+    private String model;
+    private int year;
+    Car()
+    {
+        System.out.println("first constructor");
+    }
+    Car(String make,String model,int year)
+    {
+        this.make=make;
+        this.model=model;
+        this.year=year;
+    }
+    String getA()
+    {
+        return make;
+    }
+    String getB()
+    {
+        return model;
+    }
+    int getC()
+    {
+        return year;
+    }
+    void show()
+    {
+        System.out.println("this is make "+make);
+        System.out.println("this is model "+model);
+        System.out.println("this is year "+year);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Car obj=new Car("suzuki"," yg 2017", 2012);
+        obj.show();
+    }
+}
+--------------------------------------------------------------------------------
+7:
+Create a class Calculator with methods for addition, subtraction, multiplication, and division. Use method overloading to handle different argument types.
+----
+Ans...   
+class Calculator 
+{
+    void show(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("division is "+c);
+    }
+    void show(int a,int b,int c)
+    {
+        int z=a+b+c;
+        System.out.println("sum is "+z);
+    }
+    void show(int a,int b,int c,int d)
+    {
+        int y=a-b-c-d;
+        System.out.println("sub is "+y);
+    }
+    void show(int a,int b,int c,int d,int e)
+    {
+        int x=a*b*c*d*e;
+        System.out.println("mul is "+x);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Calculator obj=new Calculator();
+        obj.show(10, 2);
+        obj.show(10, 20, 30);
+        obj.show(63, 14, 10, 22);
+        obj.show(5, 4, 8, 6, 3);
+    }
+}
+--------------------------------------------------------------------------------
+9:
+Create an interface Playable with a method play(). Implement this interface with classes Guitar and Piano.
+----
+Ans..
+interface Playable
+{
+    void play();
+}
+class Guitar implements Playable
+{
+    public void play()
+    {
+        System.out.println("I can play Guitar");
+    }
+}
+class Piano implements Playable 
+{
+    public void play()
+    {
+        System.out.println("I can play piano");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Guitar obj=new Guitar();
+        obj.play();
+        Piano obj1=new Piano();
+        obj1.play();
+    }
+}
+-----------------------------------------------------------------------------------
+10:
+Create an abstract class Shape with an abstract method calculateArea(). Implement this class with subclasses Circle and Rectangle.
+----
+Ans..
+abstract class Shape
+{
+    abstract void calculateArea();
+}
+class Circle extends Shape
+{
+    public void calculateArea()
+    {
+        System.out.println("circle class ");
+    }
+}
+class Rectangle extends Shape
+{
+    public void calculateArea()
+    {
+        System.out.println("Rectangle class ");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Circle obj=new Circle();
+        obj.calculateArea();
+        Rectangle obj1=new Rectangle();
+        obj1.calculateArea();
+    }
+}
+*****************************************************************************************************************
+		MODERATE LEVEL 
+1:
+Create a class Book with private attributes title and author. Implement the equals() method to compare two Book objects based on their title and author.
+----
+Ans...
+incomplete
+class Book 
+{
+    private String title;
+    private String author;
+    void equals(String title,String author)
+    {
+        this.author=author;
+        this.title=title;
+    }
+    String getA()
+    {
+        return author;
+    }
+    String getB()
+    {
+        return title;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        
+    }
+}
+---------------------------------------------------------------
+2:
+Create an interface Playable with a default method playMusic(). Create a class MP3Player that implements this interface and overrides the default method.
+---
+Ans...
+not possible
+-------------------------------------------------------------------
+3:
+Create an abstract class Shape with abstract methods calculateArea() and calculatePerimeter(). Implement this class with subclasses Circle and Rectangle.
+---
+Ans..
+abstract class Shape
+{
+    abstract void calculatearea();
+    abstract void calculateareaperimeter();
+}
+class Circle extends Shape
+{
+    public void calculatearea()
+    {
+        System.out.println("circle cal area");
+    }
+    public void calculateareaperimeter()
+    {
+        System.out.println("circle calper area");
+    }
+}
+class Rectangle extends Shape
+{
+    public void calculatearea()
+    {
+        System.out.println("ract cal area");
+    }
+    public void calculateareaperimeter()
+    {
+        System.out.println("ract calper area");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Circle obj=new Circle();
+        obj.calculatearea();
+        obj.calculateareaperimeter();
+        Rectangle obj1=new Rectangle();
+        obj1.calculatearea();
+        obj1.calculateareaperimeter();
+    }
+}
+------------------------------------------------------------------------------
+4:
+Create an interface Printable with a method print(). Implement this interface with classes Document and Image.
+---
+Ans...
+interface Printable
+{
+    void print();
+}
+class Document implements Printable
+{
+    public void print()
+    {
+        System.out.println("document class ");
+    }
+}
+class Image implements Printable
+{
+    public void print()
+    {
+        System.out.println("Image class ");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Document obj=new Document();
+        obj.print();
+        Image obj1=new Image();
+        obj1.print();
+    }
+}
+--------------------------------------------------------------
