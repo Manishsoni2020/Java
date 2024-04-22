@@ -1,0 +1,474 @@
+user input :
+1)linkedlist :
+all wrapper class
+---
+Ans...
+Integer
+import java.util.*;
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of Linkedlist");
+        int size=sc.nextInt();
+        int x;
+        LinkedList<Integer> al=new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the value of x");
+            x=sc.nextInt();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+-----
+Long
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of linkedlist");
+        int size=sc.nextInt();
+        long x;
+        LinkedList<Long> al =new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.nextLong();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+----
+Float
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of LinkedList");
+        int size=sc.nextInt();
+        Float x;
+        LinkedList<Float> al=new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element is list");
+            x=sc.nextFloat();
+            al.add(x);   
+        }
+        System.out.println(al);
+    }
+}
+----
+String
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of LinkedList");
+        int size=sc.nextInt();
+        String x;
+        LinkedList<String> al=new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element ");
+            x=sc.next();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+----
+double
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of LinkedList");
+        int size=sc.nextInt();
+        Double x;
+        LinkedList<Double> al=new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element ");
+            x=sc.nextDouble();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+-----
+Charchter
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of LinkedList");
+        int size=sc.nextInt();
+        char x;
+        LinkedList<Character> al=new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element ");
+            x=sc.next().charAt(0);
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+-----------------------------------
+2)
+12 56 78 54 32 12 
+----
+for loop
+Ans..
+import java.util.LinkedList;
+
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(63);
+        al.add(41);
+        al.add(25);
+        System.out.println(al);
+        for(int i=0;i<al.size();i++)
+        {
+            System.out.print(al.get(i)+" ");
+        }
+    }
+}
+----
+for each loop
+Ans..
+import java.util.LinkedList;
+
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(63);
+        al.add(41);
+        al.add(25);
+        System.out.println(al);
+        for(int i : al)
+        {
+            System.out.print(i+" ");
+        }    
+    }
+}
+---- 
+Iterator 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(63);
+        al.add(41);
+        al.add(25);
+        Iterator itr= al.iterator();
+        while (itr.hasNext()) {
+            System.out.print(itr.next());
+        }
+    }
+}
+----------------------------------
+3)
+user input 
+1
+2
+3
+4
+5
+---
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of LinkedList");
+        int size=sc.nextInt();
+        int x;
+        LinkedList<Integer> al=new LinkedList<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element ");
+            x=sc.nextInt();
+            al.add(x);
+        }
+        System.out.print(al);
+    }
+}
+-----------------------------------
+CURD operation 
+----
+Ans...import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        // create
+        LinkedList<Integer> al = new LinkedList<>();
+        al.add(36);
+        al.add(25);
+        al.add(36);
+        // read
+        System.out.println(al);
+        al.set(2, 99);
+        // update  
+        System.out.println(al);
+        //delete
+        al.remove(2);
+        System.out.println(al);
+
+    }
+}
+-----------------------------------
+size 
+set
+get
+----
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(56);
+        al.add(12);
+        al.add(87);
+        for(int i=0;i<al.size();i++)
+        {
+            System.out.print(al.get(i)+" ");
+        }
+    }
+}
+-----------------------------------
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+----
+Ans..
+import java.util.*;
+class Book
+{
+    int id;String name;String author;String publisher;int quantity;
+    Book(int id,String name,String author,String publisher,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+        this.quantity=quantity;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter book id");
+        int d=sc.nextInt();
+        System.out.println("enter book name");
+        String n=sc.next();
+        System.out.println("enter author");
+        String a=sc.next();
+        System.out.println("enter publisher");
+        String p=sc.next();
+        System.out.println();
+        System.out.println("enter quantity");
+        int q=sc.nextInt();
+        Book obj=new Book(d, n, a, p, q);
+        LinkedList<Book> al=new LinkedList<>();
+        al.add(obj);
+        for(Book i : al)
+        {
+            System.out.println(i.id);
+            System.out.println(i.name);
+            System.out.println(i.author);
+            System.out.println(i.publisher);
+            System.out.println(i.quantity);
+        }
+    }
+}
+-----------------------------------
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+linkedlist
+----
+Ans...
+import java.util.*;
+class Employee
+{
+    int id;String name;String fname;String mname;String company;int salary;
+    Employee(int id,String name,String fname,String mname,String company,int salary)
+    {
+        this.id=id;
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.company=company;
+        this.salary=salary;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter emp id");
+        int d=sc.nextInt();
+        System.out.println("emp name");
+        String n=sc.next();
+        System.out.println("emp father name");
+        String fn=sc.next();
+        System.out.println("emp mother name");
+        String mn=sc.next();
+        System.out.println("emp company");
+        String c=sc.next();
+        System.out.println();
+        System.out.println("emp salary");
+        int s=sc.nextInt();
+        Employee obj=new Employee(d, n, fn, mn, c, s);
+        LinkedList<Employee> al =new LinkedList<>();
+        al.add(obj);
+        for(Employee i : al)
+        {
+            System.out.println(i.id);
+            System.out.println(i.name);
+            System.out.println(i.fname);
+            System.out.println(i.mname);
+            System.out.println(i.company);
+            System.out.println(i.salary);
+        }
+    }
+}
+-----------------------------------------------
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+----
+Ans..
+import java.util.*;
+class Student
+{
+    String name;String fname;String mname;int year;String address;int number;String bloodgroup;
+    Student(String name,String fname,String mname,int year,String address,int number,String bloodgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.bloodgroup=bloodgroup;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Student name");
+        String n=sc.next();
+        System.out.println("st father name");
+        String fn=sc.next();
+        System.out.println("st mother name");
+        String mn=sc.next();
+        System.out.println();
+        System.out.println("st year");
+        int y=sc.nextInt();
+        System.out.println("st address");
+        String c=sc.next();
+        System.out.println("st contact");
+        int s=sc.nextInt();
+        System.out.println("st bloodgroup");
+        String b=sc.next();
+        Student obj=new Student(n, fn, mn, y, c, s, b);
+        LinkedList<Student> al =new LinkedList<>();
+        al.add(obj);
+        for(Student i : al)
+        {
+            System.out.println(i.name);
+            System.out.println(i.fname);
+            System.out.println(i.mname);
+            System.out.println(i.year);
+            System.out.println(i.address);
+            System.out.println(i.number);
+            System.out.println(i.bloodgroup);
+        }
+
+    }
+}
+----------------------------------
+even number in linkedlist 
+---
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(63);
+        al.add(41);
+        al.add(25);
+        al.add(44);
+        al.add(26);
+        for(int i=1;i<al.size();i++)
+        {
+            if(al.get(i)%2==0)
+            {
+                System.out.print(al.get(i)+" ");
+            }
+        }
+    }
+}
+-----------------------------------
+odd number in linkedlist
+---
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(63);
+        al.add(41);
+        al.add(25);
+        al.add(44);
+        al.add(26);
+        for(int i=1;i<al.size();i++)
+        {
+            if(al.get(i)%2!=0)
+            {
+                System.out.print(al.get(i)+" ");
+            }
+        }
+    }
+}
+-------------------------------- 
