@@ -1,0 +1,482 @@
+hashset :
+12
+hello world 
+7.89
+t
+123
+
+direct print 
+---
+Ans...
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        HashSet al=new HashSet<>();
+        al.add(12);
+        al.add("hello world");
+        al.add(7.89);
+        al.add('t');
+        al.add(123);
+        System.out.println(al);
+    }
+}
+---------------------
+for each 
+----
+Ans...
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        HashSet al=new HashSet<>();
+        al.add(12);
+        al.add("hello world");
+        al.add(7.89);
+        al.add('t');
+        al.add(123);
+        for(Object i : al)
+        {
+            System.out.println(i);
+        }
+    }
+}
+--------------------
+iterator 
+----
+Ans..
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        HashSet al=new HashSet<>();
+        al.add(12);
+        al.add("hello world");
+        al.add(7.89);
+        al.add('t');
+        al.add(123);
+        Iterator itr= al.iterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next()+" ");
+        }
+    }
+}
+--------------------------
+user input : 
+
+hashset :
+wrapper classess all 
+
+direct print 
+for each 
+iterator 
+----
+Ans...
+Integer
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of Hashlist");
+        int size=sc.nextInt();
+        int x;
+        HashSet<Integer> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter value for element");
+            x=sc.nextInt();
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+
+Float
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of hashlist");
+        int size=sc.nextInt();
+        Float x;
+        HashSet<Float> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter element values");
+            x=sc.nextFloat();
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+
+Double
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of hashlist");
+        int size=sc.nextInt();
+        Double x;
+        HashSet<Double> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter element values");
+            x=sc.nextDouble();
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+
+String
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of hashlist");
+        int size=sc.nextInt();
+        String x;
+        HashSet<String> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter element values");
+            x=sc.next();
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+
+Charactor
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of hashlist");
+        int size=sc.nextInt();
+        Character x;
+        HashSet<Character> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter element values");
+            x=sc.next().charAt(0);
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+
+Boleen
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of hashlist");
+        int size=sc.nextInt();
+        Boolean x;
+        HashSet<Boolean> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter element values");
+            x=sc.nextBoolean();
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+Long
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of hashlist");
+        int size=sc.nextInt();
+        Long x;
+        HashSet<Long> hs=new HashSet<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("enter element values");
+            x=sc.nextLong();
+            hs.add(x);
+        }
+        System.out.println(hs);
+    }
+}
+--------------------------
+add(E e)
+contains(Object o)
+isEmpty()
+remove(Object o)
+size()
+-------------------------------------------------------
+hashset :
+five data 
+hs1
+
+hs2
+
+hs3
+
+hs4
+
+hs5 
+
+1-->5 
+2-->3
+3--->4 
+---
+Ans..
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        HashSet <Integer> hs=new HashSet<>();
+        hs.add(12);
+        hs.add(5);
+        hs.add(7);
+        HashSet <Integer> hs1=new HashSet<>();
+        hs1.add(33);
+        hs1.add(789);
+        hs1.add(132);
+        HashSet <Integer> hs2=new HashSet<>();
+        hs2.add(56);
+        hs2.add(28);
+        hs2.add(37);
+        HashSet <Integer> hs3=new HashSet<>();
+        hs3.add(655);
+        hs3.add(361);
+        hs3.add(41);
+        HashSet <Integer> hs4=new HashSet<>();
+        hs4.add(96);
+        hs4.add(100);
+        hs4.add(26);
+        hs.addAll(hs4);
+        System.out.println(hs);
+        hs2.addAll(hs3);
+        System.out.println(hs2);
+        hs3.addAll(hs4);
+        System.out.println(hs3);
+        
+        
+    }
+}
+-----
+remove all 
+2-->3 
+---
+Ans...
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        HashSet <Integer> hs=new HashSet<>();
+        hs.add(12);
+        hs.add(5);
+        hs.add(7);
+        HashSet <Integer> hs1=new HashSet<>();
+        hs1.add(33);
+        hs1.add(789);
+        hs1.add(132);
+        HashSet <Integer> hs2=new HashSet<>();
+        hs2.add(56);
+        hs2.add(28);
+        hs2.add(37);
+        HashSet <Integer> hs3=new HashSet<>();
+        hs3.add(655);
+        hs3.add(361);
+        hs3.add(41);
+        HashSet <Integer> hs4=new HashSet<>();
+        hs4.add(96);
+        hs4.add(100);
+        hs4.add(26);
+        hs.addAll(hs4);
+        System.out.println(hs);
+        hs2.addAll(hs3);
+        System.out.println(hs2);
+        hs3.addAll(hs4);
+        System.out.println(hs3);
+        hs2.removeAll(hs3);
+        System.out.println(hs2);
+        
+    }
+}
+-----------------------------------------------------------
+hashset :
+
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+---
+Ans...
+import java.util.*;
+class Book
+{
+    int id;String name;String author;String publisher;int quantity;
+    Book(int id,String name,String author,String publisher,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+        this.quantity=quantity;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Book obj=new Book(2, "manish", "kajal", "geetapress", 5);
+        HashSet<Book> hs=new HashSet<>();
+        hs.add(obj);
+        for(Book i : hs)
+        {
+            System.out.println(i.id);
+            System.out.println(i.name);
+            System.out.println(i.author);
+            System.out.println(i.publisher);
+            System.out.println(i.quantity);
+        }
+
+    }
+}
+-----------------------------------
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+hashset :
+---
+Ans...
+import java.util.*;
+class employee{
+    String empname; int id; String empfname; String empmname; String company; int salary;
+    employee(String empname, int id, String empfname, String empmname,String company, int salary){
+        this.empname=empname;
+        this.id=id;
+        this.empfname=empfname;
+        this.empmname=empmname;
+        this.company=company;
+        this.salary=salary;
+
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter empname");
+        String en=sc.next();
+        System.out.println("enter id");
+        int id=sc.nextInt();
+        System.out.println("enter empfname");
+        String emf=sc.next();
+        System.out.println("enter empmname");
+        String emm=sc.next();
+        System.out.println("enter company");
+        String com =sc.next();
+        System.out.println();
+        System.out.println("enter salary");
+        int sal =sc.nextInt();
+
+        employee obj=new employee(emm, id, emf, emm, com, sal);
+        HashSet<employee> hs=new HashSet<>();
+        hs.add(obj);
+        for(employee i : hs){
+            System.out.println(i.empname);
+            System.out.println(i.id);
+            System.out.println(i.empfname);
+            System.out.println(i.empmname);
+            System.out.println(i.company);
+            System.out.println(i.salary);
+
+        }
+    }
+}
+
+-----------------------------------------------
+hashset :
+
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+----
+Ans...
+import java.util.*;
+class Student
+{
+    String name;String fname;String mname;int classs;int year;String address;int number;String bgroup;
+    Student(String name,String fname,String mname,int classs,int year,String address,int number,String bgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.classs=classs;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.bgroup=bgroup;
+    }
+}
+public class Main
+{
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter name");
+       String n=sc.next();
+       System.out.println("enter fname");
+       String fn=sc.next();
+       System.out.println("enter mname");
+       String mn=sc.next();
+       System.out.println("enter class");
+       int c=sc.nextInt();
+       System.out.println("enter year");
+       int y=sc.nextInt();
+       System.out.println("enter address");
+       String ad=sc.next();
+       System.out.println();
+       System.out.println("enter number");
+       int nu=sc.nextInt();
+       System.out.println();
+       System.out.println("enter bloodgroup");
+       String bg=sc.next();
+       Student obj=new Student(n, fn, mn, c, y, ad, nu, bg);
+       HashSet<Student> hs=new HashSet<>();
+       hs.add(obj);
+       for(Student i : hs)
+       {
+        System.out.println(i.name);
+        System.out.println(i.fname);
+        System.out.println(i.mname);
+        System.out.println(i.classs);
+        System.out.println(i.year);
+        System.out.println(i.address);
+        System.out.println(i.number);
+        System.out.println(i.bgroup);
+       }
+    }
+}
+====================================================================
