@@ -1,0 +1,464 @@
+LinkedHashSet :
+12
+hello world 
+7.89
+t
+123
+
+direct print 
+---
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedHashSet hs= new LinkedHashSet<>();
+        hs.add(36);
+        hs.add("hello world");
+        hs.add(7.89);
+        hs.add('t');
+        hs.add(123);
+        System.out.println(hs);
+    }
+}
+-------------------
+for each 
+---
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedHashSet hs= new LinkedHashSet<>();
+        hs.add(36);
+        hs.add("hello world");
+        hs.add(7.89);
+        hs.add('t');
+        hs.add(123);
+        for(Object i : hs)
+        {
+            System.out.println(i);
+        }
+    }
+}
+-------------------
+iterator 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedHashSet hs= new LinkedHashSet<>();
+        hs.add(36);
+        hs.add("hello world");
+        hs.add(7.89);
+        hs.add('t');
+        hs.add(123);
+        Iterator itr=hs.iterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next()+" ");
+        }
+    }
+}
+--------------------------
+user input : 
+
+LinkedHashSet :
+wrapper classess all 
+
+direct print 
+for each 
+iterator 
+-----
+Ans...
+Integer
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Integer> al=new HashSet<>();
+        al.add(58);
+        al.add(87);
+        al.add(96);
+        al.add(77);
+        System.out.println(al);
+    }
+}
+
+Float
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Float> al=new HashSet<>();
+        al.add(58.36f);
+        al.add(87.9878f);
+        al.add(956.124f);
+        al.add(7712.36f);
+        System.out.println(al);
+    }
+}
+
+Double
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Double> al=new HashSet<>();
+        al.add(58.368955D);
+        al.add(87.9878885D);
+        al.add(95876.124D);
+        al.add(7712.3687554D);
+        System.out.println(al);
+    }
+}
+
+String
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<String> al=new HashSet<>();
+        al.add("manish");
+        al.add("nisha");
+        al.add("rakesh");
+        al.add("vishu");
+        System.out.println(al);
+    }
+}
+
+Charector
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Character> al=new HashSet<>();
+        al.add('m');
+        al.add('n');
+        al.add('i');
+        al.add('s');
+        System.out.println(al);
+    }
+}
+
+Boleen
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Boolean> al=new HashSet<>();
+        al.add(true);
+        al.add(false);
+        al.add(true);
+        al.add(false);
+        System.out.println(al);
+    }
+}
+Long
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Long> al=new HashSet<>();
+        al.add(8756532L);
+        al.add(86522335L);
+        al.add(234568491L);
+        al.add(3366998844L);
+        System.out.println(al);
+    }
+}
+--------------------------
+add
+---
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Integer> al=new HashSet<>();
+        al.add(8);
+        al.add(865);
+        al.add(23);
+        al.add(336);
+        System.out.println(al);
+        HashSet<Integer> al1=new HashSet<>();
+        al1.add(88);
+        al1.add(86);
+        al1.add(223);
+        al1.add(936);
+        System.out.println(al1);
+        al.addAll(al1);
+        System.out.println(al);
+    }
+}
+-------------------------
+remove 
+----
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Integer> al=new HashSet<>();
+        al.add(8);
+        al.add(865);
+        al.add(23);
+        al.add(336);
+        System.out.println(al);
+        HashSet<Integer> al1=new HashSet<>();
+        al1.add(88);
+        al1.add(86);
+        al1.add(223);
+        al1.add(936);
+        System.out.println(al1);
+        al.addAll(al1);
+        System.out.println(al);
+        al.removeAll(al1);
+        System.out.println(al);
+    }
+}
+-------------------------------------------------------
+LinkedHashSet :
+five data 
+hs1
+
+hs2
+
+hs3
+
+hs4
+
+hs5 
+
+1-->5 
+2-->3
+3--->4 
+
+remove all 
+2-->3 
+----
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<Integer> al=new HashSet<>();
+        al.add(8);
+        al.add(865);
+        al.add(23);
+        al.add(336);
+        System.out.println(al);
+        HashSet<Integer> al1=new HashSet<>();
+        al1.add(88);
+        al1.add(86);
+        al1.add(223);
+        al1.add(936);
+        HashSet<Integer> al2=new HashSet<>();
+        al2.add(88);
+        al2.add(86);
+        al2.add(223);
+        al2.add(936);
+        HashSet<Integer> al3=new HashSet<>();
+        al3.add(88);
+        al3.add(86);
+        al3.add(223);
+        al3.add(936);
+        HashSet<Integer> al4=new HashSet<>();
+        al4.add(88);
+        al4.add(86);
+        al4.add(223);
+        al4.add(936);
+        //add all
+        al.addAll(al4);
+        System.out.println(al);
+        al2.addAll(al3);
+        System.out.println(al2);
+        al3.addAll(al4);
+        // remove all
+        al2.removeAll(al3);
+        System.out.println(al2);
+    }
+}
+-----------------------------------------------------------
+LinkedHashSet :
+aggregation : 
+
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+------
+Ans...
+Book.java...
+import java.util.*;
+class Book
+{
+    int id;String name;String author;String publisher;int quantity;
+    Book(int id,String name,String author,String publisher,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+        this.quantity=quantity;
+    }
+}
+
+Main.java...
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter book id");
+        int d=sc.nextInt();
+        System.out.println("enter book name");
+        String n=sc.next();
+        System.out.println("enter author");
+        String a=sc.next();
+        System.out.println("enter publisher");
+        String p=sc.next();
+        System.out.println();
+        System.out.println("enter quantity");
+        int q=sc.nextInt();
+        Book obj = new Book(d, n, a, p, q);
+        LinkedHashSet<Book> ls=new LinkedHashSet<>();
+        ls.add(obj);
+        for(Book i : ls)
+        {
+            System.out.println(i.id );
+            System.out.println(i.name);
+            System.out.println(i.author);
+            System.out.println(i.publisher);
+            System.out.println(i.quantity);
+        }
+    }
+}
+-----------------------------------------------
+user input =>
+
+LinkedHashSet :
+
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+aggregation : 
+
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+LinkedHashSet :
+Ans...
+Employee.java...
+class Employee
+{
+    int id;String name;String fname;String mname;String company;int salary;
+    Employee(int id,String name,String fname,String mname,String company,int salary)
+    {
+        this.id=id;
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.company=company;
+        this.salary=salary;
+    }
+}
+
+Student.java..
+class Student
+{
+    String name;String fname;String mname;int classs;int year;String address;int number;String bgroup;
+    Student(String name,String fname,String mname,int classs,int year,String address,int number,String bgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.classs=classs;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.bgroup=bgroup;
+    }
+}
+
+Main.java..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("student name");
+        String sn=sc.next();
+        System.out.println("student fname");
+        String fsn=sc.next();
+        System.out.println("student mname");
+        String msn=sc.next();
+        System.out.println("class");
+        int c=sc.nextInt();
+        System.out.println("enter year");
+        int y=sc.nextInt();
+        System.out.println();
+        System.out.println("address");
+        String ad=sc.next();
+        System.out.println("enter number");
+        int n=sc.nextInt();
+        System.out.println("bloodgroup");
+        String bg=sc.next();
+        Student obj=new Student(sn, fsn, msn, c, y, ad, n, bg);
+        LinkedHashSet<Student> ls=new LinkedHashSet<>();
+        ls.add(obj);
+        for(Student i : ls)
+        {
+            System.out.println(i.name);
+            System.out.println(i.fname);
+            System.out.println(i.mname);
+            System.out.println(i.classs);
+            System.out.println(i.year);
+            System.out.println(i.address);
+            System.out.println(i.number);
+            System.out.println(i.bgroup);
+        }
+        System.out.println("emp id");
+        int d=sc.nextInt();
+        System.out.println("emp name");
+        String en=sc.next();
+        System.out.println("emp fname");
+        String f=sc.next();
+        System.out.println("emp mname");
+        String m=sc.next();
+        System.out.println("emp company");
+        String o=sc.next();
+        System.out.println();
+        System.out.println("emp salary");
+        int sa=sc.nextInt();
+        Employee obj1=new Employee(d, en, f, m, o, sa);
+        LinkedHashSet<Employee> hs=new LinkedHashSet<>();
+        hs.add(obj1);
+        for(Employee j : hs)
+        {
+            System.out.println(j.id);
+            System.out.println(j.name);
+            System.out.println(j.mname);
+            System.out.println(j.company);
+            System.out.println(j.salary);
+        }
+    }
+}   
+--------------------------------------------------------------
+
