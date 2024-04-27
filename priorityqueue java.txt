@@ -1,0 +1,446 @@
+---------------------------------------------------------------
+all wraperr classes :used :with user input in priority queue 
+---
+Ans...
+Integer
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        int x;
+        PriorityQueue<Integer> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.nextInt();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+
+Float
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        float x;
+        PriorityQueue<Float> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.nextFloat();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+
+Double
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        double x;
+        PriorityQueue<Double> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.nextDouble();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+
+String
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        String x;
+        PriorityQueue<String> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.next();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+
+Long
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        Long x;
+        PriorityQueue<Long> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.nextLong();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+
+Char
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        Character x;
+        PriorityQueue<Character> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.next().charAt(0);
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+
+Boleen
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of priority queue");
+        int size=sc.nextInt();
+        Boolean x;
+        PriorityQueue<Boolean> al=new PriorityQueue<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter the size of element");
+            x=sc.nextBoolean();
+            al.add(x);
+        }
+        System.out.println(al);
+    }
+}
+----------------------------------------------
+string : 5 name 
+make :interface 
+-----
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Queue<String> qu= new PriorityQueue<>();
+        qu.add("my");
+        qu.add("is");
+        qu.add("name");
+        qu.add("manish");
+        System.out.println(qu);
+    }
+}
+----------------------------------------------
+interface k through arraylist , linkedlist , hashset , linkedhashset , treeset, priorityqueue 
+----
+Ans...
+Arraylist
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       List<Integer> qu=new ArrayList<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+Linkedlist
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       List<Integer> qu=new LinkedList<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+Hashset
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Set<Integer> qu=new HashSet<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+LinkedHashset
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Set<Integer> qu=new HashSet<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+TreeSet
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Set<Integer> qu=new TreeSet<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+PriorityQueue
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Queue<Integer> qu=new PriorityQueue<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+-------------------------------------------------------
+PriorityQueue :
+aggregation : 
+
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+------
+Ans...
+import java.util.*;
+class Book implements Comparable<Book>
+{
+    int id;String name;String author;String publisher;int quantity;
+    Book(int id,String name,String author,String publisher,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+        this.quantity=quantity;
+    }
+    public int compareTo(Book k)
+    {
+        if(id>k.id)
+        {
+            return 1;
+        }
+        else if(id<k.id)
+        {
+            return -1;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter id");
+        int d=sc.nextInt();
+        System.out.println("enter name");
+        String n=sc.next();
+        System.out.println("enter author");
+        String a=sc.next();
+        System.out.println("enter publisher");
+        String p=sc.next();
+        System.out.println();
+        System.out.println("enter quantity");
+        int q=sc.nextInt();
+        Book obj=new Book(d, n, a, p, q);
+        PriorityQueue<Book> pq=new PriorityQueue<>();
+        pq.add(obj);
+        for(Book i : pq)
+        {
+            System.out.println(i.id);
+            System.out.println(i.name);
+            System.out.println(i.author);
+            System.out.println(i.publisher);
+            System.out.println(i.quantity);
+        }
+    }
+}
+-------------------------------------------
+user input =>
+
+PriorityQueue :
+
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+aggregation : 
+
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+PriorityQueue :
+-----
+Ans...
+Student.java...
+class Student implements Comparable<Student>
+{
+    String name;String fname;String mname;int classs;int year;String address;int number;String bgroup;
+    Student(String name,String fname,String mname,int classs,int year,String address,int number,String bgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.classs=classs;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.bgroup=bgroup;
+    }
+    public int compareTo(Student o)
+    {
+        if(number>o.number)
+        {
+            return 1;
+        }
+        else if(number<o.number)
+        {
+            return -1;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+}
+
+Employee.java...
+class Employee implements Comparable<Employee>
+{
+    int id;String name;String fname;String mname;String company;int salary;
+    Employee(int id,String name,String fname,String mname,String company,int salary)
+    {
+        this.id=id;
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.company=company;
+        this.salary=salary;
+    }
+    public int compareTo(Employee j)
+    {
+        if(id>j.id)
+        {
+            return 1;
+        }
+        else if(id<j.id) 
+        {
+            return -1;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+}
+
+Main.java...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Student obj=new Student("manish","mahesh", "urmila", 45, 8451, "ujjain", 85245451, "B");
+        PriorityQueue<Student> pq=new PriorityQueue<>();
+        pq.add(obj);
+        for(Student i : pq)
+        {
+            System.out.println(i.name);
+            System.out.println(i.fname);
+            System.out.println(i.mname);
+            System.out.println(i.classs);
+            System.out.println(i.year);
+            System.out.println(i.address);
+            System.out.println(i.number);
+            System.out.println(i.bgroup);
+        }
+        Employee obj1=new Employee(5, "manish", "manoj", "rekha", "regex", 25000);
+        PriorityQueue<Employee> pq1=new PriorityQueue<>();
+        pq1.add(obj1);
+        for(Employee n : pq1)
+        {
+            System.out.println(n.id);
+            System.out.println(n.name);
+            System.out.println(n.fname);
+            System.out.println(n.mname);
+            System.out.println(n.company);
+            System.out.println(n.salary);
+        }
+    }
+}
+--------------------------------------------------------------------
+=======================================================================================================================================================================
