@@ -1,0 +1,460 @@
+                                                                  ArrayDeque
+all wraperr classes :used :with user input in 
+ArrayDeque queue 
+--------
+Ans..
+Integer
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        int x;
+        ArrayDeque<Integer> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.nextInt();
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+
+Long
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        long x;
+        ArrayDeque<Long> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.nextLong();
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+
+Float
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        Float x;
+        ArrayDeque<Float> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.nextFloat();
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+
+Double
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        Double x;
+        ArrayDeque<Double> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.nextDouble();
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+
+String
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        String x;
+        ArrayDeque<String> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.next();
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+
+Char
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        Character x;
+        ArrayDeque<Character> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.next().charAt(0);
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+
+Boollen
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of list");
+        int size=sc.nextInt();
+        Boolean x;
+        ArrayDeque<Boolean> ad=new ArrayDeque<>();
+        for(int i=1;i<=size;i++)
+        {
+            System.out.println("enter element");
+            x=sc.nextBoolean();
+            ad.add(x);
+        }
+        System.out.println(ad);
+    }
+}
+----------------------------------------------
+string : 5 name 
+make :interface 
+----
+Ans....
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Queue<String> qu= new ArrayDeque<>();
+        qu.add("my");
+        qu.add("is");
+        qu.add("name");
+        qu.add("manish");
+        System.out.println(qu);
+    }
+}
+----------------------------------------------
+interface k through arraylist , linkedlist , hashset , linkedhashset , treeset, priorityqueue ,
+ArrayDeque
+Ans...
+Arraylist
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       List<Integer> qu=new ArrayList<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+Linkedlist
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       List<Integer> qu=new LinkedList<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+Hashset
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Set<Integer> qu=new HashSet<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+LinkedHashset
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Set<Integer> qu=new HashSet<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+TreeSet
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Set<Integer> qu=new TreeSet<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+
+PriorityQueue
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+       Queue<Integer> qu=new PriorityQueue<>();
+       qu.add(58);
+       qu.add(74);
+       qu.add(96);
+       qu.add(12);
+       qu.add(33);
+       System.out.println(qu);
+    }
+}
+ArrayDeque
+    import java.util.*;
+    public class Main 
+    {
+        public static void main(String[] args) {
+            Queue<Integer> al=new ArrayDeque<>();
+            al.add(36);
+            al.add(25);
+            al.add(88);
+            System.out.println(al);
+        }
+    }
+---------------------------------------------
+
+ArrayDeque :
+aggregation : 
+
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+-----
+Ans...
+import java.util.*;
+class Book implements Comparable<Book>
+{
+    int id;String name;String author;String publisher;int quantity;
+    Book(int id,String name,String author,String publisher,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+        this.quantity=quantity;
+    }
+    public int compareTo(Book k)
+    {
+        if(id<k.id)
+        {
+            return 1;
+        }
+        else if(id>k.id)
+        {
+            return -1;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+}
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter id");
+        int d=sc.nextInt();
+        System.out.println("enter name");
+        String n=sc.next();
+        System.out.println("enter author");
+        String a=sc.next();
+        System.out.println("enter publisher");
+        String p=sc.next();
+        System.out.println();
+        System.out.println("enter quantity");
+        int q=sc.nextInt();
+        Book obj=new Book(d, n, a, p, q);
+        ArrayDeque<Book> pq=new ArrayDeque<>();
+        pq.add(obj);
+        for(Book i : pq)
+        {
+            System.out.println(i.id);
+            System.out.println(i.name);
+            System.out.println(i.author);
+            System.out.println(i.publisher);
+            System.out.println(i.quantity);
+    }
+}
+}
+-------------------------------------------
+user input =>
+
+
+ArrayDeque :
+
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+aggregation : 
+
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+ArrayDeque :
+---
+Ans..
+Student.java...
+class Student implements Comparable<Student>
+{
+    String name;String fname;String mname;int classs;int year;String address;int number;String bgroup;
+    Student(String name,String fname,String mname,int classs,int year,String address,int number,String bgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.classs=classs;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.bgroup=bgroup;
+    }
+    public int compareTo(Student o)
+    {
+        if(number>o.number)
+        {
+            return 1;
+        }
+        else if(number<o.number)
+        {
+            return -1;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+}
+
+Employee.java...
+class Employee implements Comparable<Employee>
+{
+    int id;String name;String fname;String mname;String company;int salary;
+    Employee(int id,String name,String fname,String mname,String company,int salary)
+    {
+        this.id=id;
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.company=company;
+        this.salary=salary;
+    }
+    public int compareTo(Employee j)
+    {
+        if(id>j.id)
+        {
+            return 1;
+        }
+        else if(id<j.id) 
+        {
+            return -1;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+}
+
+Main.java...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Student obj=new Student("manish","mahesh", "urmila", 45, 8451, "ujjain", 85245451, "B");
+        ArrayDeque<Student> pq=new ArrayDeque<>();
+        pq.add(obj);
+        for(Student i : pq)
+        {
+            System.out.println(i.name);
+            System.out.println(i.fname);
+            System.out.println(i.mname);
+            System.out.println(i.classs);
+            System.out.println(i.year);
+            System.out.println(i.address);
+            System.out.println(i.number);
+            System.out.println(i.bgroup);
+        }
+        Employee obj1=new Employee(5, "manish", "manoj", "rekha", "regex", 25000);
+        ArrayDeque<Employee> pq1=new ArrayDeque<>();
+        pq1.add(obj1);
+        for(Employee n : pq1)
+        {
+            System.out.println(n.id);
+            System.out.println(n.name);
+            System.out.println(n.fname);
+            System.out.println(n.mname);
+            System.out.println(n.company);
+            System.out.println(n.salary);
+        }
+    }
+}
+---------------------------------------------------------------
