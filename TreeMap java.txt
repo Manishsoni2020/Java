@@ -1,0 +1,422 @@
+TreeMap :
+Integer,String 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        hm.put(1, "Hello");
+        hm.put(2, "hii");
+        hm.put(3, "bye");
+        for(Map.Entry m : hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-------------------------------------------------------
+String,Integer 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+       TreeMap<String,Integer> hm=new TreeMap<>();
+       hm.put("hello", 6);
+       hm.put("manish", 7);
+       hm.put("nilesh", 9);
+       for(Map.Entry m:hm.entrySet())
+       {
+        System.out.println(m.getKey()+" "+m.getValue());
+       }
+    }
+}
+-------------------------------------------------------
+Float , String 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+       TreeMap<Float,String> hm=new TreeMap<>();
+       hm.put(1.3f, "jitu");
+       hm.put(2.0f, "ashish");d
+       hm.put(9.25f, "umesh");
+       for(Map.Entry m: hm.entrySet())
+       {
+        System.out.println(m.getKey()+" "+m.getValue());
+       }
+    }
+}
+-------------------------------------------------------
+Float, CHaracter 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Float,Character> hm=new TreeMap<>();
+        hm.put(5.6f, 'h');
+        hm.put(1.2f, 'i');
+        hm.put(3.6f, 'i');
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-------------------------------------------------------
+Float , boolean 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Float,Boolean> hm=new TreeMap<>();
+        hm.put(6.3f, true);
+        hm.put(1.2f, false);
+        hm.put(3.2f, true);
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-------------------------------------------------------
+float, float 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Float,Float> hm=new TreeMap<>();
+        hm.put(6.3f, 5.6f);
+        hm.put(1.2f, 7.1f);
+        hm.put(3.2f, 1.3f);
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+--------------------------------------------------------
+Character,Integer
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Character,Integer> hm=new TreeMap<>();
+        hm.put('k', 5);
+        hm.put('m', 8);
+        hm.put('s', 2);
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-------------------------------------------------------
+Character,String
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Character,String> hm=new TreeMap<>();
+        hm.put('k', "manish");
+        hm.put('m',"rakesh");
+        hm.put('s', "aysuh");
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-------------------------------------------------------
+Character,boolean
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Character,Boolean> hm=new TreeMap<>();
+        hm.put('k', true);
+        hm.put('m',false);
+        hm.put('s',false);
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-------------------------------------------------------
+Character,float
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Character,Float> hm=new TreeMap<>();
+        hm.put('k', 4.6f);
+        hm.put('m',7.4f);
+        hm.put('s',1.36f);
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+--------------------------------------------------------------
+putAll(Map map)
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        hm.put(1,"manish");
+        hm.put(2, "rakesh");
+        hm.put(3, "vivek");
+        TreeMap<Integer,String> hm1=new TreeMap<>();
+        hm1.put(4,"lokesh");
+        hm1.put(5, "sereesh");
+        hm1.put(6, "mahesh");
+        hm.putAll(hm1);
+        for(Map.Entry m: hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+--------------------------------------------------------------
+remove(Object key)
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        hm.put(1,"manish");
+        hm.put(2, "rakesh");
+        hm.put(3, "vivek");
+        System.out.println(hm);
+        hm.remove(2);
+        System.out.println(hm);
+    }
+}
+--------------------------------------------------------------
+get(Object key)
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        hm.put(1,"manish");
+        hm.put(2, "rakesh");
+        hm.put(3, "vivek");
+        System.out.println(hm.get(3));
+    
+}
+}
+--------------------------------------------------------------
+replace(K key, V value)
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        hm.put(1,"manish");
+        hm.put(2, "rakesh");
+        hm.put(3, "vivek");
+        System.out.println(hm);
+        hm.replace(2, "mahesh");
+        System.out.println(hm);
+}
+}
+--------------------------------------------------------------
+size()
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        hm.put(1,"manish");
+        hm.put(2, "rakesh");
+        hm.put(3, "vivek");
+        System.out.println(hm.size());
+    
+}
+}
+-----------------------------------------------------------
+hashmap :
+Integer,String 
+
+user input 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of HashMap");
+        int size=sc.nextInt();
+        int x;
+        String y;
+        TreeMap<Integer,String> hm=new TreeMap<>();
+        for(int i=0;i<=size;i++)
+        {
+            System.out.println("enter element is HashMap");
+            x=sc.nextInt();
+            y=sc.next();
+            hm.put(x, y);
+        }
+        for(Map.Entry m:hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+-----------------------------------------------------------
+Working of TreeMap in Java user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+-----
+Ans...
+import java.util.*;
+class Book
+{
+    int id;String name;String author;String publisher;int quantity;
+    Book(int id,String name,String author,String publisher,int quantity)
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+        this.quantity=quantity;
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) {
+        Book obj=new Book(2, "manish", "kajal", "geetapress", 5);
+        TreeMap<Integer,Book> tm=new TreeMap<Integer,Book>();
+        tm.put(1,obj);
+        for(Map.Entry<Integer,Book> m: tm.entrySet())
+        {
+            int key=m.getKey();
+            Book p=m.getValue();
+            System.out.println(p.id);
+            System.out.println(p.name);
+            System.out.println(p.author);
+            System.out.println(p.publisher);
+            System.out.println(p.quantity);
+        }
+
+    }
+}
+-----------------------------------------------------------
+
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+aggregation : 
+
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+Ans...
+Employee.java..
+class Employee 
+{
+    int id;String name;String fname;String mname;String company;int salary;
+    Employee(int id,String name,String fname,String mname,String company,int salary)
+    {
+        this.id=id;
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.company=company;
+        this.salary=salary;
+    }
+    
+}
+
+Student.java...
+class Student 
+{
+    String name;String fname;String mname;int classs;int year;String address;int number;String bgroup;
+    Student(String name,String fname,String mname,int classs,int year,String address,int number,String bgroup)
+    {
+        this.name=name;
+        this.fname=fname;
+        this.mname=mname;
+        this.classs=classs;
+        this.year=year;
+        this.address=address;
+        this.number=number;
+        this.bgroup=bgroup;
+    }
+    
+}
+
+Main.java...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Student obj=new Student("rakesh", "suresh", "manju", 9, 2017, "kalwar", 8562314, "A");
+        Employee obj1=new Employee(1, "manish", "mahesh", "urmila", "regex", 25000);
+        TreeMap<Integer,Student> tm=new TreeMap<>();
+        tm.put(1,obj);
+        for(Map.Entry<Integer,Student> m:tm.entrySet())
+        {
+            int key=m.getKey();
+            Student p=m.getValue();
+            System.out.println(p.name);
+            System.out.println(p.fname);
+            System.out.println(p.mname);
+            System.out.println(p.classs);
+            System.out.println(p.year);
+            System.out.println(p.address);
+            System.out.println(p.number);
+            System.out.println(p.bgroup);
+        }
+        TreeMap<Integer,Employee> tm1=new TreeMap<>();
+        tm1.put(1, obj1);
+        for(Map.Entry<Integer,Employee> m1:tm1.entrySet())
+        {
+            int key1=m1.getKey();
+            Employee s=m1.getValue();
+            System.out.println(s.id);
+            System.out.println(s.name);
+            System.out.println(s.fname);
+            System.out.println(s.mname);
+            System.out.println(s.company);
+            System.out.println(s.salary);
+        }
+
+    }
+}
+-----------------------------------------------------------
