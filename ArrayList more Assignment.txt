@@ -1,0 +1,87 @@
+1.
+write a java program and represent the following elements in Arraylist object.
+java,Angular,ReactJS,JavaScript,Python.
+iterate one by one element using for each loop and Listiterator cursor.
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        ArrayList<String> al=new ArrayList<>();
+        al.add("java");
+        al.add("Angular");
+        al.add("ReactJS");
+        al.add("JavaScript");
+        al.add("Python");
+        //Using For loop
+        for(String i:al)
+        {
+            System.out.println(i);
+        }
+        // ListIterator Cursor
+        ListIterator <String> itr=al.listIterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next());
+        }
+    }
+}
+-------------------------------------------------------------
+2.
+write a java program and represent the following elements in Linkedlist object.
+java,Angular,ReactJS,JavaScript,Python.
+iterate one by one element using for each loop and Listiterator cursor.
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedList<String> al=new LinkedList<>();
+        al.add("java");
+        al.add("Angular");
+        al.add("ReactJS");
+        al.add("JavaScript");
+        al.add("Python");
+        //Using For loop
+        for(String i:al)
+        {
+            System.out.println(i);
+        }
+        // ListIterator Cursor
+        ListIterator <String> itr=al.listIterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next());
+        }
+    }
+}
+-------------------------------------------------------------
+3.
+write a java program and represent the following elements in Vector object.
+java,Angular,ReactJS,JavaScript,Python.
+iterate one by one element using for each loop and Enumarator cursor.
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Vector<String> al=new Vector<>();
+        al.add("java");
+        al.add("Angular");
+        al.add("ReactJS");
+        al.add("JavaScript");
+        al.add("Python");
+        //Using For loop
+        for(String i:al)
+        {
+            System.out.println(i);
+        }
+        // create Enumarator cursor
+        Enumeration<String> en=Collections.enumeration(al);
+        while(en.hasMoreElements())
+        {
+            System.out.println(en.nextElement());
+        }
+    }
+}
+-------------------------------------------------------------

@@ -1,0 +1,43 @@
+import java.util.*;
+public class Main 
+{
+    void add(int a,int b)
+    {
+        int c=a+b;
+        System.out.println("addtion is = "+c);
+    }
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+    void multi(int a,int b)
+    {
+        int c=a*b;
+        System.out.println("multi is = "+c);
+    }
+    void avg(int a,int b)
+    {
+        int c=(a+b)/2;
+        System.out.println("avg is = "+c);
+    }
+    void div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Main obj=new Main();
+        obj.add(a, b);  
+        obj.sub(a, b);  
+        obj.multi(a,b);
+        obj.avg(a, b);  
+        obj.div(a, b);
+        
+    }
+}
