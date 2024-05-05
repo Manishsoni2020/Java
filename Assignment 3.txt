@@ -1,0 +1,16 @@
+1.
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashMap<String,Integer> hm=new HashMap<>();
+        hm.put("Java Full Stack",150);
+        hm.put("Pythn Full Stack",150);
+        hm.put("UI Full Stack",80);
+        for(Map.Entry m:hm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
+--------------------------------------------------------------

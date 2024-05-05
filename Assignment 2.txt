@@ -1,0 +1,131 @@
+1.
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter customer id");
+        int id=sc.nextInt();
+        System.out.println("enter customer name ");
+        String n=sc.next();
+        System.out.println("enter customer gender");
+        char a=sc.next().charAt(0);
+        System.out.println("enter customer email id ");
+        String em=sc.next();
+        System.out.println("enter customer mobile number ");
+        long m=sc.nextLong();
+        System.out.println();
+        System.out.println("customer id "+id);
+        System.out.println("customer name "+n);
+        System.out.println("customer gender "+a);
+        System.out.println("customer email id "+em);
+        System.out.println("customer mobile number "+m);
+    }
+}
+----------------------------------------------------------
+2.
+import java.util.*;
+public class Main 
+{
+    void add(int a,int b)
+    {
+        int c=a+b;
+        System.out.println("addtion is = "+c);
+    }
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+    void multi(int a,int b)
+    {
+        int c=a*b;
+        System.out.println("multi is = "+c);
+    }
+    void avg(int a,int b)
+    {
+        int c=(a+b)/2;
+        System.out.println("avg is = "+c);
+    }
+    void div(int a,int b)
+    {
+        int c=a/b;
+        System.out.println("div is = "+c);
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Main obj=new Main();
+        obj.add(a, b);  
+        obj.sub(a, b);  
+        obj.multi(a,b);
+        obj.avg(a, b);  
+        obj.div(a, b);
+        
+    }
+}
+----------------------------------------------------------
+3.
+public class Main 
+{
+    public static void main(String[] args) {
+        int a=5000/100*5;
+        System.out.println("5% of 5000 is "+a);
+        int b=5000/100*10;
+        System.out.println("10% of 5000 is "+b);
+        int c=5000/100*20;
+        System.out.println("20% of 5000 is "+c);
+        int d=5000/100*25;
+        System.out.println("25% of 5000 is "+d);
+    }
+}
+----------------------------------------------------------
+4.
+Three No Max...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any three number ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a>b && a>c)
+        {
+            System.out.println(a);
+        }
+        else if(b>a && b>c)
+        {
+            System.out.println(b);
+        }
+        else
+        {
+            System.out.println(c);
+        }
+}
+}
+
+Two No Max...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any two number ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a>b )
+        {
+            System.out.println("A is max "+a);
+        }
+        else
+        {
+            System.out.println("B is max "+b);
+        }
+}
+}
+----------------------------------------------------------
