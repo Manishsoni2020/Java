@@ -1,0 +1,15 @@
+1.
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedHashMap<String,Integer> lm=new LinkedHashMap<>();
+        lm.put("Java Full Stack", 150);
+        lm.put("Pythn Full Stack", 150);
+        lm.put("Ui Full Stack", 80);
+        for(Map.Entry m:lm.entrySet())
+        {
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
+    }
+}
