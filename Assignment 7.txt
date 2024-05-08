@@ -1,0 +1,54 @@
+1.
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        HashSet<String> hs=new HashSet<>();
+        hs.add("Java");
+        hs.add("Angular");
+        hs.add("ReactJS");
+        hs.add("JavaScript");
+        hs.add("Python");
+        for(String i:hs)
+        {
+            System.out.println(i);
+        }
+    }
+}
+-------------------------------------------------
+2.
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        LinkedHashSet<String> hs=new LinkedHashSet<>();
+        hs.add("Java");
+        hs.add("Angular");
+        hs.add("ReactJS");
+        hs.add("JavaScript");
+        hs.add("Python");
+        for(String i:hs)
+        {
+            System.out.println(i);
+        }
+    }
+}
+-------------------------------------------------
+3.
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        TreeSet<String> hs=new TreeSet<>();
+        hs.add("Java");
+        hs.add("Angular");
+        hs.add("ReactJS");
+        hs.add("JavaScript");
+        hs.add("Python");
+        for(String i:hs)
+        {
+            System.out.println(i);
+        }
+    }
+}
+-------------------------------------------------
