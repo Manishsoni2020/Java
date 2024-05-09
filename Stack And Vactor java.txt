@@ -1,0 +1,608 @@
+every method code : 
+
+add()
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Vector<Integer> st=new Vector<>();
+        st.add(25);
+        st.add(41);
+        st.add(74);
+        System.out.println(st);
+    }
+}
+
+addAll()
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Vector<Integer> st=new Vector<>();
+        st.add(25);
+        st.add(41);
+        st.add(74);
+        Vector<Integer> st1=new Vector<>();
+        st1.add(63);
+        st1.add(74);
+        st1.add(960);
+        st.addAll(st1);
+        System.out.println(st);
+    }
+}
+
+addElement()
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Vector<Integer> st=new Vector<>();
+        st.addElement(25);
+        st.addElement(14);
+        st.addElement(87);
+        System.out.println(st);
+    }
+}
+
+--------------------------
+stack:
+wrapper classes used 
+Ans...
+Integer..
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(25);
+        st.push(63);
+        st.push(45);
+        System.out.println(st);
+    }
+}
+
+String
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<String> st=new Stack<>();
+        st.push("manish");
+        st.push("rakesh");
+        st.push("suresh");
+        st.push("vikas");
+        System.out.println(st);
+    }
+}
+
+Float
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Float> st=new Stack<>();
+        st.push(3.5f);
+        st.push(4.1f);
+        st.push(7.8f);
+        st.push(5.9f);
+        System.out.println(st);
+    }
+}
+
+Double
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Double> st=new Stack<>();
+        st.push(528.6987);
+        st.push(44125.2155);
+        st.push(7785.0215);
+        st.push(7415.36999);
+        System.out.println(st);
+    }
+}
+
+Long
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Long> st=new Stack<>();
+        st.push(5289556987L);
+        st.push(44125662155L);
+        st.push(77858870215L);
+        st.push(741545436999L);
+        System.out.println(st);
+    }
+}
+
+Char
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Character> st=new Stack<>();
+        st.push('f');
+        st.push('g');
+        st.push('l');
+        st.push('y');
+        System.out.println(st);
+    }
+}
+
+Boolen
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Boolean> st=new Stack<>();
+        st.push(true);
+        st.push(false);
+        st.push(true);
+        st.push(false);
+        System.out.println(st);
+    }
+}
+------------------------------------
+push 
+Ans...
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<String> st=new Stack<>();
+        st.push("manish");
+        st.push("rakesh");
+        st.push("suresh");
+        st.push("vikas");
+        System.out.println(st);
+    }
+}
+
+pop
+Ans...
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(84);
+        st.push(41);
+        st.push(23);
+        st.push(87);
+        // For delete last elment 
+        st.pop();
+        System.out.println(st);
+    }
+}
+
+peek 
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(84);
+        st.push(41);
+        st.push(23);
+        st.push(87);
+        // for print highest element 
+        System.out.println(st.peek());
+        System.out.println(st);
+    }
+}
+
+size
+import java.util.*;
+public class Main  
+{
+    public static void main(String[] args) {
+        Stack<Integer> st=new Stack<>();
+        st.push(84);
+        st.push(41);
+        st.push(23);
+        st.push(87);
+        // for print size 
+        System.out.println(st.size());
+        System.out.println(st);
+    }
+}
+-----------------------------------------
+ArrayList merge with linkedlist 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(63);
+        al.add(74);
+        al.add(14);
+        al.add(22);
+        LinkedList<Integer> ls=new LinkedList<>();
+        ls.add(69);
+        ls.add(88);
+        ls.add(44);
+        ls.add(66);
+        al.addAll(ls);
+        System.out.println(al);
+    }
+}
+
+linkedlist merge with arraylist 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedList<Integer> al=new LinkedList<>();
+        al.add(63);
+        al.add(74);
+        al.add(14);
+        al.add(22);
+        ArrayList<Integer> ls=new ArrayList<>();
+        ls.add(69);
+        ls.add(88);
+        ls.add(44);
+        ls.add(66);
+        al.addAll(ls);
+        System.out.println(al);
+    }
+}
+
+vector merge arraylist 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Vector<Integer> al=new Vector<>();
+        al.add(63);
+        al.add(74);
+        al.add(14);
+        al.add(22);
+        ArrayList<Integer> ls=new ArrayList<>();
+        ls.add(69);
+        ls.add(88);
+        ls.add(44);
+        ls.add(66);
+        al.addAll(ls);
+        System.out.println(al);
+    }
+}
+
+arraylist merge vector
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(63);
+        al.add(74);
+        al.add(14);
+        al.add(22);
+        Vector<Integer> ls=new Vector<>();
+        ls.add(69);
+        ls.add(88);
+        ls.add(44);
+        ls.add(66);
+        al.addAll(ls);
+        System.out.println(al);
+    }
+}
+
+stack merge with linkedlist 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(74);
+        st.push(88);
+        st.push(41);
+        st.push(65);
+        LinkedList<Integer> ls=new LinkedList<>();
+        ls.add(25);
+        ls.add(14);
+        ls.add(63);
+        st.addAll(ls);
+        System.out.println(st);
+    }
+}
+
+stack merge with arraylist
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(74);
+        st.push(88);
+        st.push(41);
+        st.push(65);
+        ArrayList<Integer> ls=new ArrayList<>();
+        ls.add(25);
+        ls.add(14);
+        ls.add(63);
+        st.addAll(ls);
+        System.out.println(st);
+    }
+}
+
+stack merge with vector
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(74);
+        st.push(88);
+        st.push(41);
+        st.push(65);
+        Vector<Integer> ls=new Vector<>();
+        ls.add(25);
+        ls.add(14);
+        ls.add(63);
+        st.addAll(ls);
+        System.out.println(st);
+    }
+}
+
+vector merge stack
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> st=new Stack<>();
+        st.push(74);
+        st.push(88);
+        st.push(41);
+        st.push(65);
+        Vector<Integer> ls=new Vector<>();
+        ls.add(25);
+        ls.add(14);
+        ls.add(63);
+        ls.addAll(st);
+        System.out.println(ls);
+    }
+}
+vector merge linkedlist 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedList<Integer> ls=new LinkedList<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        Vector<Integer> ls1=new Vector<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls1.addAll(ls);
+        System.out.println(ls1);
+    }
+}
+
+arraylist merge hashset 
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> ls=new ArrayList<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        HashSet<Integer> ls1=new HashSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls.addAll(ls1);
+        System.out.println(ls);
+    }
+}
+
+hashset merge arraylist 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> ls=new ArrayList<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        HashSet<Integer> ls1=new HashSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls1.addAll(ls);
+        System.out.println(ls1);
+    }
+}
+
+hashset merger linkedhashset 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedHashSet<Integer> ls=new LinkedHashSet<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        HashSet<Integer> ls1=new HashSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls1.addAll(ls);
+        System.out.println(ls1);
+    }
+}
+
+linkedhashset merge hashset 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedHashSet<Integer> ls=new LinkedHashSet<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        HashSet<Integer> ls1=new HashSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls.addAll(ls1);
+        System.out.println(ls);
+    }
+}
+
+treehashset merge hashset
+Ans..
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        TreeSet<Integer> ls=new TreeSet<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        HashSet<Integer> ls1=new HashSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls.addAll(ls1);
+        System.out.println(ls);
+    }
+}
+
+treehashset merge linedhashset
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        TreeSet<Integer> ls=new TreeSet<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        LinkedHashSet<Integer> ls1=new LinkedHashSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls.addAll(ls1);
+        System.out.println(ls);
+    }
+}
+
+treehashset merge treehashset
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        TreeSet<Integer> ls=new TreeSet<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        TreeSet<Integer> ls1=new TreeSet<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls.addAll(ls1);
+        System.out.println(ls);
+    }
+}
+-----------------------------------------------------------
+ArrayList merge with linkedlist 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(63);
+        al.add(74);
+        al.add(14);
+        al.add(22);
+        LinkedList<Integer> ls=new LinkedList<>();
+        ls.add(69);
+        ls.add(88);
+        ls.add(44);
+        ls.add(66);
+        al.addAll(ls);
+        System.out.println(al);
+    }
+}
+
+linkedlist merge with vector 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        LinkedList<Integer> ls=new LinkedList<>();
+        ls.add(75);
+        ls.add(44);
+        ls.add(23);
+        Vector<Integer> ls1=new Vector<>();
+        ls1.add(25);
+        ls1.add(14);
+        ls1.add(63);
+        ls1.addAll(ls);
+        System.out.println(ls1);
+    }
+}
+vector merge with stack 
+Ans...
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Vector<Integer> vt=new Vector<>();
+        vt.add(25);
+        vt.add(41);
+        vt.add(98);
+        Stack<Integer> st=new Stack<>();
+        st.add(63);
+        st.add(74);
+        st.add(412);
+        vt.addAll(st);
+        System.out.println(vt);
+    }
+}
+-----------------------------------------------------------------
