@@ -1,0 +1,90 @@
+create : Java 
+
+Ans...
+import java.util.*;
+import java.io.File;
+public class Main 
+{
+    public static void main(String[] args) {
+        try{
+            File obj=new File("hello.txt");
+            if(obj.createNewFile())
+            {
+                System.out.println("file create"+obj.getName());
+            }
+            else 
+            {
+                System.out.println("file already create");
+            }
+        }
+        catch(Exception ex)
+        {
+            System.out.println("an error accured");
+        }
+    }
+}
+
+insert what is java ?
+Ans...
+import java.io.FileWriter;
+public class Main 
+{
+    public static void main(String[] args) {
+        try
+        {
+            FileWriter obj=new FileWriter("hello.txt");
+            // want to write some contant
+            obj.write("What is java ?");
+            obj.close();
+            System.out.println("Successfully content type");
+        }
+        catch(Exception ex)
+        {
+            System.out.println("an error accured");
+        }
+    }
+}
+
+read 
+Ans..
+import java.io.File;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        try {
+            File obj=new File("Naresh.txt");
+            Scanner myReader=new Scanner(obj);
+            while(myReader.hasNext())
+            {
+                String data=myReader.nextLine();
+                System.out.println(data);
+                myReader.close();
+            }
+        } catch (Exception e) {
+            System.out.println("error");
+        }
+    }
+}
+
+delete 
+import java.util.*;
+import java.io.File;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        File obj=new File("naresh.txt");
+        if(obj.delete())
+        {
+            System.out.println("delete this file "+obj.getName());
+        }
+        else 
+        {
+            System.out.println("fail to delete file");
+        }
+    }
+}
+
+
+---------------------------------------------------
