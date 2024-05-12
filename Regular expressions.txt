@@ -1,0 +1,141 @@
+1.
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String p="ANGPA1234G";
+        String r="[A-Z][A-Z][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9][A-Z]";
+        Pattern n=Pattern.compile(r);
+        Matcher m=n.matcher(p);
+        if(m.find() && m.group().equals(p))
+        {
+            System.out.println("vaild");
+        }
+        else
+        {
+            System.out.println("not valid");
+        }
+    }
+}
+------------------------------------------------
+2.
+a).import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String p="A1234567";
+        String r="[A-Z][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
+        Pattern n=Pattern.compile(r);
+        Matcher m=n.matcher(p);
+        if(m.find() && m.group().equals(p))
+        {
+            System.out.println("vaild");
+        }
+        else
+        {
+            System.out.println("not valid");
+        }
+    }
+}
+
+b).
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String p="L1234123";
+        String r="[A-Z][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
+        Pattern n=Pattern.compile(r);
+        Matcher m=n.matcher(p);
+        if(m.find() && m.group().equals(p))
+        {
+            System.out.println("vaild");
+        }
+        else
+        {
+            System.out.println("not valid");
+        }
+    }
+}
+----------------------------------------------------
+3.
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String p="1111 2222 3333 4444";
+        String r="[0-9][0-9][0-9][0-9] [0-9][0-9][0-9][0-9] [0-9][0-9][0-9][0-9] [0-9][0-9][0-9][0-9]";
+        Pattern n=Pattern.compile(r);
+        Matcher m=n.matcher(p);
+        if(m.find() && m.group().equals(p))
+        {
+            System.out.println("vaild");
+        }
+        else
+        {
+            System.out.println("not valid");
+        }
+    }
+}
+------------------------------------------------------
+4.
+A)
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.*;
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your pincode");
+        String i=sc.nextLine();
+        String j="[0-9][0-9][0-9][0-9][0-9][0-9]";
+        Pattern p=Pattern.compile(j);
+        Matcher m=p.matcher(i);
+        if(m.find() && m.group().equals(i))
+        {
+            System.out.println("vaild pincode");
+        }
+        else 
+        {
+            System.out.println("not valid");
+        }
+    }
+}
+
+B)
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String s="500083";
+        String g="[0-9][0-9][0-9][0-9][0-9][0-9]";
+        Pattern p=Pattern.compile(g);
+        Matcher m=p.matcher(s);
+        if(m.find() && m.group().equals(s))
+        {
+            System.out.println("vaild pincode");
+        }
+        else 
+        {
+            System.out.println("not vaild");
+        }
+    }
+}
+-------------------------------------------------------------
