@@ -1,0 +1,277 @@
+array questions set :
+*************************************************************************
+
+EASY LEVEL
+
+1) Write a Java program to find the sum of all elements in an integer array.
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={1,2,3,4,5};
+        int sum=0;
+        for(int i=0;i<a.length;i++)
+        {
+            sum=sum+a[i];
+        }
+        System.out.println(sum);
+    }
+}
+----------------------------------
+2)Write a Java program to find the maximum element in an array of integers.
+Ans...
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        int a[]={1,2,3,4,5};
+        int max=a[0];
+        for(int i=1;i<a.length;i++)
+        {
+            if(a[i]>max)
+            {
+                max=a[i];
+            }
+        }
+        System.out.println("maximum element of array"+max);
+    }
+}
+----------------------------------
+3)Write a Java program to count the number of even and odd elements in an array of integers.
+Ans..
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={1,2,3,4,5};
+        int count=0;
+        int count1=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]%2==0)
+            {
+                count++;
+            }
+        }
+        System.out.println("total even number "+count);
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]%2!=0)
+            {
+                count1++;
+            }
+        }
+        System.out.println("total odd number "+count1);
+        
+    }
+}
+----------------------------------
+4) Write a Java program to find the average of elements in an array of integers.
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={1,2,3,4,5};
+        int sum=0;
+        for(int i=0;i<a.length;i++)
+        {
+            sum=(sum+a[i]);
+        }
+        System.out.println(sum/a.length);
+    }
+}
+----------------------------------
+5)Write a Java program to reverse an array of integers
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={1,2,3,4,5};
+        for(int i=a.length-1;i>=0;i--)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+----------------------------------
+6) Write a Java program to find the second largest element in an array of integers.
+public class Main 
+{
+    static void sort(int a[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+           for(int j=i+1;j<a.length;j++)
+           {
+            if(a[i]>a[j])
+            {
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+           }
+        }
+    }
+    static void max(int a[])
+    {
+        int max=0;
+        for(int i=0;i<a.length-1;i++)
+        {
+            if(max<a[i])
+            {
+                max=a[i];
+            }
+        }
+        System.out.println(max);
+    }
+    static void display(int a[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+    public static void main(String[] args)
+    {
+       int a[]={1,5,6,7,2,12,11};
+       display(a);
+       sort(a);
+       System.out.println();
+       display(a);
+       System.out.println();
+       max(a);
+    }
+}
+----------------------------------
+7)Write a Java program to find the common elements between two arrays of integers.
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={1,2,3,4,5};
+        int b[]={6,7,8,44,3};
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<b.length;j++)
+            {
+                if(a[i]==b[j])
+                {
+                    System.out.print(a[i]+" ");
+                }
+            }
+        }
+    }
+}
+----------------------------------
+8)Write a Java program to find the frequency of each element in an array of integers. take
+positive elements and negative elements
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={-1,-2,8,6,-10,45};
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]<0)
+            {
+                System.out.print(a[i]+" ");
+            }
+        }
+        System.out.println();
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>0)
+            {
+                System.out.print(a[i]+" ");
+            }
+        }
+    }
+}
+----------------------------------
+9)Write a Java program to find the intersection of two arrays.(intersection means :common
+elements)
+Ans...
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        int b[]={11,12,2,6,13,14,15,16};
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<b.length;j++)
+            {
+                if(a[i]==b[j])
+                {
+                    System.out.print(a[i]+" ");
+                }
+            }
+        }
+        
+    }
+}
+----------------------------------
+10)Write a Java program to shift all zeros in an array to the end while maintaining the order of
+non-zero elements.
+given elements is : { 0, 2, 0, 4, 0, 6, 8, 0 }
+Ans...
+public class Main 
+{
+    static void display(int a[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=a.length-1;j>i;j--)
+            {
+                if(a[i]==0)
+                {
+                    int temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+    }
+    public static void main(String[]args)
+    {
+        int a[]={0, 2, 0, 4, 0, 6, 8, 0};
+        display(a);
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------
+----
+
+MODERATE LEVEL
+
+1)Write a Java program to rotate an array to the right by a given number of steps.
+eg : { 1, 2, 3, 4, 5, 6, 7 };
+output explanation =>
+one time rotation : 7,1,2,3,4,5,6
+second time roration :6,7,1,2,3,4,5
+third time rotation : 5,6,7,1,2,3,4
+
+2)Write a Java program to segregate 0s, 1s, and 2s in an array.
+
+3)Write a Java program to find the majority element in an array (the element that appears more
+than n/2 times).
+
+4)Write a Java program to find the maximum difference between two elements in an array such
+that the larger element appears after the smaller element.
+5)Write a Java program to find the minimum difference between two elements in an array.
+
+6) Write a Java program to find the longest increasing subarray.
+
+7)Reverse an Array in-place: java at specific place
+8)Remove Duplicates from Sorted Array: remove only first duplicate element
+9)Remove Duplicates from unSorted Array: remove only first duplicate element
+10)find the peak element in array
+------------------------------------------------------------------------------------------------------------------------
