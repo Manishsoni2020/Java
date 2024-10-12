@@ -1,0 +1,375 @@
+Q1.
+
+package sendredirection;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/Sendrd")
+public class Sendrd extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public Sendrd() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		out.print("<a href='https://www.flipkart.com/?cmpid=content_20325461660_gmc_pla&gad_source=1&gclid=Cj0KCQjw05i4BhDiARIsAB_2wfCw6gtIxOJ9ADF6B3lb5d4qo8JAsdTJ9wr-fXw2zjreK3HWtA3Owb0aAmZwEALw_wcB'>facebook</a><br>");
+		out.print("<a href='https://www.myntra.com/?utm_source=dms_google&utm_medium=searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK_New&gad_source=1&gclid=Cj0KCQjw05i4BhDiARIsAB_2wfD6QbMEIoYrsJ19rF7pob6ftP1b1-eI_tTrSVfhngp3uLHsvBi65N0aAojFEALw_wcB'>myntrat</a><br>");
+		out.print("<a href='https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=713930225169&hvpos=&hvnetw=g&hvrand=17609898761006493078&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061782&hvtargid=kwd-64107830&hydadcr=14452_2402225&gad_source=1'>amazon</a><br>");
+	}
+}
+-----------------
+Q2.
+package sendredirection1;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Sendrd2")
+public class Sendrd2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+  
+    public Sendrd2() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.sendRedirect("https://www.myntra.com/?utm_source=dms_google&utm_medium=searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK_New&gad_source=1&gclid=Cj0KCQjw05i4BhDiARIsAB_2wfA4vbp0K3S2cwnOd-U8yE9ZTatyYCGBnVSXS845mcfWU5n78b7lavsaAmnFEALw_wcB");
+	}
+}
+-------------------
+Q3.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container" >
+        <h2>Login</h2>
+        <form id="loginForm" action="shoping" method="get">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+package hii;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/shoping")
+public class Hii extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+    public Hii() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		//name
+		String name=request.getParameter("name");
+		//email
+		String email=request.getParameter("email");
+		//password
+		String password=request.getParameter("password");
+		if(name.equals("amazon")&& email.equals("amazon@gmail.com")&& password.equals("1234"))
+		{
+			
+			response.sendRedirect("https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=713930225169&hvpos=&hvnetw=g&hvrand=4999015078910551040&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061770&hvtargid=kwd-64107830&hydadcr=14452_2402225&gad_source=1");
+		}
+		else if(name.equals("meesho")&& email.equals("meesho@gmail.com")&& password.equals("1234"))
+		{
+			response.sendRedirect("https://www.meesho.com/?srsltid=AfmBOoqFVvsBqj1QDgnVZDOWgQU_OdRl7D3BKlePvIrQ2kzoPwum2T9C");
+		}
+		else if(name.equals("flipcart")&& email.equals("flipcart@gmail.com")&& password.equals("1234"))
+		{
+			response.sendRedirect("https://www.meesho.com/?srsltid=AfmBOoqFVvsBqj1QDgnVZDOWgQU_OdRl7D3BKlePvIrQ2kzoPwum2T9C");
+		}
+		else if(name.equals("lenskart")&& email.equals("lenskart@gmail.com")&& password.equals("1234"))
+		{
+			response.sendRedirect("https://www.lenskart.com/");
+		}
+		else if(name.equals("apple")&& email.equals("apple@gmail.com")&& password.equals("1234"))
+		{
+			response.sendRedirect("https://www.apple.com/in/store?afid=p238%7CsdUuvv563-dc_mtid_187079nc38483_pcrid_715593096843_pgrid_109516736379_pntwk_g_pchan__pexid__ptid_kwd-10778630_&cid=aos-IN-kwgo-brand--slid---product-");
+		}
+		else
+		{
+			RequestDispatcher rd =request.getRequestDispatcher("NewFile.html");
+			rd.include(request, response);
+		}
+
+	}
+
+}
+-------------------
+Q.4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindustan Hospital - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Hindustan Hospital Login</h2>
+        <form id="loginForm" action="hos" method="get" >
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" name=name required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" name=email required>
+            </div>
+            <div class="input-group">
+                <label for="father-name">Father's Name</label>
+                <input type="text" id="father-name" placeholder="Enter your father's name"  name=fname required>
+            </div>
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" placeholder="Enter your age" name= age required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+package h;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/hos")
+public class H extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+   
+    public H() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		//name
+		String name=request.getParameter("name");
+		//email
+		String email=request.getParameter("email");
+		//fname
+		String fname=request.getParameter("fname");
+		//age
+		String age=request.getParameter("age");
+		if(name.equals("manish")&& email.equals("manish@gmail.com")&& fname.equals("fname")&& age.equals("25"))
+		{
+			PrintWriter out=response.getWriter();
+			out.print("kajal mam doctor se milo");
+		}
+		else if(name.equals("manish")&& email.equals("manish@gmail.com")&& fname.equals("fname")&& age.equals("25"))
+		{
+			PrintWriter out=response.getWriter();
+			out.print("rakesh doctor se milo");
+		}
+	}
+}
+
+
