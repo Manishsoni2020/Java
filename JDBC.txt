@@ -1,0 +1,244 @@
+Base.java
+package base;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Base")
+public class Base extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public Base() {
+        super();
+    }
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String driver="com.mysql.jdbc.Driver";
+		String url="jdbc:mysql://localhost:3306/hii";
+		String user ="root";
+		String password="2002";
+		PrintWriter out=response.getWriter();	
+		try {
+		
+		Class.forName(driver);//load driver 
+		Connection con = DriverManager.getConnection(url, user, password);
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery("select * from emp");
+		while(rs.next()) {
+			out.println(rs.getInt("eid")+" "+rs.getString("name"));
+		}
+		}
+		catch(Exception ex) {
+		out.println(ex);
+		}
+	}
+}
+
+Base1.java
+package base;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Base1")
+public class Base1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+ 
+    public Base1() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String driver="com.mysql.jdbc.Driver";
+		String url="jdbc:mysql://localhost:3306/joins";
+		String user="root";
+		String password="2002";
+		try
+		{
+			PrintWriter out=response.getWriter();
+			Class.forName(driver);
+			Connection con=DriverManager.getConnection(url,user,password);
+			Statement smt=con.createStatement();
+			ResultSet rs=smt.executeQuery("select * from customer");
+			while(rs.next())
+			{
+				out.println(rs.getInt("customer_id")+" "+rs.getString("customer_name"));
+			}
+			
+		}
+		catch(Exception ex)
+		{
+			
+		}
+	}
+}
+
+Base2.java
+package base2;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Base2")
+public class Base2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    public Base2() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String driver="com.mysql.jdbc.Driver";
+		String url="jdbc:mysql://localhost:3306/joins";
+		String user="root";
+		String password="2002";
+		try
+		{
+			PrintWriter out=response.getWriter();
+			Class.forName(driver);
+			Connection con=DriverManager.getConnection(url,user,password);
+			Statement st=con.createStatement();
+			ResultSet rt=st.executeQuery("select * from product");
+			while(rt.next())
+			{
+				out.println(rt.getInt("product_id")+" "+rt.getString("product_name"));
+			}
+			
+		}
+		catch(Exception ex)
+		{
+			
+		}
+	}
+
+
+}
+
+Base3.java
+package base3;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Base3")
+public class Base3 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+  
+    public Base3() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String driver="com.mysql.jdbc.Driver";
+		String url="jdbc:mysql://localhost:3306/world";
+		String user="root";
+		String password="2002";
+		try
+		{
+			PrintWriter out=response.getWriter();
+			Class.forName(driver);
+			Connection con=DriverManager.getConnection(url,user,password);
+			Statement smt=con.createStatement();
+			ResultSet re=smt.executeQuery("select * from city");
+			while(re.next())
+			{
+				out.println(re.getInt("ID")+" "+re.getString("Name"));
+			}
+			
+		}
+		catch(Exception e)
+		{
+			
+		}
+	}
+}
+
+Base4.java
+package base4;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Base4")
+public class Base4 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    public Base4() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String driver="com.mysql.jdbc.Driver";
+		String url="jdbc:mysql://localhost:3306/world";
+		String user="root";
+		String password="2002";
+		try
+		{
+			PrintWriter out=response.getWriter();
+			Class.forName(driver);
+			Connection con=DriverManager.getConnection(url,user,password);
+			Statement snt=con.createStatement();
+			ResultSet rl=snt.executeQuery("select * from city");
+			while(rl.next())
+			{
+				out.println(rl.getString("Name")+" "+rl.getInt("Population"));
+			}
+			
+		}
+		catch(Exception ex)
+		{
+			
+		}
+	}
+}
+
